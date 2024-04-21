@@ -1,21 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import SearchForm from '../../components/SearchForm/SearchForm';
+import SearchForm from '../../components/Search/SearchForm';
 import { getAllJob } from '../../services/jobService';
 import { TbReceiptYen } from 'react-icons/tb';
+import { Job } from '../../interface/interface';
 
-interface Job {
-    city: string[];
-    createAt: string;
-    description: string;
-    id: number;
-    idCompany: number;
-    name: string;
-    salary: string;
-    tags: string[]
-    updateAt: string
-    status: boolean
-}
+
 
 const Search = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -40,8 +30,10 @@ const Search = () => {
     }, [])
     console.log(data)
     return (
-        <div>
-            <SearchForm />
+        <div className='bg-purple-50'>
+            <div className='container sm:px-40 py-10 sm:py-0'>
+                <SearchForm />
+            </div>
         </div>
     )
 }

@@ -38,7 +38,20 @@
         "Friendship Tower, 31 Le Duan, Ben Nghe Ward, District 1, Ho Chi Minh",
         "Dreamplex, 174 Thai Ha Street, Dong Da, Ha Noi"
       ],
-      "website": "https://abc.com"
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "website": "https://abc.com",
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXMvS2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--58c93159cd5e45169503a9917c87b6acfd05ce01/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/Logo%20KBTG.jpg",
+      "tags": [
+        "Java",
+        "Golang",
+        "ReactJS",
+        "iOS",
+        "Android",
+        ".NET"
+      ]
     },
     {
       "id": 2,
@@ -82,6 +95,20 @@
         "Tầng 32 & 34, tòa nhà Keangnam Landmark 72, đường Phạm Hùng, Nam Tu Liem, Ha Noi",
         "Tầng 3, Tòa nhà Vĩnh Trung Plaza, số 255 - 257 Hùng Vương, Phường Vĩnh Trung, Thanh Khe, Da Nang",
         "KCN Tràng Duệ, huyện An Dương, thuộc Khu kinh tế Đình Vũ – Cát Hải, TP. Hải Phòng"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM3d3REE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--61527e04af1870bf7e9858df649b2a613e1fad9b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/lg-development-center-vietnam-logo.png",
+      "tags": [
+        "C++",
+        "Tester",
+        "OOP",
+        "Embedded",
+        "Android",
+        "C#"
       ]
     },
     {
@@ -125,6 +152,19 @@
       "address": [
         "TNR Tower, 54A Nguyen Chi Thanh, Lang Thuong, Dong Da, Ha Noi",
         "The Hallmark, 15 Tran Bach Dang, Thu Thiem Ward, Thu Duc City, Ho Chi Minh"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMS9LSnc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f77c1653cf49260705bf77be3846954d9b817b70/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo.jpg",
+      "tags": [
+        "QA QC",
+        "NodeJS",
+        "ReactJS",
+        "Agile",
+        "DevOps",
+        "Cloud"
       ]
     },
     {
@@ -163,6 +203,18 @@
       ],
       "address": [
         "Tầng 3-4 tòa nhà Phi Long, 52 Nguyễn Văn Linh, Hai Chau, Da Nang"
+      ],
+      "city": [
+        "Da Nang"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBekZTSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--46906e49d7f753e23866a5494b3c2ef7c166a28c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo_brand%20(1).png",
+      "tags": [
+        "QA QC",
+        "English",
+        "ReactJS",
+        "NodeJS",
+        "TypeScript",
+        "Cloud"
       ]
     },
     {
@@ -198,6 +250,226 @@
         "FPT Software Đường D1 Phường Tân Phú , District 9, Ho Chi Minh",
         "FPT Cau Giay Building, Cau Giay, Ha Noi",
         "Tòa nhà FPT Complex, Đường Nam Kỳ Khởi Nghĩa, Phường Hòa Hải, Ngu Hanh Son, Da Nang"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEJwSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--10a9cdf11d126baa55d2186b1dd97bc867eb9a9e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo%20FSOFT%20d%E1%BB%8Dc.png",
+      "tags": [
+        "Java",
+        "C++",
+        "English",
+        "Android",
+        "SQL",
+        ".NET"
+      ]
+    },
+    {
+      "id": 6,
+      "companyName": "Persol Career Tech Studio Vietnam",
+      "email": "company06@gmail.com",
+      "phone": "0345345345",
+      "password": "123456",
+      "token": "sdfqWjkzOX2130awkjAp3",
+      "quantityPeople": 8,
+      "companyType": "IT Product",
+      "companySize": "1-50 employees",
+      "country": "Japan",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "No OT",
+      "description": [
+        "Our Studio was established in August 2022 to became of creative development professionals that the whole world can be proud of. We were founded from the Japanese parent company but operates independently here in Ho Chi Minh City. We co-develop products together with the Japan team but we are not offshore team just to do what we are told to do. Not an outsourcing company with micro management. We suggest, manage, lead and control the project because it’s our product. We are here to demonstrate values to the world",
+        "We are a team that creates a fulfilling “new way of working” where the hopes of people and the expectations of society fit perfectly, as if “the way of working” and “the way of life” are merged."
+      ],
+      "reason": [
+        "Flexible working time (Hybrid)",
+        "Competitive salary, bonus, expenses and allowances",
+        "Chance to upgrade current position"
+      ],
+      "why": [
+        "Chance to upgrade current position",
+        "13th Salary",
+        "Flexible Working Time",
+        "Hybrid Working",
+        "15th Annual Leave",
+        "Full-paid Social Insurance",
+        "Travel Allowance",
+        "Premium Health Care (PTI Insurance)",
+        "Annual Health Check "
+      ],
+      "address": [
+        "6th Floor An Phu Plaza, Vo Thi Sau Ward, District 3, District 3, Ho Chi Minh"
+      ],
+      "city": [
+        "Ho Chi Minh"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMENnTGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--341216e11c566296e05835f54046c1a30a82cec3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/PERSOL%20LOGO.jpg",
+      "tags": [
+        ".NET",
+        "TypeScript",
+        "Spring",
+        "AWS",
+        "Azure",
+        "Agile"
+      ]
+    },
+    {
+      "id": 7,
+      "companyName": "Luxoft Vietnam",
+      "email": "company07@gmail.com",
+      "phone": "0345345345",
+      "password": "123456",
+      "token": "kljwBqwePO2234xswkjAp3",
+      "quantityPeople": 8,
+      "companyType": "IT Outsourcing",
+      "companySize": "51-150 employees",
+      "country": "United States",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "Extra salary for OT",
+      "description": [
+        "Join Luxoft Vietnam to turbocharge your professional development",
+        "Luxoft, a DXC Technology Company, (NYSE: DXC), is a digital strategy and software engineering firm providing bespoke technology solutions that drive business change for customers the world over. Luxoft uses technology to enable business transformation, enhance customer experiences, and boost operational efficiency through its strategy, consulting, and engineering services. Luxoft combines a unique blend of engineering excellence and deep industry expertise, specializing in automotive, financial services, travel and hospitality, healthcare, life sciences, media and telecommunications. For more information, please visit"
+      ],
+      "reason": [
+        "Great Challenges",
+        "Global Opportunities",
+        "Personal Growth"
+      ],
+      "why": [
+        "Flexible working time",
+        "Working from home as long as you interested",
+        "Laptop/IT equipment providing",
+        "Join a dynamic and fast growing global company (English-speaking environment)",
+        "13th-month salary",
+        "14 days of annual leave + 01 more vacation day will be added for every 02 full years of service",
+        "100% salary offer in 2-months of probation period",
+        "Premium health insurance for employee",
+        "Yearly health care check up"
+      ],
+      "address": [
+        "Etown 5, 364 Cong Hoa, Tan Binh, Ho Chi Minh"
+      ],
+      "city": [
+        "Ho Chi Minh"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMzJoSkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--51b47fe328abe32961f465b1fef8e3296bfd4af9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/Luxoft%20Purple%20RGB.png",
+      "tags": [
+        "C++",
+        "C language",
+        "Embedded",
+        "Java",
+        "Tester",
+        "QA QC"
+      ]
+    },
+    {
+      "id": 8,
+      "companyName": "NFQ Asia",
+      "email": "company08@gmail.com",
+      "phone": "0345345345",
+      "password": "123456",
+      "token": "xxmqLkppPO2234lssxjQx6",
+      "quantityPeople": 8,
+      "companyType": "IT Outsourcing",
+      "companySize": "301-500 employees",
+      "country": "Germany",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "No OT",
+      "description": [
+        "As a part of the global NFQ Group with 20+ years of experience scaling companies and a team of 800++ developers globally, NFQ Vietnam focuses on building high-performance dedicated teams for ambitious tech-driven businesses in Europe and Asia.",
+        "Each team here works directly with the client from end to end in an Agile spirit. This unique set up gives our employees the experience of working for a real product company, with a real sense of commitment and ownership to the product itself.",
+        "NFQ Vietnam has more than 250+ engineers located in Hochiminh, Danang, Hanoi & Cantho offices. We are recognized as top-notch place to work in Vietnam."
+      ],
+      "reason": [
+        "We truly value your thoughts and opinions",
+        "Global and professional",
+        "Hybrid working, flexible time"
+      ],
+      "why": [
+        "Laptop is provided.",
+        "Hybrid work.",
+        "English class for career development.",
+        "A fun & dynamic environment and freedom to be creative.",
+        "Modern office with the flexible relaxing zone.",
+        "13th-month salary (based on company policies and business situation).",
+        "Performance review 2 times/ year.",
+        "Extra Premium Healthcare & Annual Health-check.",
+        "Loyalty Program: life insurance worth 1 billion VND.",
+        "15 days annual leaves, working Monday – Friday."
+      ],
+      "address": [
+        "Podium Floor, Sapphire 2 Tower, 92 Nguyen Huu Canh Street, Ward 22, Binh Thanh, Ho Chi Minh",
+        "23rd Fl. G8 Golden building, 65 Hai Phong Street, Hai Chau, Da Nang",
+        "10th Floor, West Tower, Hancorp Plaza 72 Tran Dang Ninh Street, Dich Vong, Cau Giay, Ha Noi"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEJmTWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--aced64a3533842d453f2df7174360566061b12fc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/NFQ-logo-box-orange.png",
+      "tags": [
+        ".NET",
+        "ReactJS",
+        "PHP",
+        "Java",
+        "English",
+        "Cloud"
+      ]
+    },
+    {
+      "id": 9,
+      "companyName": "Tyme",
+      "email": "company09@gmail.com",
+      "phone": "0345345345",
+      "password": "123456",
+      "token": "lpoiQxaaXB0004lwgapOq3",
+      "quantityPeople": 8,
+      "companyType": "IT Product",
+      "companySize": "301-500 employees",
+      "country": "Singapore",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "No OT",
+      "description": [
+        "Tyme Group is one of the world’s fastest-growing digital banking groups, building high-tech and high-touch banks in fast-growing, emerging markets. Headquartered in Singapore with a Technology and product Development Hub in Vietnam, Tyme designs, builds, and commercializes digital banks for emerging markets, with particular expertise in serving under-served and under-banked populations.",
+        "Established in 2016, TymeX has been Tyme Group's Product & Technology Development Hub, bringing together engineering and product people who share a global mission to become serial bank builders, shaping the future of banking through technology. We build products with the principle of finding the right balance between the digital and physical worlds.",
+        "NFQ Vietnam has more than 250+ engineers located in Hochiminh, Danang, Hanoi & Cantho offices. We are recognized as top-notch place to work in Vietnam."
+      ],
+      "reason": [
+        "Excellent environment and team to help you grow.",
+        "Competitive salary and learning culture.",
+        "Premium health care for you and your family."
+      ],
+      "why": [
+        "Passionate about technology.",
+        "Independent but also a good team player.",
+        "Comfortable with a high degree of ambiguity.",
+        "Focused on usability and speed.",
+        "Keen on presenting your ideas to your peers and management.",
+        "Meal and parking allowances are covered by the company.",
+        "Full benefits and salary rank during probation.",
+        "Insurances such as Vietnamese labor law and premium health care for you and your family.",
+        "Values-driven, international working environment, and agile culture.",
+        "Overseas travel opportunities for training and work-related."
+      ],
+      "address": [
+        "HIU Tower, 215 Điện Biên Phủ, Phường 15, Binh Thanh, Ho Chi Minh",
+        "Times Tower, 35 Le Van Luong, Nhan Chinh ward, Thanh Xuan, Ha Noi"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK0xPTEE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e622a8382b21b032819f520d792bef976ace053e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/TX_RGB_Primary_onWhite.png",
+      "tags": [
+        "Java",
+        "Agile",
+        "iOS",
+        "Android",
+        "AWS",
+        "Cloud"
       ]
     }
   ],
@@ -218,7 +490,7 @@
   "tags": [
     {
       "key": 1,
-      "value": "HTML"
+      "value": "Spring"
     },
     {
       "key": 2,
@@ -234,7 +506,7 @@
     },
     {
       "key": 5,
-      "value": "JSON"
+      "value": "Agile"
     },
     {
       "key": 6,
@@ -266,15 +538,15 @@
     },
     {
       "key": 13,
-      "value": "VueJS"
+      "value": "ASP.NET"
     },
     {
       "key": 14,
-      "value": "Django"
+      "value": ".NET"
     },
     {
       "key": 15,
-      "value": "JQuery"
+      "value": "C#"
     },
     {
       "key": 16,
@@ -283,6 +555,22 @@
     {
       "key": 17,
       "value": "Bussiness Analyst"
+    },
+    {
+      "key": 18,
+      "value": "C++"
+    },
+    {
+      "key": 19,
+      "value": "OPP"
+    },
+    {
+      "key": 20,
+      "value": "Linux"
+    },
+    {
+      "key": 20,
+      "value": "AWS"
     }
   ],
   "jobs": [
@@ -848,6 +1136,372 @@
         "Ho Chi Minh",
         "Ha Noi",
         "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 6,
+      "id": 15,
+      "name": "SAP ABAP Technical Consultant-SignBonus 2 Months Salary",
+      "tags": [
+        "SAP",
+        "Database",
+        "English"
+      ],
+      "location": "At office",
+      "salary": "3000",
+      "overview": [
+        "Offshore or onsite ABAP development for implementation/roll-out/development/AMS projects",
+        "Review functional specification (FS) and suggest appropriate technical solution",
+        "Write technical specification (TS) based on FS",
+        "Strictly adhere to development guidelines for ABAP development"
+      ],
+      "responsibilities": [
+        "Conduct peer review to guarantee adherence to guidelines and templates",
+        "Write Unit Test Specification (UTS) and perform Unit Testing (UT)",
+        "Recommend end-to-end technical solutions to improve business processes",
+        "Articulate and manage consultation sessions with functional consultants and end-users",
+        "Maintain strong working relationship with peers from all locations",
+        "Ensure proper documentation and provide knowledge transfer to support members"
+      ],
+      "experience": [
+        "At least 3+ years of experience in ABAP and object oriented programming",
+        "Experience in RICEF development in ABAP language (Reports, Interfaces, Conversions, Enhancements, Forms)",
+        "Experience in both Procedural and Object Oriented Programing",
+        "Experience in ECC 6.0 and S/4HANA for at least one of the following modules: FICO/MM/SD/PP/PM/HCM",
+        "In-depth understanding of the Software Development Life Cycle (SDLC)",
+        "Detail-oriented with strong organizational skills",
+        "Work well with minimal supervision and able to deliver results under pressure",
+        "Able to work in a fast-paced and team-oriented environment",
+        "Good English Speaking or Good Japanese is a must"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 6,
+      "id": 16,
+      "name": "Back End Developer (C#)",
+      "tags": [
+        "C#",
+        "Java",
+        "ReactJS"
+      ],
+      "location": "Hybrid",
+      "salary": "3000",
+      "overview": [
+        "Overall maintenance and development of core systems (design to release/back-end and front-end development)"
+      ],
+      "responsibilities": [
+        "Implementation of system architecture improvement activities",
+        "Proactive return of knowledge to the organization"
+      ],
+      "experience": [
+        "Development experienced in C#, .NET Core",
+        "Knowledge and usage experience of frameworks such as Angular, React, Vue.js, etc",
+        "Basic knowledge and experience with SQL",
+        "Experience in team development with using Git"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 6,
+      "id": 17,
+      "name": "C# Leader Developer (.NET)",
+      "tags": [
+        "C#",
+        "Team Leader",
+        ".NET"
+      ],
+      "location": "Hybrid",
+      "salary": "3000",
+      "overview": [
+        "Overall maintenance and development of core systems (design to release/back-end and front-end development)"
+      ],
+      "responsibilities": [
+        "Development team Tech lead or member Management",
+        "Overall maintenance and development of core systems (design to release/back-end and front-end development)",
+        "Implementation of various deliverable reviews such as design and source code of development members (final quality check)",
+        "Proactively take on technical challenges and actively return knowledge to the organization"
+      ],
+      "experience": [
+        "More than 2 years experience as a leader",
+        "Development experience of Web API (REST) using C#",
+        "RDBMS knowledge and development experience",
+        "Knowledge and usage experience of frameworks such as Angular, React, Vue.js, etc."
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 6,
+      "id": 18,
+      "name": "Middle/Senior Back End Developer (Java)",
+      "tags": [
+        "Java",
+        "SQL",
+        "Javascript"
+      ],
+      "location": "Hybrid",
+      "salary": "3000",
+      "overview": [
+        "Developing and implementing features relevant to Backend side with Agile Scrum Methodology",
+        "Maintaining and improving performance of existing systems with flexible solutions.",
+        "Modifying and refactoring according to changing business requirements.",
+        "Implementing high-quality software with automation testing."
+      ],
+      "responsibilities": [
+        "Open-minded newly with many interesting tools and libraries.",
+        "Self-improvement with huge technical documents and sharing, coaching presentations.",
+        "For senior level: Support Lead Backend Developer to manage junior/fresher"
+      ],
+      "experience": [
+        "Willingness to develop and improve services with the sense of ownership",
+        "Experience development web application using Java",
+        "Basic knowledge and experience with SQL",
+        "Experience in team development with using Git",
+        "Experience with Spring Boot, Struts"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 6,
+      "id": 19,
+      "name": "Technical Lead (Java)",
+      "tags": [
+        "Java",
+        "Team Leader",
+        "Spring"
+      ],
+      "location": "Hybrid",
+      "salary": "3500",
+      "overview": [
+        "Actively take on technical challenges and return knowledge to the team",
+        "Being Tech-Leader or Project Leader to manage the team members",
+        "Design and implementation of test automation such as e2e test"
+      ],
+      "responsibilities": [
+        "Development and maintenance of Front/Backend areas in product development",
+        "Maintaining and improving performance of existing systems with flexible solutions",
+        "Open-minded newly with many interesting tools and libraries"
+      ],
+      "experience": [
+        "2 years+ of experience as a leader",
+        "Willingness to develop and improve services with the sense of ownership",
+        "Experience with Spring Boot, Struts",
+        "Experience developing web application using Java",
+        "Experience with UI library/framework such as React or Vue.js, Angular"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 7,
+      "id": 20,
+      "name": "Java Developer (Regular level)",
+      "tags": [
+        "Java",
+        "Javascript",
+        "J2EE"
+      ],
+      "location": "Hybrid",
+      "salary": "2000",
+      "overview": [
+        "EarlyResolution, a multichannel lending default management solution for the banking industry, offers smart technology to help with loss mitigation and compliance. It is delivered by our highly experienced and competent development teams located across the globe (United States, Vietnam, and India).",
+        "We offer you to join our team of highly skilled professionals with development, business analysis, testing, and management backgrounds who strive for excellence. We are looking for a candidate with good communication and interpersonal skills who is adaptive to our existing procedures, techniques, and methods and contributes to exploring innovative ideas with high potential."
+      ],
+      "responsibilities": [
+        "We offer you to join our team of highly skilled professionals with development, business analysis, testing, and management backgrounds who strive for excellence. You will be responsible for understanding business needs knowing how to develop and maintain the software application in the banking industry, and studying system flow, data usage, and work processes following the software development.",
+        "You will be responsible for identifying, prioritizing, and executing tasks in the software development life cycle. You will be responsible for performing validation and verification testing. You will have to collaborate with the internal teams and vendors to fix and improve products"
+      ],
+      "experience": [
+        "Minimum 2+ years of Java and J2EE experienced in the enterprise development process, strong in Java, core as well as advance Java concepts.",
+        "Web services, MVC Framework, JavaScript",
+        "HTML, JSP, JSF, JSTL, CSS, JQuery, JMS, Cloud(AWS)"
+      ],
+      "city": [
+        "Ho Chi Minh"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 7,
+      "id": 21,
+      "name": "Senior Embedded C/C++ Software Engineers (Automotive)",
+      "tags": [
+        "C++",
+        "C language",
+        "Embedded"
+      ],
+      "location": "Hybrid",
+      "salary": "2000",
+      "overview": [
+        "Be part of a multinational team of engineers responsible for developing software for automotive Telematics Control Unit products.",
+        "Technologies used: Embedded C/C++, CAN, OSEK, RTOS, GSM, 3G/4G, AT commands"
+      ],
+      "responsibilities": [
+        "Job scope includes software analysis, software design, code implementation, software integration, module verification and validation",
+        "Responsible for the quality and on-time delivery of your work-products throughout the software development life cycles",
+        "Responsible for the development of SW components and/or SW (Sub-)systems according to the defined SW development life cycle process.",
+        "Work closely with other software engineers in Singapore, and Europe."
+      ],
+      "experience": [
+        "4+ years of working experience in Automotive or relevant domains (Embedded, etc.)",
+        "Degree/Masters in Computer Science/Engineering/Electronic, or a related discipline, preferably with specialization or related experience in development for embedded systems",
+        "Analysis and Design experience for Embedded SW",
+        "Advanced programming skills in Embedded C/C++",
+        "Experience in unit testing and integration testing",
+        "Good understanding of real-time system architecture/design",
+        "Experience of HW related SW development using microcontrollers, HW boards, PCBs",
+        "Experience in embedded development tools (emulators, analyzers, oscilloscopes, etc)"
+      ],
+      "city": [
+        "Ho Chi Minh"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 8,
+      "id": 22,
+      "name": "Middle/Senior/Lead NodeJS Developer",
+      "tags": [
+        "NodeJS",
+        "PostgreSql",
+        "Javascript"
+      ],
+      "location": "Hybrid",
+      "salary": "2000",
+      "overview": [
+        "At NFQ, we're all about developing cutting-edge apps, CRMs, ERPs, and other cross-platform products. Both for ourselves and for our clients that include HomeToGo, Kayak, Alaiko, Home24, and many others. We specialize in e-commerce, mobility, and transport & logistics, and we're always eager to tackle new challenges. Whatever the area – from Mobile to UX  – we've got a team that knows it inside out.",
+        "Join our team of 800+ professionals across Germany, Poland, Lithuania, Vietnam, Thailand, Singapore, and Egypt. Make your own way with us."
+      ],
+      "responsibilities": [
+        "You will be joining an awesome startup team to build cool applications that serve millions of users, from idea to production.",
+        "As our customers are typically ambitious foreign startups, you will have a chance to improve your English, learn about startup culture and product mindset along the way. If you want to make a great impact on the world, this is your chance now.",
+        "Managing full lifecycle customer projects with Agile methods.",
+        "Developing strong relationships with customers, acting as the primary point of contact as well as managing stakeholder expectations and always seeking for solution improvement."
+      ],
+      "experience": [
+        "Strong knowledge of NodeJS, RESTful API (minimum 3 years of experience).",
+        "Good experience with RDBMS like MySQL, PostgreSQL NoSQL like MongoDB, Redis.",
+        "Ensures code modularity and DRYness for maintainability and ensures high performance on MicroServices.",
+        "Advanced programming skills in Embedded C/C++",
+        "Advanced knowledge and best programming practices of web application vulnerabilities such as cross-site scripting (XSS), session hijacking, SQL injection, CSRF (Cross-Site Request Forgery), OWASP Top 10, and other attack vectors.",
+        "Good English Communication skills.",
+        "Experience with Front-end Frameworks like VueJS, ReactJS.",
+        "Experience in automation tests, such as Unit Test, Functional Test, Integration Test."
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 9,
+      "id": 23,
+      "name": "(Junior/Middle/Senior) Java API Engineer",
+      "tags": [
+        "Java",
+        "AWS",
+        "Spring"
+      ],
+      "location": "Hybrid",
+      "salary": "2500",
+      "overview": [
+        "Our team is responsible for creating a brand of new digital financial platforms and apps that are highly reliable and scalable using modern engineering practices. You will be joining a project which talented software engineers in our Digital Bank Build team who is responsible for designing, building, and maintaining the new digital banking platform and the customer channels. As part of the team, you will be responsible for implementing software features, involve in technical designs, and writing tests to ensure the high-quality delivery of the product. The teams operate in Scrum and DevOps models.",
+        "We’re looking for top engineers out there! During the interview process, we will test your coding and design skills to assess your experience and depth of knowledge. Don’t worry our interview process will be fun!"
+      ],
+      "responsibilities": [
+        "As a backend engineer, you will be working within a specific problem where you will design, develop, and deploy backend services with a focus on scalability, high availability, and low latency.",
+        "Drive the efficient delivery of change through analysis, definition, and documentation of requirements whilst identifying potential solutions using agile delivery frameworks.",
+        "Solve complex technical and business problems and learn new technology and frameworks.",
+        "Be part of a team that will take full responsibility for the features you own.",
+        "Design, develop, test, deploy, monitor, and improve, you are responsible for the full life-cycle of your product – build it, own it."
+      ],
+      "experience": [
+        "A pragmatic mindset.",
+        "Outstanding problem-solving ability, eagerness to learn, and curiosity.",
+        "A few years of software development experience with one or more general-purpose programming languages.",
+        "Strong database and schema design for large-scale applications.",
+        "Adaptable attitude and personality that is ready for continuous change.",
+        "Collaboration and culture fit in the Agile experience will be an advantage.",
+        "Good English skills."
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 9,
+      "id": 24,
+      "name": "Senior DevOps Engineer (CloudOps, AWS)",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ],
+      "location": "Hybrid",
+      "salary": "2500",
+      "overview": [
+        "The Senior DevOps Engineer (CloudOps, AWS) will be working with the Platform team and focusing on AWS infrastructure and automation.  A key part of the role is championing and leading infrastructure as code.  You will be responsible for the implementation of tools and processes which enable rapid development and deployment of software.",
+        "Your mission is to embrace continuous integration/deployment in a delivery pipeline that will perform automated quality checks, deploy cloud infrastructure and applications quickly, and provide operational tooling and metrics that can be consumed by development teams. To be successful, you will have a blend of development experience and operational experience that provides a good understanding of the developers you are working with, while also balancing critical systems uptime."
+      ],
+      "responsibilities": [
+        "Contribute to developing continuous delivery, automation, and building pipelines to create an excellent experience for developers and customers",
+        "Identify and develop opportunities to improve our processes and tools for automation",
+        "Learn new skills and help foster a continuous delivery and cloud-first mindset",
+        "Manage your day-to-day workload and requests using agile practices as part of a team and community",
+        "Periodic after-hours on-call support is required with over-time.",
+        "Ability to travel occasionally (up to 10% of the year)"
+      ],
+      "experience": [
+        "Experience in managing Linux operating systems",
+        "Experience using Docker and container orchestration, such as ECS/EKS is a plus",
+        "Knowledge of one or more of the following AWS CloudFormation/Terraform/CDK for infrastructure provisioning.",
+        "Knowledge of the source control and its related concepts (Gitlab/Git flow, Trunk base, branches, etc.).",
+        "Experience with CI/CD tools (such as Jenkins, TeamCity, AWS CodePipeline, CodeDeploy) or configuration management tools (such as Ansible, Chef, Puppet..)",
+        "Familiarity with at least one programming language (Python, Bash, etc.).",
+        "Knowledge of networking, firewalls, load balancers, high availability, etc.."
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
       ],
       "status": true,
       "createAt": "30-04-2023 14:10:23"
