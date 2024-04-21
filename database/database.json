@@ -1,0 +1,998 @@
+{
+  "company": [
+    {
+      "companyName": "KBTG Vietnam",
+      "email": "company01@gmail.com",
+      "password": "123456",
+      "token": "pwYhBgkNOANIjtKI7WHz",
+      "id": 1,
+      "companyType": "IT Product",
+      "companySize": "151-300 employees",
+      "country": "Thailand",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "No OT",
+      "phone": "0935324245",
+      "quantityPeople": 8,
+      "description": [
+        "Công ty TNHH KBTG Việt Nam",
+        "Established in 2016, KASIKORN Business Technology Group (KBTG) is the technology arm of KASIKORNBANK (KBank), one of Thailand's leading commercial banks. This spin-off allows KBTG to fully focus on IT operations, supporting KBank and K-Group on its digital transformation journey and day-to-day business. KBTG oversees more than 500 applications, from the core banking system to digital service channels.",
+        "As KBank expands into the ASEAN Economic Community, KBTG is accelerating transformation to increase our capability and support the shared goal of regional expansion. After establishing K-TECH, a China-base technology hub in Shenzhen, we are now setting up another office in Ho Chi Minh City called KBTG Vietnam to facilitate overseas operations. KBTG strives to become the best tech company in Southeast Asia by 2025."
+      ],
+      "reason": [
+        "Competitive offered package",
+        "Dynamic and challenging product environment",
+        "Agile from anywhere"
+      ],
+      "why": [
+        "Competitive offered package",
+        "Dynamic and challenging product environment",
+        "Agile from anywhere",
+        "13th month salary & Performance bonus",
+        "15 days Annual Leaves",
+        "Life Insurance, Health Insurance",
+        "FLEX benefit package",
+        "Annual health check-up",
+        "Training and Development Programs"
+      ],
+      "address": [
+        "Friendship Tower, 31 Le Duan, Ben Nghe Ward, District 1, Ho Chi Minh",
+        "Dreamplex, 174 Thai Ha Street, Dong Da, Ha Noi"
+      ],
+      "website": "https://abc.com"
+    },
+    {
+      "id": 2,
+      "password": "123456",
+      "email": "company02@gmail.com",
+      "phone": "0973455645",
+      "token": "JqHrujb2R9HeyJC0Txj9",
+      "companyName": "LG Electronics Development Vietnam (LGEDV)",
+      "quantityPeople": 8,
+      "companyType": "IT Product",
+      "companySize": "501-1000 employees",
+      "country": "South Korea",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "No OT",
+      "description": [
+        "LG Electronics Development Vietnam (LGEDV)",
+        "LGEDV was started in May 2016 as LG Vehicle Component Solutions Development Center Vietnam.",
+        "From 1st Jan 2023, the company embarked on a new journey to be an independent entity under the name LGEDV (LG Electronics Development Vietnam Company Limited) - new R&D Subsidiary.",
+        "LGEDV conduct core R&D activities, and various product reliability tests in support of our vehicle component business.",
+        "We offer an environment that enables colleagues to demonstrate their capabilities, focus on their work and create value.",
+        "At LG, you're encouraged to take a creative and individual approach to challenges with strong emphasis placed on performance and skill—and equal, merit-based opportunities across the board.",
+        "Follow us to stay up to date with the latest job vacancies!"
+      ],
+      "reason": [
+        "Competitive salary & up-to 16-month income / year",
+        "Attractive allowances & benefits",
+        "Flexible working time with many company holidays"
+      ],
+      "why": [
+        "Flexible working time with many company holidays",
+        "HYBRID WORKING, flexible working time (Mon - Fri)",
+        "Support for lunch, transportation and other allowances (Coding Expert, Technical leader, phone...)",
+        "PVI Premium health care & accident insurance",
+        "Total 19 days off (12 days of annual leave & additional 7 days of company holidays: Summer holiday, Mid-Autumn, Christmas, LG and VS DCV Foundation Days)",
+        "Support fee to get TOEIC & technical certifications (ISTQB, Agile Scrum...)",
+        "On-site & training opportunities abroad",
+        "Company trip, sport clubs (zumba, football, pingpong, badminton,...)",
+        "Monthly budget for team activities, etc"
+      ],
+      "address": [
+        "Tầng 32 & 34, tòa nhà Keangnam Landmark 72, đường Phạm Hùng, Nam Tu Liem, Ha Noi",
+        "Tầng 3, Tòa nhà Vĩnh Trung Plaza, số 255 - 257 Hùng Vương, Phường Vĩnh Trung, Thanh Khe, Da Nang",
+        "KCN Tràng Duệ, huyện An Dương, thuộc Khu kinh tế Đình Vũ – Cát Hải, TP. Hải Phòng"
+      ]
+    },
+    {
+      "id": 3,
+      "companyName": "NAB Innovation Centre Vietnam",
+      "email": "company03@gmail.com",
+      "phone": "0345345345",
+      "password": "123456",
+      "token": "hlzlCzrzOXLw8aftjYj3",
+      "quantityPeople": 8,
+      "companyType": "IT Product",
+      "companySize": "1000+ employees",
+      "country": "Australia",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "No OT",
+      "description": [
+        "The NAB Innovation Centre Vietnam is owned by NAB - Australia’s largest business bank.",
+        "The NAB Innovation Centre Vietnam (NAB Vietnam) is part of National Australia Bank (NAB) Technology & Enterprise Operations division. The mission of the NAB Vietnam is to connect the talents of Vietnam to NAB and together improve the lives of those in the Vietnam technology community.",
+        "From 1st Jan 2023, the company embarked on a new journey to be an independent entity under the name LGEDV (LG Electronics Development Vietnam Company Limited) - new R&D Subsidiary.",
+        "As Australia’s largest business bank, NAB is focused on delivering great experiences for customers. To do this it uses modern technologies, alongside great technology talent including leading software engineers, cloud experts and quality engineers.",
+        "We’re working on interesting projects to help NAB’s 10 million customers: By joining us, local software engineers will have access to a wide variety of projects and opportunities, working closely with colleagues in Australia and with global partners such as AWS and Microsoft to take advantage of the latest modern technologies.",
+        "We’re investing in you: We strive to create not only a great place to work, but also the best technology centre for tech engineers to thrive.",
+        "We believe in people with ideas and dreams, and we want you to achieve your aspirations. If you have an appetite to learn, grow and elevate others around you, this is the place for you!"
+      ],
+      "reason": [
+        "Very competitive remuneration package",
+        "Build products for millions of users in Australia",
+        "Hybrid and flexible working environment"
+      ],
+      "why": [
+        "Generous compensation and benefit package",
+        "Attractive salary and benefits",
+        "20-day annual leave and 7-day sick leave, etc.",
+        "13th month salary and Annual Performance Bonus",
+        "Premium healthcare for yourself and family members",
+        "Exciting career and development opportunities ",
+        "Professional and engaging working environment",
+        "Hybrid working model and good work-life balance ",
+        "Well-equipped & modern Agile office with fully stocked pantryc"
+      ],
+      "address": [
+        "TNR Tower, 54A Nguyen Chi Thanh, Lang Thuong, Dong Da, Ha Noi",
+        "The Hallmark, 15 Tran Bach Dang, Thu Thiem Ward, Thu Duc City, Ho Chi Minh"
+      ]
+    },
+    {
+      "id": 4,
+      "companyName": "ONE Tech Stop Vietnam Company Ltd",
+      "email": "company04@gmail.com",
+      "phone": "0345345345",
+      "password": "123456",
+      "token": "xlilCzrzOX0128aftjYj3",
+      "quantityPeople": 8,
+      "companyType": "IT Product",
+      "companySize": "51-150 employees",
+      "country": "Singapore",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "No OT",
+      "description": [
+        "Join us if you love to build a huge product for the 6th largest shipping company over the world!",
+        "ONE Tech Stop Group of Companies is the IT arm of a Global Container Shipping Company, Ocean Network Express Pte Ltd, headquartered in Singapore.",
+        "We use the agile methodology to bring out the best deliverable results in the shortest possible time.  Our objective is to provide the best customer experience to Ocean Network Express and its customers."
+      ],
+      "reason": [
+        "Think outside of the box",
+        "Never stay in your comfort zone",
+        "Critical thinking"
+      ],
+      "why": [
+        "Annual Salary Review & Increment",
+        "13th-month salary + Performance Bonus",
+        "Premium health care (Bao Viet Insurance) for employees & dependents (parents or spouse and children).",
+        "Social Security co-contribution based on full gross salary",
+        "Premium healthcare for yourself and family members",
+        "Lunch allowance",
+        "Annual health screening reimbursement: 4,700,000 VND/year",
+        "Well-being allowance: 13,800,000VND/year",
+        "Training and education sponsorship: $1500/year"
+      ],
+      "address": [
+        "Tầng 3-4 tòa nhà Phi Long, 52 Nguyễn Văn Linh, Hai Chau, Da Nang"
+      ]
+    },
+    {
+      "id": 5,
+      "companyName": "FPT Software",
+      "email": "company05@gmail.com",
+      "phone": "0345345345",
+      "password": "123456",
+      "token": "abaxCzrzOX0100aftjUj3",
+      "quantityPeople": 8,
+      "companyType": "IT Service and IT Consulting",
+      "companySize": "1000+ employees",
+      "country": "Vietnam",
+      "workingDays": "Monday - Friday",
+      "overTimePolicy": "Extra salary for OT",
+      "description": [
+        "The leading provider of software outsourcing services in Vietnam",
+        "FPT Software is part of FPT Corporation (FPT – HoSE) – the global leading technology, outsourcing and IT services group headquartered in Vietnam with nearly US$2 billion in revenue and more than 27000 employees. Qualified with CMMI Level 5 & ISO 27001:2013, ASPICE LEVEL 3, FPT Software delivers world-class services in Smart factory, Digital platform, RPA, AI, IoT, Enterprise Mobilization, Cloud, AR/VR, Embedded System, Managed service, Testing, Platform modernization, Business Applications, Application Service, BPO and more services globally from delivery centers across the United States, Japan, Europe, Korea, China, Australia, Vietnam and the Asia Pacific.",
+        "In 2017, FPT Software has been placed in top 10 of the ranking for three consecutive years. Among top 10, FPT Software is the only IT Company."
+      ],
+      "reason": [
+        "Global Exposure",
+        "Fast Track Career",
+        "Diversified Jobs & Technologies"
+      ],
+      "why": [
+        "You can catch up with unlimited opportunities to work and live in different countries over the world, join world class software projects with trendiest technologies, innovative products & services that bring great values to millions of people around the world, such as the world’s largest airplane brand, biggest broadcast satellite services in the US, the leading manufacturer of postage meter and mailroom equipment in EU, etc.",
+        "You can choose your career path to become a technology expert or a professional manager which best fits your desire, qualifications and characteristics in an equal opportunity and open-minded culture workplace.",
+        "You can balance your working and spiritual life in the environment of youth, multinational culture and creativity, improve impressively vital soft skills including English, Japanese, French… and communication skills through daily direct communication with global customers and employees.",
+        "FPT Software is proud to accompany with thousands of individuals to continuously develop and explore their career path."
+      ],
+      "address": [
+        "FPT Software Đường D1 Phường Tân Phú , District 9, Ho Chi Minh",
+        "FPT Cau Giay Building, Cau Giay, Ha Noi",
+        "Tòa nhà FPT Complex, Đường Nam Kỳ Khởi Nghĩa, Phường Hòa Hải, Ngu Hanh Son, Da Nang"
+      ]
+    }
+  ],
+  "city": [
+    {
+      "key": 1,
+      "value": "Ha Noi"
+    },
+    {
+      "key": 2,
+      "value": "Ho Chi Minh"
+    },
+    {
+      "key": 3,
+      "value": "Da Nang"
+    }
+  ],
+  "tags": [
+    {
+      "key": 1,
+      "value": "HTML"
+    },
+    {
+      "key": 2,
+      "value": "CSS"
+    },
+    {
+      "key": 3,
+      "value": "Javascript"
+    },
+    {
+      "key": 4,
+      "value": "Database"
+    },
+    {
+      "key": 5,
+      "value": "JSON"
+    },
+    {
+      "key": 6,
+      "value": "PHP"
+    },
+    {
+      "key": 7,
+      "value": "Python"
+    },
+    {
+      "key": 8,
+      "value": "Java"
+    },
+    {
+      "key": 9,
+      "value": "SQL"
+    },
+    {
+      "key": 10,
+      "value": "Angular"
+    },
+    {
+      "key": 11,
+      "value": "NodeJS"
+    },
+    {
+      "key": 12,
+      "value": "ReactJS"
+    },
+    {
+      "key": 13,
+      "value": "VueJS"
+    },
+    {
+      "key": 14,
+      "value": "Django"
+    },
+    {
+      "key": 15,
+      "value": "JQuery"
+    },
+    {
+      "key": 16,
+      "value": "TypeScript"
+    },
+    {
+      "key": 17,
+      "value": "Bussiness Analyst"
+    }
+  ],
+  "jobs": [
+    {
+      "idCompany": 1,
+      "id": 1,
+      "name": "Java Engineer (Middle-Senior, English)",
+      "tags": [
+        "Java",
+        "MySQL",
+        "Spring"
+      ],
+      "location": "Hybrid",
+      "salary": "1000",
+      "overview": [
+        "At KBTG, we build our own platforms as well as service external well-known clients like PTTOR, Facebook, LINE MAN, GRAB, and many more with modernized technology stack and an open platform structure. We dedicate to build new financial service experiences which aim to satisfy users the most and be part of their daily life.",
+        "This role is responsible for the application design and development of application components or multiple application solutions to meet business solution and customer requirements."
+      ],
+      "responsibilities": [
+        "Develop accurate and efficient programs",
+        "Maintain current knowledge of standard language, coding methods, and operations requirements",
+        "Thoroughly tests the operation of completed programs and linkage to other programs",
+        "Assists the system analyst to establish file requirements and processing specifications for automated portions of the system",
+        "Build software and deploy to UIS/SIT/UAT environment",
+        "Support defect/problem investigation"
+      ],
+      "experience": [
+        "Bachelor's Degree in Computer Engineer, Computer Science, IT or other related fields",
+        "Minimum 5-year experience in Java software development",
+        "Experience working with one or more from the followings: web application development, Unix environments, mobile application development, information retrieval, networking, developing large-scale software system, version control system, and/or security software development",
+        "Good communication in English"
+      ],
+      "status": true,
+      "createAt": "29-04-2023 21:22:17",
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "updateAt": "30-04-2023 14:12:25"
+    },
+    {
+      "idCompany": 1,
+      "id": 2,
+      "name": "Senior .NET Engineer (English Communication)",
+      "tags": [
+        ".NET",
+        "C#",
+        "ASP.NET"
+      ],
+      "location": "Hybrid",
+      "salary": "1500",
+      "overview": [
+        "As a Senior .NET Developer, you will be responsible for designing, developing, and maintaining high-quality software solutions using .NET technologies. You will collaborate with cross-functional teams to analyze requirements, propose technical solutions, and implement robust applications."
+      ],
+      "responsibilities": [
+        "Design, develop, and maintain scalable and efficient software applications using .NET framework.",
+        "Collaborate with business stakeholders and technical teams to gather requirements and define project scope.",
+        "Participate in the full software development lifecycle, including requirements analysis, design, coding, testing, and deployment.",
+        "Develop and implement clean, maintainable, and reusable code following best practices and coding standards.",
+        "Troubleshoot and debug issues in existing applications, identifying root causes and implementing effective solutions.",
+        "Conduct code reviews and provide constructive feedback to ensure code quality and adherence to coding standards.",
+        "Stay up-to-date with the latest trends and technologies in the .NET development field and make recommendations for process improvements."
+      ],
+      "experience": [
+        "Bachelor's Degree in Computer Science, Engineering, or a related fields.",
+        "Proven experience as a .NET Developer, with a focus on C# and ASP.NET.",
+        "Have 4+ year of experience with .NET",
+        "Strong understanding of object-oriented programming principles and design patterns.",
+        "Experience with web development frameworks such asASP.NET MVC or ASP.NET Core.",
+        "Proficient in front-end technologies like HTML, CSS, and JavaScript.",
+        "Familiarity with databases and SQL, preferably with experience in SQL Server.",
+        "Experience with version control systems (e.g., Git) and Agile development methodologies.",
+        "Excellent problem-solving and analytical skills with a proactive and collaborative mindset.",
+        "Strong communication skills to effectively interact with team members and stakeholders.",
+        "Strong knowledge and understanding of SOLID principles and Clean Architecture"
+      ],
+      "createAt": "29-04-2023 21:31:32",
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "updateAt": "30-04-2023 14:12:21"
+    },
+    {
+      "idCompany": 1,
+      "id": 3,
+      "name": "Senior Business Analyst (English, Fintech)",
+      "tags": [
+        "Bussiness Analyst",
+        "Agile",
+        "SQL"
+      ],
+      "location": "Hybrid",
+      "salary": "3000",
+      "overview": [
+        "The Business Analyst is responsible for gathering, analyzing, and documenting business requirements for the development and enhancement of the banking applications. This includes working with stakeholders from across the bank to understand their needs and priorities, and translating those into clear and concise requirements that can be implemented by the development team.",
+        "The Business Analyst also plays a key role in ensuring that our application meets the bank's business objectives, regulatory requirements, and user expectations. This includes working with the development team to test the application and providing feedback on its usability and functionality."
+      ],
+      "responsibilities": [
+        "Gather, analyze, and document business requirements for the development and enhancement of the bank's applications",
+        "Work with stakeholders from across the bank to understand their needs and priorities",
+        "Translate business requirements into clear and concise specifications that can be implemented by the development team",
+        "Ensure that the applications meets the bank's business objectives, regulatory requirements, and user expectations",
+        "Work with the development team to test the applications and provide feedback on its usability and functionality",
+        "Participate in the agile development process and use Jira and Confluence to track and manage requirements"
+      ],
+      "experience": [
+        "Bachelor's degree in business administration, information technology, or a related field",
+        "Good English communication in both speaking and writing",
+        "5+ years of experience in business analysis, preferably in the banking/fintech sector",
+        "Experience with API and microservices",
+        "Experience with banking products such as lending, card, deposit, QR payment, and international remittance",
+        "Strong analytical and problem-solving skills",
+        "Excellent communication and interpersonal skills",
+        "Ability to work independently and as part of a team",
+        "Experience with Jira, Confluence, and other agile development tools",
+        "Strong analytical and proven ability to quickly understand complex business and systems and provide appropriate solution",
+        "Excellent interpersonal and communication skills and ability to effectively collaborate with diverse people such as clients, developers, or testers.",
+        "Driver, committed, result-oriented",
+        "Able to work under pressure and tight deadlines"
+      ],
+      "status": true,
+      "createAt": "29-04-2023 21:32:17",
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "updateAt": "30-04-2023 14:12:15"
+    },
+    {
+      "idCompany": 2,
+      "id": 4,
+      "name": "R&D Engineer & leader (C/C++)",
+      "tags": [
+        "C++",
+        "Linux",
+        "OOP"
+      ],
+      "location": "Hybrid",
+      "salary": "2000",
+      "overview": [
+        "Following research centers in Korea, USA, Russia, India, etc. LG CTO Vietnam Software Lab (LG CTO VSL) officially operated in Vietnam from July 2022 with the mission of developing next generations of technology and incubating new LG business in the future. You will have the opportunity to work, share and learn with talented engineers at CTO centers in countries around the world and launch strategic-oriented technology products of LG Corporation.",
+        "Currently, LG CTO VSL focuses on webOS development for smart TVs and signages. With webOS present in more than 129 million smart TV products in homes around the world, LGE is revolutionizing the living room with the new experience beyond TV."
+      ],
+      "responsibilities": [
+        "Develop new features for webOS operating system ( components such as Connectivity, Web Engine, Display (LSM), etc.",
+        "Collaborate with Scrum team members, PO and other headquarter stakeholders to delivery products according to schedule"
+      ],
+      "experience": [
+        "Bachelor or higher degree in computer science or relevant fields",
+        "2+ years of working experience with C/C++ and OOP",
+        "Ability to explain technical issues simply in English with the collaborating scrum teams",
+        "Using and implementing Design Patterns (Strategy, Observer, Command, etc.)",
+        "Multithreading and multiprocessing programming",
+        "System or application performance enhancement and memory optimization",
+        "Contribution to open-source projects (Chromium, Wayland, etc.)",
+        "Embedded Linux Developers on the Yocto Build System",
+        "GLib experience, especially functions related to g_main_loop.",
+        "Gerrit & GitHub experience (comfortable using code review and source code repository management)"
+      ],
+      "status": true,
+      "createAt": "29-04-2023 21:33:23",
+      "updateAt": "30-04-2023 14:12:09",
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ]
+    },
+    {
+      "idCompany": 2,
+      "id": 5,
+      "name": "05 Software Engineers (JavaScript, TypeScript)",
+      "tags": [
+        "Javascript",
+        "C++",
+        "TypeScript"
+      ],
+      "location": "Hybrid",
+      "salary": "2500",
+      "overview": [
+        "Following research centers in Korea, USA, Russia, India, etc. LG CTO Vietnam Software Lab (LG CTO VSL) officially operated in Vietnam from July 2022 with the mission of developing next generations of technology and incubating new LG business in the future.",
+        "You will have the opportunity to work, share and learn with talented engineers at CTO centers in countries around the world and launch strategic-oriented technology products of LG Corporation.",
+        "Recently, LG Electronics developed LG Upgradable Platform Appliance (LUPA) and its platform.",
+        "Moreover, to expand webOS ecosystem and prepare for the future, we’re developing webOS integrated platform SDK for webOS based product/platform such as TV, signage, OSE and Apollo.",
+        "Major components of webOS integrated platform SDK are webOS Studio (IDE), CLI (Command line interface tool) and Emulator. We are looking for developers in Vietnam to build VSL’s SDK scrum and develop webOS SDK."
+      ],
+      "responsibilities": [
+        "New feature development/maintenance on webOS Studio based on Visual Studio Code Extension such as package manager, resource monitor viewer and advanced editor feature",
+        "Apply webOS studio into other product/platform(TV, Apollo) ",
+        "Develop webOS Emulator(x86-64) which is run on PC’s virtual box for webOS new platform (Apollo)",
+        "Maintenance exist webOS Emulator for webOS OSE",
+        "Apply webOS CLI(based on Node.js) into webOS new platform(Apollo)",
+        "Maintenance exist webOS CLI for webOS OSE/TV"
+      ],
+      "experience": [
+        "Bachelor's degree in computer science or equivalent practical experience",
+        "2+ years of working experience with JavaScript / Type script. It would be plus point if having knowledge with C/C++/ Python",
+        "Good working experience in VSCode extension development and embedded application/service development projects",
+        "Good working experience in unit test and test automation",
+        "Proven knowledge and working experience in all phases of software development cycle for embedded SDK tool development",
+        "Basic communication skill in English, mostly for the technical communication with the collaborating scrum teams"
+      ],
+      "status": true,
+      "createAt": "29-04-2023 21:33:23",
+      "updateAt": "30-04-2023 10:23:02",
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ]
+    },
+    {
+      "idCompany": 2,
+      "id": 6,
+      "name": "Embedded Software Engineer - Integration Build (DevOps)",
+      "tags": [
+        "Linux",
+        "Embedded"
+      ],
+      "location": "Hybrid",
+      "salary": "2500",
+      "overview": [
+        "LG Electronics R&D Vietnam (LGEDV) focuses on eco-friendly automotive components. The Company produces high-quality in-car infotainment systems that deliver both information and entertainment on-the-go for many of the world‘s biggest automobile brands.",
+        "We conduct core R&D activities, and various product reliability tests in support of our vehicle component business.",
+        "With the key missions of offering an environment that enables colleagues to demonstrate their capabilities, focus on their work and create value & delivering the “invaluable” office operation services & solutions that contributes to a company’s business success."
+      ],
+      "responsibilities": [
+        "Developing embedded Linux systems using the Yocto project-built system. Basically, be familiar with the tools of the Yocto project, including BitBake, Experience configuring and tuning entire embedded Linux distributions.",
+        "Creating images by including open source using CMake and others into the Yocto build system. Understanding how to create recipes for building and packaging software.",
+        "Excellent scripting skills (Python or Bash)",
+        "Fluency in C, C++, Java, Nodejs.",
+        "Having hands-on experiences in using JIRA, VLM, Collab and at least one version control tool such as Git, gerrit;"
+      ],
+      "experience": [
+        "B.S or higher degree in Mechatronic Engineering, Automotive Engineering, Computing Engineering, Information Technology, Computer Science or related majors",
+        "Embedded Linux Developers on the Yocto Build System",
+        "Experience of building an open source using Make, CMake into Yocto recipes as components of the Yocto build system",
+        "Shell scripting and Python experience",
+        "Git & Gerrit experience (comfortable using code review and source code repository management)",
+        "Ability to verbal and written communicate and explain technical issues in English with the collaborating scrum teams."
+      ],
+      "status": true,
+      "createAt": "30-04-2023 10:31:41",
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "updateAt": "30-04-2023 14:12:00"
+    },
+    {
+      "idCompany": 2,
+      "id": 7,
+      "name": "Home Appliance - C/C++ Software Engineer",
+      "tags": [
+        "C++",
+        "Linux",
+        "OOP"
+      ],
+      "location": "At office",
+      "salary": "2500",
+      "overview": [
+        "LGEDV VHA conducts core R&D activities, and various product reliability tests in support of our products such as Living appliances, Kitchen Appliances, and Air Solutions.",
+        "With the key missions of offering an environment that enables colleagues to demonstrate their capabilities, focus on their work and create value & delivering the “invaluable” office operation services & solutions that contributes to a company’s business success, you will have the opportunity to work, share and learn with talented engineers and launch strategic-oriented technology products of LG Corporation. "
+      ],
+      "responsibilities": [
+        "Work with the local engineering team, product managers, and program managers at VHA and remote locations (Korea) to build and ship embedded system applications",
+        "As a member of application team, design software module, implement, test & release according to agile process",
+        "Expected engineering output in the form of source code, engineering documentation, test results, release note",
+        "Provide high quality and high performing embedded system applications C/C++ based",
+        "Senior level engineers are required to perform code reviews of fellow or junior team members",
+        "Support leadership team (PM, PL and cross functional leaders) for the successful outcome of engineering projects"
+      ],
+      "experience": [
+        "Bachelor's (or higher) degree in computer science or equivalent practical experience.",
+        "Experienced with C/C++ and OS, preferred +2 years",
+        "Experienced with Web Frontend unit test, linting, build and release is preferred",
+        "Good knowledge in OOP, Data Structure, Algorithms, Design Patterns, TDD",
+        "Good understanding of UI framework, UI components, and atomic design pattern",
+        "Good written and oral communication skill in English",
+        "Experienced with Collaboration tools / methods is preferred: Confluence, Jira, Gerrit, Git, Agile process, Yocto"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 3,
+      "id": 8,
+      "name": "Senior DevSecOps Engineer (Python)",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ],
+      "location": "Hybrid",
+      "salary": "3000",
+      "overview": [
+        "By applying for the above position, you accept and agree that your personal data and any information stated in the attached curriculum vitae (CV) will be used and processed by ITViec and NAB Vietnam for recruitment purposes. The storage and processing of such information will comply with the applicable laws of Vietnam, and the policies and procedures of ITViec and NAB Vietnam regarding personal data, as amended from time to time"
+      ],
+      "responsibilities": [
+        "Primary contact in supporting, maintaining and expanding SOAR integrations",
+        "Creation and maintenance of deployment tooling, including scripts, monitoring, logging, CI/CD pipelines",
+        "Building highly scalable and resilient technical solutions that enable rapid development and deployment.",
+        "Continuous self-development and learning to maintain knowledge of best practice and latest technology developments.",
+        "Perform “business-as-usual” technology management and support functions for security solutions within the Cyber Platforms and Engineering Portfolio.",
+        "Perform problem diagnosis and use technical expertise to develop options and solutions to specific problems that are often technical in nature and lead to remediation, repair and recovery activity."
+      ],
+      "experience": [
+        "5+ years of experience in coding and scripting in latest programming languages (Python, Bash etc.)/ Applicatoon Security",
+        "Hands on with coding: Scripting using Python- DevOps/DevSecops Background ",
+        "Experience of modern secure software development practices & mentoring teams to improve their practices.",
+        "Building CI/CD pipeline automation, tooling (GitHub, Jenkins, Artifactory, Docker, Ansible and Bamboo) and Compliance as code.",
+        "Mandatory hands-on experience with Azure or AWS cloud platforms using Terraform or CloudFormation",
+        "Experience supporting server running both Windows and Linux operating systems",
+        "Experience with security tools in SAST (static code testing), SCA (software composition analysis), CSS (container security), DAST (dynamic security testing)"
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 3,
+      "id": 9,
+      "name": "Solution Designer (Software Architect/Java/JavaScript)",
+      "tags": [
+        "Java",
+        "Javascript"
+      ],
+      "location": "Hybrid",
+      "salary": "4000",
+      "overview": [
+        "By applying for the above position, you accept and agree that your personal data and any information stated in the attached curriculum vitae (CV) will be used and processed by ITViec and NAB Vietnam for recruitment purposes. The storage and processing of such information will comply with the applicable laws of Vietnam, and the policies and procedures of ITViec and NAB Vietnam regarding personal data, as amended from time to time."
+      ],
+      "responsibilities": [
+        "Managing & Executing on the design, development and testing of customer / colleague and technology features/stories in line with service priorities.",
+        "Develop, maintain and validate engineering standards, application architecture and design patterns, ‘code level’ standards etc.",
+        "Owns the adoption of standards-working with the team to ensure understanding and adoption of Software Engineering standards.",
+        "Lead brainstorming session to develop potential solutions for business needs, ideas or problems.",
+        "Possess good knowledge of enterprise architecture and business architecture.",
+        "Present potential solutions to various stakeholders."
+      ],
+      "experience": [
+        "Experience of 10+ years in application design and / or development roles and 15+ years in Technology generally.",
+        "Strong stakeholder management and communication skills.",
+        "Deep understanding of microservices architecture including designing, architecting microservices in complex environments.",
+        "Understanding of DevOps including the knowledge of testing automation, AWS cloud, APIs and microservices.",
+        "Experience in Java, JavaScript frameworks, especially NodeJS or ReactJS.",
+        "Strong solution engineering skills.",
+        "Solid experience in designing and developing RESTful APIs and microservices-based system, Event-Driven Architecture. "
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 3,
+      "id": 10,
+      "name": "Python Engineers (Lead/Senior/Middle)",
+      "tags": [
+        "Python",
+        "AWS",
+        "Cloud"
+      ],
+      "location": "Hybrid",
+      "salary": "2000",
+      "overview": [
+        "By applying for the above position, you accept and agree that your pesonal data and any information stated in the attached curriculum vitae (CV) will be used and processed by ITViec and NAB Vietnam for recruitment purposes. The storage and processing of such information will comply with the applicable laws of Vietnam, and the policies and procedures of ITViec and NAB Vietnam regarding personal data, as amended from time to time.",
+        "You will be part of a squad in Governance Risk & Compliance team to enhance and build new interface for GRACE (Governance Risk and Compliance Engine) to support CPS230 program. (Australia Prudential Regulatory Authority – Operational Risk Management Standard). You will be working with GRC solution engineers on all aspects of agile delivery eg Requirements analysis, design, coding, testing, platform/Infrastructure including security and compliance, support and maintenance"
+      ],
+      "responsibilities": [
+        "Functional and technical Support to enable delivery and ongoing maintenance of a reliable and efficient Governance Risk & Compliance platform, in line with NAB Group operational risk reporting policies and external compliance obligations",
+        "Continuously improve operations, procedures, and controls to improve efficiency and effectiveness of services to colleagues and stakeholders.",
+        "Collaborate with key business stakeholder including Operational risk, other technology & Service Assurance teams including Enterprise Control, Enterprise Data, External & Internal Audit to deliver a consistent approach for risk management, controls, procedures, quality and controls across the domain."
+      ],
+      "experience": [
+        ">7 years experience working in Software Development and at least 4 years with Python",
+        "At least 1 year experience in building pipelines using an automation tool, like Jenkins.",
+        "CI/CD – Good understanding of CI/CD concepts and working knowledge of building pipelines using at least one automation tool.",
+        "Proven experience in AWS DevOps implementations. (Terraform, Cloud-formation, Ansible, Jenkins)",
+        "Good English communication skills",
+        "High level of proficiency in cloud-based applications in AWS",
+        "Solid experience in designing and developing RESTful APIs and microservices-based system, Event-Driven Architecture. "
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 4,
+      "id": 11,
+      "name": "QA Engineer",
+      "tags": [
+        "QA QC",
+        "HTML5"
+      ],
+      "location": "At office",
+      "salary": "1000",
+      "overview": [
+        "The quality gatekeeper is responsible for ensuring that software is being delivered with the highest quality standards. The main mission is to reach quality excellence by having no issues in production as a continuous target.",
+        "The QA Engineer should know and understand the business details, being able to check whether the final result matches all the business expectations.",
+        "The QA Engineer should create and execute manual and automated test scenarios, provide root cause analyses of defects based on metrics, and proactively raise improvements that will enhance the quality of the product."
+      ],
+      "responsibilities": [
+        "As a member of an Agile team: The main responsibility for the quality of the product. Ensure that the product is delivered with the highest quality by leveraging QA activities along with the scrum phases. Some of the daily basis activities are",
+        "Design test processes and procedures used to ensure that software operates within defined requirements.",
+        "Create detailed, comprehensive, and well-structured test plans and test cases.",
+        "Implement test plans, automation, and validation strategies.",
+        "Creating and executing test automation scripts (UI testing, API testing, etc).",
+        "In-depth functional testing – Must be able to evaluate functional stability to ensure business requirements are being met and are “fit-for-purpose” through end-to-end functional and automation testing.",
+        "Work closely with developers and product owners/business analysts to resolve issues.",
+        "Communicate any obstacles to raise awareness and avoid project impediments and overall project timeline disruption.",
+        "Collaborate with Product Owner, and Developers on tasks related to the planning, testing, and coordination of release activities.",
+        "Participate in user story creation process through dissection of high-level requirements during team review sessions."
+      ],
+      "experience": [
+        "3+ years of work experience in Quality Assurance roles",
+        "Good communication skills in English.",
+        "Experience in writing clear, concise, and comprehensive test plans and test cases.",
+        "Knowledge of testing integrations, testing best practices, and end-to-end system processes.",
+        "Excellent analytical and problem-solving abilities.",
+        "Demonstrated ability to think outside the box.",
+        "Understanding of Agile/Scrum methodology and how QA functions within it."
+      ],
+      "city": [
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 4,
+      "id": 12,
+      "name": "Full-Stack Developer (React.JS/Node.js)",
+      "tags": [
+        "Node JS",
+        "React JS",
+        "TypeScript"
+      ],
+      "location": "At office",
+      "salary": "2000",
+      "overview": [
+        "The developer will be involved in all phases of the product development cycle including requirements analysis, project estimation, detailed design, software development, testing, and deployment.",
+        "He/she has A Good Mindset for Development schedule/Quality/Self-Study and is willing to learn new technologies."
+      ],
+      "responsibilities": [
+        "Perform development & testing features/bugs from backlog items.",
+        "Response quickly to handle incidents if it happens.",
+        "Build and maintain the CI/CD.",
+        "Be Involved in Quality Assurance with good processes, practices, and analysis tools.",
+        "Be Involved in developing Non-Functional Requirements (e.g. Performance, Security, Reliability, Maintainability…)",
+        "Responsible for being committed to the results to be delivered by his/her team and assists his/her teams in achieving such results.",
+        "Responsible for objectively and effectively communicating with his/her counterparts, leaders, and team members",
+        "Developing ideas for new programs, products, or features by monitoring industry developments and trends."
+      ],
+      "experience": [
+        "Having experience in Web Front-end (HTML/CSS/JS), NextJS or ReactJS",
+        "Having experience in backend technology of Nodejs and TypeScript and frameworks available for Nest.js",
+        "Database programming or design skills, including relational database skills (SQL, etc.) and non-relational database skills (MongoDB, Redis, Cassandra, etc.).",
+        "CODING: The code should be well documented and compliant with good practices, as well as the testing skill (Unit Test, Integration Test, User Acceptance Test, Automation Regression Test.",
+        "RESTful API",
+        "Knowledge of Programming Principles, Design Patterns, etc",
+        "Willing to learn new technology and have a product mindset."
+      ],
+      "city": [
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 5,
+      "id": 13,
+      "name": "C++ Developer – Up to $2500",
+      "tags": [
+        "C++",
+        "Japanese",
+        "C#"
+      ],
+      "location": "At office",
+      "salary": "2000",
+      "overview": [
+        "Participate in projects developing and maintenance firmware for printing machines with Japanese customers.",
+        "Opportunities to go onsite Japan long or short term (3 months).",
+        "Work with project members, responsible for the design/code review, development, and implementation of software applications with team size 10-20 members."
+      ],
+      "responsibilities": [
+        "Implement task lists, estimate deliver assignments as functional specifications, quality standards and project schedules.",
+        "Consistently delivers high-quality services and meet customer requirements.",
+        "Other assignments from Project Manager."
+      ],
+      "experience": [
+        "Strong proficiency in C++, with fair knowledge of the language specification",
+        "Thorough knowledge of the standard library, STL containers, and algorithms",
+        "Good understanding of memory management",
+        "Understanding of dynamic polymorphism and C++ specific notions",
+        "Knowledge of low-level threading primitives and real-time environments",
+        "Familiarity with system call wrapper library functions",
+        "Proficient understanding of code versioning tools {{such as Git, SVN, and Mercurial}}",
+        "Work with external teams to resolve testing issues and bug fixes.",
+        "Willing to go onsite when requested."
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    },
+    {
+      "idCompany": 5,
+      "id": 14,
+      "name": "Security Consultant (Cloud)",
+      "tags": [
+        "Cloud",
+        "AWS",
+        "Azure"
+      ],
+      "location": "At office",
+      "salary": "2000",
+      "overview": [
+        "Collaborating with engineering and development teams to evaluate and identify optimal cloud solutions.",
+        "Modifying and improving existing systems.",
+        "Designing, developing, and deploying modular cloud-based systems.",
+        "Developing and maintaining cloud solutions in accordance with best practices."
+      ],
+      "responsibilities": [
+        "Actively participate in the sales process and work closely with the direct and channel sales teams",
+        "Discover and understand customer requirements and align our solutions to those requirements",
+        "Present FPT business functions, value and competitive differences",
+        "Provide service and product demonstrations to prospective customers",
+        "Lead RFP responses in coordination with Product and Engineering teams",
+        "Responsible for providing feedback from prospects and customers to refine services and products",
+        "Maintain a deep technical skillset through self-study and provided trainings"
+      ],
+      "experience": [
+        "Min 5-years in Security/ Cloud Consultant",
+        "Strong written and oral presentation and communication skills.",
+        "Desire to be the technical representative for FPT in front of partners and customers.",
+        "Next-Generation Anti-virus, Endpoint Detection and Response (EDR), Security Orchestration, Automation, and Response (SOAR), Security Information and Event Management (SIEM, particularly Splunk and/or MS Sentinel), firewalls, and other core security products. (e.g. Crowdstrike, Carbon Black, Splunk, and/or the Microsoft security technologies)",
+        "Microsoft Azure Sentinel, Microsoft 365 Defender, and Azure Defender suite of security solutions (i.e. Defender for Endpoint, Defender for Identity, Defender for Office365, MSFT Cloud App Security), Azure Active Directory, Azure Security Center, Azure Log Analytics, and M365 suite of solutions.",
+        "AZ-500, MS-500, AWS Security Specialty, AWS SA Pro Certifications are very welcome but not a strict requirement.",
+        "Provide product and service demonstrations.",
+        "Ability to work independently or as an active member of a team",
+        "A pleasant attitude, eagerness to learn and keep up with new technologies."
+      ],
+      "city": [
+        "Ho Chi Minh",
+        "Ha Noi",
+        "Da Nang"
+      ],
+      "status": true,
+      "createAt": "30-04-2023 14:10:23"
+    }
+  ],
+  "cv": [
+    {
+      "id": 1,
+      "idCompany": 1,
+      "idJob": 4,
+      "name": "Le Van A",
+      "phone": "0123456789",
+      "email": "levana@gmail.com",
+      "statusRead": true,
+      "description": "Xin chào, tôi là Le Van A. Hiện tại tôi đang là...",
+      "linkProject": "",
+      "createAt": "29-04-2023 10:31:41",
+      "city": "Hà Nội"
+    },
+    {
+      "id": 2,
+      "idCompany": 1,
+      "idJob": 4,
+      "name": "Le Van E",
+      "phone": "0123456789",
+      "email": "levane@gmail.com",
+      "statusRead": true,
+      "description": "Xin chào, tôi là Le Van E. Hiện tại tôi đang là...",
+      "linkProject": "",
+      "createAt": "29-04-2023 10:32:41",
+      "city": "Hà Nội"
+    },
+    {
+      "id": 3,
+      "idCompany": 1,
+      "idJob": 4,
+      "name": "Le Van F",
+      "phone": "0123456789",
+      "email": "levanf@gmail.com",
+      "statusRead": true,
+      "description": "Xin chào, tôi là Le Van F. Hiện tại tôi đang là...",
+      "linkProject": "",
+      "createAt": "29-04-2023 10:33:41",
+      "city": "Hà Nội"
+    },
+    {
+      "id": 4,
+      "idCompany": 2,
+      "idJob": 5,
+      "name": "Le Van B",
+      "phone": "0123456789",
+      "email": "levanb@gmail.com",
+      "statusRead": false,
+      "description": "Xin chào, tôi là Le Van B. Hiện tại tôi đang là...",
+      "linkProject": "",
+      "createAt": "30-04-2023 10:31:41",
+      "city": "Hà Nội"
+    },
+    {
+      "id": 5,
+      "idCompany": 1,
+      "idJob": 4,
+      "name": "Le Van C",
+      "phone": "0123456789",
+      "email": "levanc@gmail.com",
+      "statusRead": true,
+      "description": "Xin chào, tôi là Le Van C. Hiện tại tôi đang là...",
+      "linkProject": "",
+      "createAt": "30-04-2023 10:31:41",
+      "city": "Hà Nội"
+    },
+    {
+      "name": "Le Van A",
+      "phone": "0123456789",
+      "email": "namdp.1999@gmail.com",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "linkProject": "https://itviec.com/\nhttps://www.w3schools.com/",
+      "idJob": 7,
+      "idCompany": 1,
+      "createAt": "03-05-2023 08:59:36",
+      "id": 6
+    },
+    {
+      "name": "Le Van A",
+      "phone": "0123456789",
+      "email": "namdp.1999@gmail.com",
+      "description": "ádasd",
+      "linkProject": "ádasd",
+      "idJob": 7,
+      "idCompany": 1,
+      "createAt": "03-05-2023 09:02:32",
+      "id": 7,
+      "statusRead": true
+    },
+    {
+      "name": "Le Van A",
+      "phone": "0123456789",
+      "email": "levana@gmail.com",
+      "city": "Hà Nội",
+      "description": "Lorem...",
+      "linkProject": "Lorem 123 ...",
+      "idJob": 7,
+      "idCompany": 1,
+      "createAt": "04-05-2023 10:35:35",
+      "id": 8,
+      "statusRead": true
+    },
+    {
+      "name": "Nam test",
+      "phone": "0123456789",
+      "email": "namtest@gmail.com",
+      "city": "Hà Nội",
+      "description": "Xin chào...",
+      "linkProject": "https://daca.vn/",
+      "idJob": 7,
+      "idCompany": 1,
+      "createAt": "09-05-2023 22:28:37",
+      "id": 9,
+      "statusRead": true
+    },
+    {
+      "name": "Le Van A",
+      "phone": "0344570115",
+      "email": "namdp.1999@gmail.com",
+      "city": "Hà Nội",
+      "description": "Xin chào...",
+      "linkProject": "daca.vn",
+      "idJob": 7,
+      "idCompany": 1,
+      "createAt": "01-06-2023 21:25:50",
+      "id": 10,
+      "statusRead": true
+    },
+    {
+      "name": "Le Van A",
+      "phone": "0123456789",
+      "email": "namtest@gmail.com",
+      "city": "Hà Nội",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 7,
+      "idCompany": 1,
+      "createAt": "23-06-2023 21:52:51",
+      "id": 11,
+      "statusRead": true
+    }
+  ]
+}
