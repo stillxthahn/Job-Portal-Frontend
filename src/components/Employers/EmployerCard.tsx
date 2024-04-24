@@ -1,33 +1,40 @@
-import React from 'react'
-import { Company } from '../../interface/interface'
-import { Link } from 'react-router-dom'
+import { CompanyWithJobsCount } from '../../interface/interface'
+import { Link, useNavigate } from 'react-router-dom'
+import { HiOutlineStatusOnline } from 'react-icons/hi'
+import { IconContext } from 'react-icons'
 interface CompanyProps {
-    props: Company
+    props: CompanyWithJobsCount
 }
 
 const EmployerCard = ({ props }: CompanyProps) => {
+    const navigate = useNavigate()
+    const handleClick = (id: number) => {
+        document.body.scrollIntoView({ behavior: "smooth", block: "start" });
+        navigate(`/company/${id}`)
+    }
     return (
-        <Link to={`company/${props.id}`}>
-            <div className='rounded-xl bg-purple-50'>
-                <div className='flex flex-col items-center pt-6 gap-4 aspect-square'>
-                    <div className='bg-white w-[140px] aspect-square overflow-hidden object-cover flex justity-center items-center rounded shrink'><img className='rounded' src={props.imageUrl} alt="" /></div>
-                    <p className='text-sm font-bold text-center max-w-[300px] grow'>{props.companyName}</p>
-                    <div className='flex flex-row text-sm font-semibold gap-2 flex-wrap max-w-[300px] justify-center  shrink'>
-                        {props.tags.map((item: string) => (
-                            <div className='px-2 py-1 rounded-2xl bg-white '>{item}</div>
-                        ))}
-                    </div>
-                    <div className='flex flex-row text-sm bg-slate-100 font-semibold text-slate-800 justify-between w-full px-5 py-4 rounded-b-xl'>
-                        <div className='flex flex-row gap-1'>
-                            {props.city.map((item: string) => (
-                                <div>{item}</div>
-                            ))}
-                        </div>
-                        <div>4</div>
-                    </div>
-                </div>
+        <div onClick={() => handleClick(props.id)} className='cursor-pointer flex flex-col border sm:w-[416px] w-[300px] aspect-square items-center justify-between rounded-xl gap-4 sm:gap-0'>
+            <div className='w-[140px] sm:w-[160px] bg-white drop-shadow-xl rounded-xl aspect-square overflow-hidden flex justify-center items-center mt-8'><img className='' src={props.imageUrl} alt="" /></div>
+            <div className='text-lg font-bold flex justify-center items-center text-center max-w-[240px]'><p>{props.companyName}</p></div>
+            <div className='flex flex-row gap-2 sm:gap-3 flex-wrap font-medium justify-center items-center text-xs text-slate-600 sm:text-sm max-w-[220px] sm:max-w-[320px]'>
+                {props.tags.map((item, index) => (
+                    <div key={index} className='bg-gray-100  rounded-2xl px-2 py-1 sm:px-4 sm:py-0.5'>{item}</div>
+                ))}
             </div>
-        </Link>
+            <div className='w-full flex text-xs sm:text-sm px-3 sm:px-4 font-medium py-2 sm:py-4  bg-gray-100 rounded-b-xl justify-between '>
+                <div className='flex justify-center items-center gap-2.5 text-slate-600'>
+                    {props.city.map((item, index) => (
+                        <div key={index}>{item}</div>
+                    ))}
+                </div>
+                <div className='flex justify-center items-center gap-1 text-md sm:text-base'>
+                    <IconContext.Provider
+                        value={{ color: 'green', size: '20px' }}>
+                        <HiOutlineStatusOnline />
+                    </IconContext.Provider>
+                    {props.jobsCount} </div>
+            </div>
+        </div>
     )
 }
 

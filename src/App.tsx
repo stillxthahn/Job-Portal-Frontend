@@ -6,6 +6,7 @@ import Login from './pages/Login/Login'
 import Logout from './pages/Logout/Logout'
 import Register from './pages/Register/Register'
 import Search from './pages/Search/Search'
+import InfoEmployer from './pages/InfoEmployer/InfoEmployer'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/logout/' element={<Logout />} />
           <Route path='/search' element={<Search />} />
+          <Route path='/company/:id' element={<InfoEmployer />} />
+
         </Route>
       </Routes>
 
