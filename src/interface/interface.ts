@@ -21,20 +21,27 @@ export interface Company {
     tags: Array<string>;
 }
 
+
 export interface City {
     key: number;
     value: string
 }
 
 export interface Job {
-    city: string[];
-    createAt: string;
-    description: string;
-    id: number;
     idCompany: number;
+    id: number;
     name: string;
-    salary: string;
-    tags: string[]
-    updateAt: string
-    status: boolean
+    tags: Array<string>;
+    location: string,
+    salary: "2500",
+    overview: Array<string>;
+    responsibilities: Array<string>;
+    experience: Array<string>;
+    city: Array<string>;
+    status: boolean;
+    createAt: string;
+}
+
+export interface CompanyWithJobsCount extends Company {
+    jobsCount: number;
 }
