@@ -17,8 +17,9 @@ export interface Company {
     address: Array<string>;
     city: Array<string>;
     website: string;
-    imageUrl: string;
+    logoUrl: string;
     tags: Array<string>;
+    imageUrl: Array<string>;
 }
 
 

@@ -24,9 +24,6 @@
         "Agile from anywhere"
       ],
       "why": [
-        "Competitive offered package",
-        "Dynamic and challenging product environment",
-        "Agile from anywhere",
         "13th month salary & Performance bonus",
         "15 days Annual Leaves",
         "Life Insurance, Health Insurance",
@@ -43,7 +40,7 @@
         "Ha Noi"
       ],
       "website": "https://abc.com",
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXMvS2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--58c93159cd5e45169503a9917c87b6acfd05ce01/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/Logo%20KBTG.jpg",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXMvS2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--58c93159cd5e45169503a9917c87b6acfd05ce01/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/Logo%20KBTG.jpg",
       "tags": [
         "Java",
         "Golang",
@@ -51,6 +48,11 @@
         "iOS",
         "Android",
         ".NET"
+      ],
+      "imageUrl": [
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEtjUWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a8651e335017c9722b5c61726191b0a96bace014/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/20230621-KBTG-Vietnam-Office-24-min.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFNjUWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ad5008a904d43a8c2c202c034d5061d1338bdff1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/20230621-KBTG-Vietnam-Office-07-min.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGVjUWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2925db8e67613bd59e780b1e3c044341f0c1ebc0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/20230621-KBTG-Vietnam-Office-16-min.jpg"
       ]
     },
     {
@@ -101,7 +103,7 @@
         "Ha Noi",
         "Da Nang"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM3d3REE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--61527e04af1870bf7e9858df649b2a613e1fad9b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/lg-development-center-vietnam-logo.png",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM3d3REE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--61527e04af1870bf7e9858df649b2a613e1fad9b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/lg-development-center-vietnam-logo.png",
       "tags": [
         "C++",
         "Tester",
@@ -109,6 +111,11 @@
         "Embedded",
         "Android",
         "C#"
+      ],
+      "imageUrl": [
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUQrSEE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--16c392940805fd7b0c2b1fc03b6190e031f565ea/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/LG%20VS%20DCV%20-%20Banner%20Stand-alone.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFNvSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2efe4b5b1b45b69fc5b46d0e03de758cf9c81616/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/Pic%201.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFdvSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--34ddc200a8ccd15c4a2313953f9a4f7bbde7bff1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/Pic%203.jpg"
       ]
     },
     {
@@ -157,7 +164,7 @@
         "Ho Chi Minh",
         "Ha Noi"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMS9LSnc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f77c1653cf49260705bf77be3846954d9b817b70/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo.jpg",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMS9LSnc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f77c1653cf49260705bf77be3846954d9b817b70/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo.jpg",
       "tags": [
         "QA QC",
         "NodeJS",
@@ -165,6 +172,11 @@
         "Agile",
         "DevOps",
         "Cloud"
+      ],
+      "imageUrl": [
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd1RCUEE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2883ad78600e749b0d181b0c4b6afad7a1fadf73/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/itviec-headline-2%20(1).jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMzJkUEE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2b2e02b0a957cdb773a390aaa3b0202ed3a29034/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/itviec-img-1.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMzZkUEE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--de6168196dc15a286d8070f6ffa870305e87404b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/itviec-img-2.jpg"
       ]
     },
     {
@@ -207,7 +219,7 @@
       "city": [
         "Da Nang"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBekZTSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--46906e49d7f753e23866a5494b3c2ef7c166a28c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo_brand%20(1).png",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBekZTSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--46906e49d7f753e23866a5494b3c2ef7c166a28c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo_brand%20(1).png",
       "tags": [
         "QA QC",
         "English",
@@ -215,6 +227,11 @@
         "NodeJS",
         "TypeScript",
         "Cloud"
+      ],
+      "imageUrl": [
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMTFMSkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--45e14ccf000a6d9430dfb74975a21defd4c84003/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/IMG_9259.JPG",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMnBMSkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--680d8d9f87573d79a7198e7ec43e754050670203/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/IMG_9210.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMnRMSkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6e4cd0442f6d3a43111d978adedfc24ee93e2a45/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/IMG_9218.jpg"
       ]
     },
     {
@@ -256,7 +273,7 @@
         "Ha Noi",
         "Da Nang"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEJwSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--10a9cdf11d126baa55d2186b1dd97bc867eb9a9e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo%20FSOFT%20d%E1%BB%8Dc.png",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEJwSFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--10a9cdf11d126baa55d2186b1dd97bc867eb9a9e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/logo%20FSOFT%20d%E1%BB%8Dc.png",
       "tags": [
         "Java",
         "C++",
@@ -264,6 +281,11 @@
         "Android",
         "SQL",
         ".NET"
+      ],
+      "imageUrl": [
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMGZIREE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e9ed579dd8b66e819eba520e8c7bfdf6352ca1e0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/meeting_edited.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMGpIREE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--60ebd952953ddfb17afe93dbfeb84f476f4bb8bc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/meeting_2eduted.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOG5NREE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2b785965f1ba05619a72eabbbf289ee53632de35/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/1_go%CC%81c_Canteen.jpg"
       ]
     },
     {
@@ -305,7 +327,7 @@
       "city": [
         "Ho Chi Minh"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMENnTGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--341216e11c566296e05835f54046c1a30a82cec3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/PERSOL%20LOGO.jpg",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMENnTGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--341216e11c566296e05835f54046c1a30a82cec3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/PERSOL%20LOGO.jpg",
       "tags": [
         ".NET",
         "TypeScript",
@@ -313,6 +335,11 @@
         "AWS",
         "Azure",
         "Agile"
+      ],
+      "imageUrl": [
+        "https: //itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN2I1UGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--95ae1958656a7e2430e001e36419d1ca0435d43f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/IMG_3353.JPG",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM2lnTGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d6e5ecc2c62a31d02e4fc4aad001e5bc2c7737d1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/PERSOL%20CAREER%20TECH%20STUDIO%20VIETNAM_Vertical_BW.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN3o1UGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--caa775509091607cef74bb50d7050271b594dcde/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/TEAM38%20(101).jpg"
       ]
     },
     {
@@ -354,7 +381,7 @@
       "city": [
         "Ho Chi Minh"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMzJoSkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--51b47fe328abe32961f465b1fef8e3296bfd4af9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/Luxoft%20Purple%20RGB.png",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMzJoSkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--51b47fe328abe32961f465b1fef8e3296bfd4af9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/Luxoft%20Purple%20RGB.png",
       "tags": [
         "C++",
         "C language",
@@ -362,6 +389,11 @@
         "Java",
         "Tester",
         "QA QC"
+      ],
+      "imageUrl": [
+        "https: //itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMHZFSlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--41d5c775f0f8a293a1d62bd047f05e3b2c2b50d1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/2-422117_EB_General%20Banners%20request%20for%20APAC%20for%20recruitment%20campaign_1024x500.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNUxSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--08b27ff329c1424b7fd2d8c49a6bb22736a9267c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/SIM-411.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMDNSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ea7e2ea53e0f03ea402281ec7ead004d7d46a645/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/SIM-4975.jpg"
       ]
     },
     {
@@ -409,7 +441,7 @@
         "Ha Noi",
         "Da Nang"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEJmTWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--aced64a3533842d453f2df7174360566061b12fc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/NFQ-logo-box-orange.png",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEJmTWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--aced64a3533842d453f2df7174360566061b12fc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/NFQ-logo-box-orange.png",
       "tags": [
         ".NET",
         "ReactJS",
@@ -417,6 +449,11 @@
         "Java",
         "English",
         "Cloud"
+      ],
+      "imageUrl": [
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN21VTlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d2fa22aa6fdca04db95430d9149ffbd99ebaf48d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/TAN_4555.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBLytVTlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c5470f98baa4931d462ed18900007b02366f5a24/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/TAN_4315.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd0NWTlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--067a43ca79563b040935f9980e04ed248535931a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/TAN_4332.jpg"
       ]
     },
     {
@@ -462,7 +499,7 @@
         "Ho Chi Minh",
         "Ha Noi"
       ],
-      "imageUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK0xPTEE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e622a8382b21b032819f520d792bef976ace053e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/TX_RGB_Primary_onWhite.png",
+      "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK0xPTEE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e622a8382b21b032819f520d792bef976ace053e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb0ebae071595ab1791dc0ad640ef70a76504047/TX_RGB_Primary_onWhite.png",
       "tags": [
         "Java",
         "Agile",
@@ -470,6 +507,11 @@
         "Android",
         "AWS",
         "Cloud"
+      ],
+      "imageUrl": [
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMHZFSlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--41d5c775f0f8a293a1d62bd047f05e3b2c2b50d1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/2-422117_EB_General%20Banners%20request%20for%20APAC%20for%20recruitment%20campaign_1024x500.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNUxSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--08b27ff329c1424b7fd2d8c49a6bb22736a9267c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/SIM-411.jpg",
+        "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMDNSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ea7e2ea53e0f03ea402281ec7ead004d7d46a645/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/SIM-4975.jpg"
       ]
     }
   ],
