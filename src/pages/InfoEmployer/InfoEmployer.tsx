@@ -5,7 +5,6 @@ import { getJobsByCompanyId } from '../../services/jobService'
 import { Company, Job } from '../../interface/interface'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { RiGlobalLine, RiPassValidLine } from 'react-icons/ri'
-import { IconContext } from 'react-icons'
 
 
 const InfoEmployer = () => {
@@ -13,6 +12,7 @@ const InfoEmployer = () => {
     const companyId = params.id || "";
     const [company, setCompany] = useState<Company>()
     const [jobs, setJobs] = useState<Array<Job>>()
+    const [activeLocation, setActiveLocation] = useState(false)
     useEffect(() => {
         const fetchAPI = async () => {
             const companyRes = await getCompany(companyId)
@@ -27,20 +27,25 @@ const InfoEmployer = () => {
         fetchAPI()
     }, [companyId])
 
+    const handleClick = (id: number) => {
+        const selectedLocation = document.querySelector("key": id)
+        selectedLocation.active = true
+    }
+
+    useEffect(() => {
+        setActiveLocation()
+    }, [])
+
     return (
         <div className='bg-gray-100' >
             <div className='bg-gradient-to-r from-slate-900 to-red-900 text-gray-50 '>
-                <div className='hidden sm:flex container px-60 py-8'>
+                <div className='hidden sm:flex container py-8'>
                     <div className='flex items-center justify-center gap-7'>
                         <div className='w-[140px] sm:w-[160px] bg-white rounded-xl aspect-square overflow-hidden flex justify-center items-center'><img className='' src={company?.logoUrl} alt="" /></div>
                         <div className='self-start flex flex-col gap-4'>
                             <div className='font-bold text-3xl'>{company?.companyName}</div>
                             <div className='flex gap-3 items-center font-semibold'>
-                                <IconContext.Provider
-                                    value={{ color: 'gray', }}
-                                >
-                                    <MdOutlineLocationOn size={20} />
-                                </IconContext.Provider>
+                                <MdOutlineLocationOn color="gray" size={20} />
                                 <div className='flex gap-2'>
                                     {company?.city.map((item, index) => (
                                         <div key={index}>{item}</div>
@@ -48,18 +53,14 @@ const InfoEmployer = () => {
                                 </div>
                             </div>
                             <div className='flex gap-3 items-center font-semibold'>
-                                <IconContext.Provider
-                                    value={{ color: 'gray', }}
-                                >
-                                    <RiPassValidLine size={20} />
-                                </IconContext.Provider>
+                                <RiPassValidLine color="gray" size={20} />
                                 <div>{jobs !== undefined ? jobs.length : 0} jobs available</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='flex container my-10 px-60'>
+            <div className='flex container my-10'>
                 <div className='flex gap-6'>
                     <div className='flex flex-wrap gap-6 basis-2/3'>
                         <div className='w-full py-2 px-8 bg-white rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
@@ -152,6 +153,26 @@ const InfoEmployer = () => {
                                     </div>
                                 ))}
                             </div>
+                        </div>
+                        <div className='w-full pt-2 pb-6 px-8 bg-white rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] h-[400px]'>
+                            <div className=''>
+                                <div className='font-bold text-2xl py-4'>Location</div>
+                                <div className='mt-2 border-[0.25px] border-dashed'></div>
+                            </div>
+                            <div className='flex items-start mt-6 gap-4'>
+                                <div className='flex flex-wrap gap-5 basis-1/3 overflow-auto h-full font-medium'>
+                                    {company?.address.map((item) => (
+                                        <div className='flex border border-1 rounded-lg py-4 px-2 gap-4 justify-start items-start cursor-pointer'>
+                                            <MdOutlineLocationOn color="red" size={50} />
+                                            <div>{item}</div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className='basis-2/3'>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div className='basis-1/3 items-start '>
