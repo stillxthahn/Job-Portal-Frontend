@@ -12,6 +12,7 @@ const EmployerCard = ({ props }: CompanyProps) => {
         document.body.scrollIntoView({ behavior: "smooth", block: "start" });
         navigate(`/company/${id}`)
     }
+
     return (
         <div onClick={() => handleClick(props.id)} className='cursor-pointer flex flex-col border sm:w-[416px] w-[300px] aspect-square items-center justify-between rounded-xl gap-4 sm:gap-0'>
             <div className='w-[140px] sm:w-[160px] bg-white drop-shadow-xl rounded-xl aspect-square overflow-hidden flex justify-center items-center mt-8'><img className='' src={props.logoUrl} alt="" /></div>
