@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import LayoutDefault from './components/Layouts/LayoutDefault/LayoutDefault'
@@ -7,7 +8,6 @@ import Logout from './pages/Logout/Logout'
 import Register from './pages/Register/Register'
 import Search from './pages/Search/Search'
 import InfoEmployer from './pages/InfoEmployer/InfoEmployer'
-
 function App() {
   return (
     <BrowserRouter>

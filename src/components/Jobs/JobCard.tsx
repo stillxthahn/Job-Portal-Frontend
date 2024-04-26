@@ -1,6 +1,11 @@
 import React from 'react'
+import { Job } from '../../interface/interface'
+interface JobsProps {
+    props: Job[]
+}
 
-const JobCard = () => {
+const JobCard = ({ props }: JobsProps) => {
+    console.log(props)
     return (
         <div>JobCard</div>
     )

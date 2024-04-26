@@ -1,24 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React, { MouseEventHandler, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getCompany } from '../../services/companyService'
 import { getJobsByCompanyId } from '../../services/jobService'
 import { Company, Job } from '../../interface/interface'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { RiGlobalLine, RiPassValidLine } from 'react-icons/ri'
-
+import JobCard from '../../components/Jobs/JobCard'
 
 const InfoEmployer = () => {
     const params = useParams()
     const companyId = params.id || "";
     const [company, setCompany] = useState<Company>()
     const [jobs, setJobs] = useState<Array<Job>>()
-    const [activeLocation, setActiveLocation] = useState(false)
+    const [activeElement, setActiveElement] = useState(0);
+    const [activeMap, setActiveMap] = useState<string>()
     useEffect(() => {
         const fetchAPI = async () => {
             const companyRes = await getCompany(companyId)
             const jobsRes = await getJobsByCompanyId(companyId)
             if (companyRes) {
                 setCompany(companyRes)
+                setActiveMap(`https://www.google.com/maps/embed/v1/place?key=AIzaSyCdwqX0lVtEREBiR5DqcDPZwUsJPG45T68&q=${companyRes?.address[0]}`)
             }
             if (jobsRes) {
                 setJobs(jobsRes)
@@ -27,14 +29,12 @@ const InfoEmployer = () => {
         fetchAPI()
     }, [companyId])
 
-    const handleClick = (id: number) => {
-        const selectedLocation = document.querySelector("key": id)
-        selectedLocation.active = true
+    const handleClick = (id: number): MouseEventHandler => () => {
+        if (activeElement !== id) {
+            setActiveElement(id)
+            setActiveMap(`https://www.google.com/maps/embed/v1/place?key=AIzaSyCdwqX0lVtEREBiR5DqcDPZwUsJPG45T68&q=${company?.address[id]}`)
+        }
     }
-
-    useEffect(() => {
-        setActiveLocation()
-    }, [])
 
     return (
         <div className='bg-gray-100' >
@@ -97,8 +97,8 @@ const InfoEmployer = () => {
                                 <div className='mt-2 border-[0.25px] border-dashed'></div>
                             </div>
                             <div className='font-medium text-lg text-gray-900 mt-4 mb-6'>
-                                {company?.description.map((des) => (
-                                    <div className='mt-4'>{des}</div>
+                                {company?.description.map((des, index) => (
+                                    <div key={index} className='mt-4'>{des}</div>
                                 ))}
                             </div>
                             <div className='mt-2 border-[0.25px] border-dashed'></div>
@@ -134,42 +134,43 @@ const InfoEmployer = () => {
                             </div>
                             <div className=' font-bold text-gray-900 mt-4 mb-6 flex gap-2 flex-wrap'>
                                 {company?.reason.map((item, index) => (
-                                    <div className='flex items-center gap-2 w-full'>
+                                    <div key={index} className='flex items-center gap-2 w-full'>
                                         <div className='w-1.5 bg-red-500 aspect-square rounded-full'></div>
                                         <div className="w-full" key={index}>{item}</div>
                                     </div>
                                 ))}
                             </div>
                             <div className='grid grid-cols-3 gap-2 mb-6'>
-                                {company?.imageUrl.map((url) => (
-                                    <div className='overflow-hidden rounded-md'><img src={url} alt="" /></div>
+                                {company?.imageUrl.map((url, index) => (
+                                    <div key={index} className='overflow-hidden rounded-md'><img src={url} alt="" /></div>
                                 ))}
                             </div>
                             <div className='list-disc font-medium text-gray-900 mt-4 mb-6 text-base flex gap-2 flex-wrap'>
                                 {company?.why.map((item, index) => (
-                                    <div className='flex items-baseline gap-2 w-full'>
+                                    <div key={index} className='flex items-baseline gap-2 w-full'>
                                         <div className='w-1.5 bg-red-500 aspect-square rounded-full'></div>
-                                        <div className="w-full" key={index}>{item}</div>
+                                        <div className="w-full" >{item}</div>
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <div className='w-full pt-2 pb-6 px-8 bg-white rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] h-[400px]'>
+                        <div className='w-full pt-2 pb-6 px-8 bg-white rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
                             <div className=''>
                                 <div className='font-bold text-2xl py-4'>Location</div>
                                 <div className='mt-2 border-[0.25px] border-dashed'></div>
                             </div>
                             <div className='flex items-start mt-6 gap-4'>
                                 <div className='flex flex-wrap gap-5 basis-1/3 overflow-auto h-full font-medium'>
-                                    {company?.address.map((item) => (
-                                        <div className='flex border border-1 rounded-lg py-4 px-2 gap-4 justify-start items-start cursor-pointer'>
+                                    {company?.address.map((item, index) => (
+                                        <div key={index} onClick={handleClick(index)} className={`flex  border-2 rounded-lg py-4 px-2 gap-4 justify-start items-start cursor-pointer
+                                        ${activeElement === index && 'border-red-500'}`}>
                                             <MdOutlineLocationOn color="red" size={50} />
                                             <div>{item}</div>
                                         </div>
                                     ))}
                                 </div>
                                 <div className='basis-2/3'>
-
+                                    <iframe loading="lazy" className="w-full aspect-square" src={activeMap}></iframe>
                                 </div>
                             </div>
 
@@ -177,17 +178,14 @@ const InfoEmployer = () => {
                     </div>
                     <div className='basis-1/3 items-start '>
                         <div className='font-bold text-2xl'>{jobs?.length} jobs available!</div>
-                        <div className="mt-8 overflow-auto h-20 bg-white  rounded-lg ">Well, let me tell you something, funny boy. Y'know that little stamp, the one that says "New York Public Library"? Well that may not mean anything to you, but that means a lot to me. One whole hell of a lot.
-
-                            Sure, go ahead, laugh if you want to. I've seen your type before: Flashy, making the scene, flaunting convention. Yeah, I know what you're thinking. What's this guy making such a big stink about old library books? Well, let me give you a hint, junior.
-
-                            Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+                        <div className="mt-8 overflow-auto h-20 bg-white  rounded-lg ">
+                            {jobs && <JobCard props={jobs}></JobCard>}
 
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
