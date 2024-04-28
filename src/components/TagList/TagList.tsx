@@ -15,11 +15,11 @@ const TagList = () => {
     }, [])
     console.log(tagList)
     return (
-        <div className='sm:py-0 container flex items-center font-semibold text-slate-800'>
+        <div className='sm:py-0 container flex items-center font-semibold text-gray-50'>
             <div className='hidden sm:block sm:min-w-40'>Suggestions for you:</div>
             <div className="flex flex-wrap items-center justify-center gap-3">
                 {tagList.map((item: { key: number, value: string }) => (
-                    <div className='bg-transparent hover:bg-purple-500 text-purle-500 hover:text-white rounded-2xl px-3 py-1 border border-purple-300 hover:border-transparent' key={item.key}>
+                    <div className='bg-transparent hover:bg-gray-600  hover:text-white rounded-full px-3 py-2 border border-gray-700 hover:border-transparent' key={item.key}>
                         <Link to={`/search?keyword=${item.value || ""}`} >{item.value}</Link>
                     </div>
                 ))}

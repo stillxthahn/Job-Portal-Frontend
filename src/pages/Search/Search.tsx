@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import SearchForm from '../../components/Search/SearchForm';
-import { getAllJob } from '../../services/jobService';
-import { TbReceiptYen } from 'react-icons/tb';
+import { getJob } from '../../services/jobService';
 import { Job } from '../../interface/interface';
-
-
 
 const Search = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -15,7 +12,7 @@ const Search = () => {
     console.log(citySearch, keywordSearch);
     useEffect(() => {
         const fetchAPI = async () => {
-            const response = await getAllJob()
+            const response = await getJob()
             if (response) {
                 const newData = response.filter((item: Job) => {
                     const city = citySearch ? item.city?.includes(citySearch) : true;
@@ -30,8 +27,8 @@ const Search = () => {
     }, [])
     console.log(data)
     return (
-        <div className='bg-purple-50'>
-            <div className='container sm:px-40 py-10 sm:py-0'>
+        <div className='bg-gradient-to-r from-slate-900 to-red-900 pb-24 mt-[66px] text-gray-50'>
+            <div className='container px-4 sm:px-32 mx-full max-w-screen '>
                 <SearchForm />
             </div>
         </div>

@@ -41,6 +41,12 @@ export interface Job {
     city: Array<string>;
     status: boolean;
     createAt: string;
+    updateAt: string;
+}
+
+export interface JobWithCompany extends Job {
+    logoUrl: string
+    companyName: string
 }
 
 export interface CompanyWithJobsCount extends Company {
