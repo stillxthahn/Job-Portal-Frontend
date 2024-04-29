@@ -8,8 +8,8 @@ import Logout from './pages/Logout/Logout'
 import Register from './pages/Register/Register'
 import Search from './pages/Search/Search'
 import InfoEmployer from './pages/InfoEmployer/InfoEmployer'
-import InfoJob from './pages/InfoJob/InfoJob'
 import ScrollToTop from './helpers/ScrollToTop'
+import JobDetails from './pages/JobDetails/JobDetails'
 function App() {
   return (
     <BrowserRouter>
@@ -23,7 +23,7 @@ function App() {
           <Route path='/search' element={<Search />} />
           <Route path='/company/:id' element={<InfoEmployer />} />
           <Route path='/company/:id' element={<InfoEmployer />} />
-          <Route path='/job/:id' element={<InfoJob />} />
+          <Route path='/job/:id' element={<JobDetails />} />
 
 
         </Route>
