@@ -27,6 +27,7 @@ const SearchForm = () => {
 
     const handleFinish = (values: { city: string, keyword: string }) => {
         const city = values.city === "All" || values.city === undefined ? "" : values.city;
+        console.log("SEARCH", values.city, values.keyword)
         navigate(
             `/search?city=${city}&keyword=${values.keyword || ""}`
         );

@@ -7,8 +7,8 @@ const Footer = () => {
     return (
         <footer>
             <div className='bg-gradient-to-r from-slate-900 to-red-900 pt-14 shrink-0 text-gray-400 '>
-                <div className='sm:px-40 font-bold justify-between pb-14 flex'>
-                    <div className='flex flex-col gap-8'>
+                <div className='container sm:px-40 2xl:px-56 font-bold justify-between pb-14 flex'>
+                    <div className='flex flex-col sm:gap-8'>
                         <div>
                             <Link className="text-2xl text-gray-100" to='/'>PORTAL</Link>
                         </div>
