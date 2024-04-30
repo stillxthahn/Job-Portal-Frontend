@@ -1,25 +1,24 @@
 import { useEffect, useState } from "react"
 import { Company, Job } from "../../interface/interface"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { getJob, getJobList } from "../../services/jobService"
 import { getCompany } from "../../services/companyService"
-import { RiHomeOfficeLine } from "react-icons/ri"
-import { MdOutlineLocationOn } from "react-icons/md"
-import { LuCircleDollarSign } from "react-icons/lu"
-import { timeAgo } from "../../helpers/time"
-import { IoMdTime } from "react-icons/io"
-import { IoOpenOutline } from "react-icons/io5"
 import JobCard from "../../components/Jobs/JobCard"
-import { useSticky } from "../../helpers/useSticky"
+import CompanyCard from "../../components/Employers/CompanyCard"
 import InfoJob from "../../components/Jobs/InfoJob"
+import ApplyForm from "../../components/ApplyForm/ApplyForm"
 const JobDetails = () => {
 	const [job, setJob] = useState<Job>()
 	const [company, setCompany] = useState<Company>()
 	const [otherJobs, setOtherJobs] = useState<Job[]>()
-	const container = useSticky<HTMLDivElement>("root")
 
 	const params = useParams()
 	const jobId = params.id
+
+	const [showForm, setIsShowForm] = useState<boolean>(false)
+	function toggleForm() {
+		setIsShowForm(!showForm)
+	}
 	useEffect(() => {
 		const fetchAPI = async () => {
 			const jobRes = await getJob(jobId)
@@ -37,23 +36,35 @@ const JobDetails = () => {
 		}
 		fetchAPI()
 	}, [jobId])
-
+	if (!job || !company) {
+		return null
+	}
 	return (
-		<div className=" flex flex-wrap w-full container pb-20 2xl:px-56 gap-6 mt-[88px]">
-			{/* first section */}
-			{job && company && (
-				<InfoJob job={job} company={company} isPage={true}></InfoJob>
-			)}
+		<>
+			<ApplyForm idJob={job.id} idCompany={company.id} onClose={toggleForm} isOpen={showForm}></ApplyForm>
 
-			{/* second section */}
-			<div className="font-bold mt-8 text-2xl w-full">More jobs for you</div>
+			<div className="container pb-20 2xl:px-56 gap-6 mt-[88px]">
+				{/* first section */}
+				<div className=" flex  w-full gap-6 ">
+					<div className="flex flex-wrap basis-2/3">
+						{/* // <InfoJob job={job} company={company} isPage={true}></InfoJob> */}
+						<InfoJob job={job} company={company} isPage={true} toggleForm={toggleForm} isFormOpen={showForm}></InfoJob>
+					</div>
+					<div className="basis-1/3 sticky top-[66px] self-start">
+						<CompanyCard company={company}></CompanyCard>
+					</div>
+				</div>
 
-			<div className="w-full grid grid-cols-3 gap-8">
-				{otherJobs && otherJobs.map((job, index) => (
-					<JobCard key={index} props={job} selected={false} />
-				))}
-			</div>
-		</div >
+				{/* second section */}
+				<div className="font-bold mt-10 text-2xl w-full">More jobs for you</div>
+
+				<div className="w-full mt-8 grid grid-cols-3 gap-8">
+					{otherJobs && otherJobs.map((job, index) => (
+						<JobCard key={index} props={job} selected={false} />
+					))}
+				</div>
+			</div >
+		</>
 	)
 }
 

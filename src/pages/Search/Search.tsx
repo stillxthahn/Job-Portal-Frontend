@@ -9,6 +9,8 @@ import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 import JobCard from '../../components/Jobs/JobCard';
 import InfoJob from '../../components/Jobs/InfoJob';
+import JobApply from '../../components/Jobs/InfoJob';
+import CompanyCard from '../../components/Employers/CompanyCard';
 
 const Search = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -139,8 +141,8 @@ const Search = () => {
                             ))}
                         </div>
                         {/* second col */}
-                        <div className='flex basis-4/6'>
-                            <InfoJob job={selectedElement[0]} company={selectedElement[1]} isPage={false}></InfoJob>
+                        <div className='basis-4/6 sticky self-start top-[65px]'>
+                            <JobApply job={selectedElement[0]} company={selectedElement[1]} isPage={false}></JobApply>
                         </div>
                     </div>
                 )}
