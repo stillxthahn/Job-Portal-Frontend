@@ -10,6 +10,7 @@ import Search from './pages/Search/Search'
 import InfoEmployer from './pages/InfoEmployer/InfoEmployer'
 import ScrollToTop from './helpers/ScrollToTop'
 import JobDetails from './pages/JobDetails/JobDetails'
+import ApplyForm from './components/ApplyForm/ApplyForm'
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
           <Route path='/company/:id' element={<InfoEmployer />} />
           <Route path='/company/:id' element={<InfoEmployer />} />
           <Route path='/job/:id' element={<JobDetails />} />
+          <Route path='/apply' element={<ApplyForm />} />
 
 
         </Route>

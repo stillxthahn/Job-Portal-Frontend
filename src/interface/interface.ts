@@ -44,6 +44,20 @@ export interface Job {
     updateAt: string;
 }
 
+export interface CV {
+    name: string;
+    phone: string;
+    email: string;
+    city: string;
+    description: string;
+    linkProject: string;
+    idJob: string;
+    idCompany: string;
+    createAt: string;
+    id: number;
+    statusRead: boolean;
+}
+
 export interface JobWithCompany extends Job {
     logoUrl: string
     companyName: string

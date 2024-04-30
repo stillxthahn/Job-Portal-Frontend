@@ -8,17 +8,17 @@ import { timeAgo } from '../../helpers/time'
 import { IoMdTime } from 'react-icons/io'
 import { Modal } from 'antd'
 import ApplyForm from '../ApplyForm/ApplyForm'
+import { Link, useNavigate } from 'react-router-dom'
 
 interface InfoJobProps {
 	job: Job
 	company: Company
 	isPage: boolean
-	toggleForm: () => void
-	isFormOpen: boolean
 }
 
-const InfoJob = ({ job, company, isPage, toggleForm, isFormOpen }: InfoJobProps) => {
+const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 	const container = useSticky<HTMLDivElement>("root")
+
 	return (
 
 		<div className={`root`}>
@@ -33,7 +33,10 @@ const InfoJob = ({ job, company, isPage, toggleForm, isFormOpen }: InfoJobProps)
 				{!isPage && (
 					<div className='absolute rounded-lg border border-gray-300 right-10 w-[100px] aspect-square flex justify-center items-center'><img className="" src={company.logoUrl} alt="" /></div>
 				)}
-				<div onClick={toggleForm} className={`py-2 mt-2 cursor-pointer hover:bg-red-700 text-center rounded-lg bg-red-600 text-white font-bold w-full`}>Apply now</div>
+				<Link className='w-full' to={`/apply?name=${job.name}&job=${job.id}&company=${company.id}`}>
+					<div className={`py-2 mt-2 cursor-pointer hover:bg-red-700 text-center rounded-lg bg-red-600 text-white font-bold w-full`}>Apply now</div>
+				</Link>
+				{/* ApplyForm */}
 			</div>
 			<div className={`${isPage ? '' : 'overflow-auto h-[55vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full'} flex flex-wrap w-full px-6 py-6 bg-white rounded-b-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]`}>
 				<div className='w-full grid grid-cols-3 gap-2 '>
@@ -62,7 +65,7 @@ const InfoJob = ({ job, company, isPage, toggleForm, isFormOpen }: InfoJobProps)
 					<div>Skills:</div>
 					<div className="flex gap-2">
 						{job?.tags.map((tag, index) => (
-							<div key={index} className='px-2 py-0.5 flex border border-1 rounded-2xl'>{tag}</div>
+							<div key={index} className='px-2 py-0.5 flex border border-1 rounded-'>{tag}</div>
 						))}
 					</div>
 				</div>

@@ -15,10 +15,6 @@ const JobDetails = () => {
 	const params = useParams()
 	const jobId = params.id
 
-	const [showForm, setIsShowForm] = useState<boolean>(false)
-	function toggleForm() {
-		setIsShowForm(!showForm)
-	}
 	useEffect(() => {
 		const fetchAPI = async () => {
 			const jobRes = await getJob(jobId)
@@ -41,14 +37,12 @@ const JobDetails = () => {
 	}
 	return (
 		<>
-			<ApplyForm idJob={job.id} idCompany={company.id} onClose={toggleForm} isOpen={showForm}></ApplyForm>
-
 			<div className="container pb-20 2xl:px-56 gap-6 mt-[88px]">
 				{/* first section */}
 				<div className=" flex  w-full gap-6 ">
 					<div className="flex flex-wrap basis-2/3">
 						{/* // <InfoJob job={job} company={company} isPage={true}></InfoJob> */}
-						<InfoJob job={job} company={company} isPage={true} toggleForm={toggleForm} isFormOpen={showForm}></InfoJob>
+						<InfoJob job={job} company={company} isPage={true}></InfoJob>
 					</div>
 					<div className="basis-1/3 sticky top-[66px] self-start">
 						<CompanyCard company={company}></CompanyCard>
