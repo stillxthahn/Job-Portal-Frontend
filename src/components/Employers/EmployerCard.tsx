@@ -22,12 +22,14 @@ const EmployerCard = ({ props }: CompanyProps) => {
                         <div key={index}>{item}</div>
                     ))}
                 </div>
-                <div className='flex justify-center items-center gap-1 text-md sm:text-base'>
-                    <IconContext.Provider
-                        value={{ color: 'green', size: '20px' }}>
-                        <HiOutlineStatusOnline />
-                    </IconContext.Provider>
-                    {props.jobsCount} </div>
+                {props.jobsCount > 0 &&
+                    <div className='flex justify-center text-gray-800 items-center gap-2 text-md sm:text-base'>
+                        <span className="relative flex h-3 w-3">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                        </span>
+                        {props.jobsCount} {props.jobsCount > 1 ? "jobs" : "job"} available</div>
+                }
             </div>
         </Link>
     )

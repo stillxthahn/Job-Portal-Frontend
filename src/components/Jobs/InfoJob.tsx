@@ -6,9 +6,8 @@ import { MdOutlineLocationOn } from 'react-icons/md'
 import { RiHomeOfficeLine } from 'react-icons/ri'
 import { timeAgo } from '../../helpers/time'
 import { IoMdTime } from 'react-icons/io'
-import { Modal } from 'antd'
 import ApplyForm from '../ApplyForm/ApplyForm'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, createSearchParams, useNavigate } from 'react-router-dom'
 
 interface InfoJobProps {
 	job: Job
@@ -18,24 +17,47 @@ interface InfoJobProps {
 
 const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 	const container = useSticky<HTMLDivElement>("root")
-
+	const navigate = useNavigate()
+	const params = {
+		name: `${job.name}`,
+		idJob: `${job.id}`,
+		idCompany: `${company.id}`
+	}
+	const handleApply = () => {
+		navigate({
+			pathname: "/apply",
+			search: `${createSearchParams(params)}`
+		})
+	}
+	const handleCompany = () => {
+		if (!isPage) {
+			navigate(
+				`/company/${company.id}`
+			)
+		}
+	}
+	const handleJob = () => {
+		if (!isPage) {
+			navigate(
+				`/job/${job.id}`
+			)
+		}
+	}
 	return (
 
 		<div className={`root`}>
 			{/* apply */}
 			<div ref={container.ref} className={`pt-5 flex flex-wrap w-full px-6  pb-3 bg-white rounded-t-lg shadow-[0_-12px_30px_rgb(0,0,0,0.12)] sticky self-start top-[66px]`}>
-				<div className={`max-w-[680px] text-3xl font-bold`}>{job?.name}</div>
-				<div className={`${container.isSticky ? 'mt-6' : 'mt-1.5'} text-md w-full font-semibold text-gray-800 transition-all`}>{company?.companyName}</div>
+				<div onClick={handleJob} className={`${isPage ? "" : "cursor-pointer"} max-w-[680px] text-3xl font-bold`}>{job?.name}</div>
+				<div onClick={handleCompany} className={`${container.isSticky ? 'mt-6' : 'mt-1.5'} ${isPage ? "" : "cursor-pointer"} text-md w-full font-semibold text-gray-800 transition-all`}>{company?.companyName}</div>
 				<div className={`${container.isSticky ? 'mt-2' : 'mt-1.5'} w-full flex items-center gap-2 font-bold text-gray-600 transition-all`}>
 					<LuCircleDollarSign size={25} color="gray" />
 					<div>Up to {job?.salary}$</div>
 				</div>
 				{!isPage && (
-					<div className='absolute rounded-lg border border-gray-300 right-10 w-[100px] aspect-square flex justify-center items-center'><img className="" src={company.logoUrl} alt="" /></div>
+					<div onClick={handleCompany} className='cursor-pointer absolute rounded-lg border border-gray-300 right-10 w-[92px] aspect-square flex justify-center items-center'><img className="" src={company.logoUrl} alt="" /></div>
 				)}
-				<Link className='w-full' to={`/apply?name=${job.name}&job=${job.id}&company=${company.id}`}>
-					<div className={`py-2 mt-2 cursor-pointer hover:bg-red-700 text-center rounded-lg bg-red-600 text-white font-bold w-full`}>Apply now</div>
-				</Link>
+				<div onClick={handleApply} className={`py-2 mt-2 cursor-pointer hover:bg-red-700 text-center rounded-lg bg-red-600 text-white font-bold w-full`}>Apply now</div>
 				{/* ApplyForm */}
 			</div>
 			<div className={`${isPage ? '' : 'overflow-auto h-[55vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full'} flex flex-wrap w-full px-6 py-6 bg-white rounded-b-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]`}>

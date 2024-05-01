@@ -37,24 +37,16 @@ const Search = () => {
                     const company = await getCompany(newData[0]?.idCompany)
                     const jobCompany = await getJobsByCompanyId(company.id)
                     setJobSpotlight(jobCompany)
-                    setData(newData);
                     setCompanySpotlight(company)
                     setActiveElement(newData[0].id)
                     setSelectedElement([newData[0], company])
                 }
+                setData(newData);
             }
         }
         fetchAPI()
-    }, [citySearch, keywordSearch])
-    // console.log("ALL JOB", data)
-    // console.log("COMPANY SPOTLIGHT", companySpotlight)
-    // console.log("JOB SPOTLIGHT", jobSpotlight)
-    // console.log("SELECTED ELEMENT INDEX", activeElement)
-    // if (selectedElement) {
-    //     const [seletecJob, selectedCompany] = selectedElement
-    //     console.log("SELECTED ELEMENT", seletecJob, selectedCompany)
-    // }
-
+    }, [searchParams, citySearch, keywordSearch])
+    console.log(data)
     if (data?.length == 0 || !data) {
         return (
             <div className='bg-gradient-to-r from-slate-900 to-red-900 pb-24 mt-[66px] text-gray-50'>

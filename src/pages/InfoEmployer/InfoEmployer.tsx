@@ -24,9 +24,6 @@ const InfoEmployer = () => {
                 setActiveMap(`https://www.google.com/maps/embed/v1/place?key=${mapKey}&q=${companyRes?.address[0]}`)
             }
             if (jobsRes) {
-                // const jobWithLogo = jobsRes.map((item: Job) => {
-                //     return { ...item, logoUrl: companyRes?.logoUrl, companyName: companyRes.companyName }
-                // })
                 setJobs(jobsRes)
             }
         }
@@ -183,7 +180,8 @@ const InfoEmployer = () => {
                     </div>
                 </div>
                 <div className='basis-1/3 sticky self-start top-[100px]'>
-                    <div className='font-bold text-2xl mb-8'>{jobs?.length} jobs available!</div>
+                    <div className='font-bold text-2xl mb-8'>{jobs?.length} {jobs?.length == 1 ? 'job' : 'jobs'} available</div>
+
                     <div className="overflow-auto flex gap-6 flex-wrap h-[70vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                         {jobs && jobs.map((job, index) => (
                             <Link key={index} to={`/job/${job.id}`}>

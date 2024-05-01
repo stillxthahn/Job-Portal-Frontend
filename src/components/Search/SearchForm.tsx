@@ -3,14 +3,16 @@ import { Input, Select, Form, Button, Row, Col } from "antd";
 import { FaSearch } from "react-icons/fa";
 import styles from "./SearchForm.module.css"
 import { getListCity } from '../../services/cityService';
-import { useNavigate } from 'react-router-dom';
+import { createSearchParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { City } from '../../interface/interface';
+import path from 'path';
 
 
 
 const SearchForm = () => {
     const navigate = useNavigate()
     const [cities, setCities] = useState<City[]>();
+    const [searchParams, setSearchParams] = useSearchParams()
     useEffect(() => {
         const fectAPI = async () => {
             const response = await getListCity()
@@ -28,9 +30,14 @@ const SearchForm = () => {
     const handleFinish = (values: { city: string, keyword: string }) => {
         const city = values.city === "All" || values.city === undefined ? "" : values.city;
         console.log("SEARCH", values.city, values.keyword)
-        navigate(
-            `/search?city=${city}&keyword=${values.keyword || ""}`
-        );
+        const params = {
+            city: `${city}`,
+            keyword: `${values.keyword ? values.keyword : ""}`,
+        }
+        navigate({
+            pathname: "/search",
+            search: `?${createSearchParams(params)}`
+        })
     }
     return (
         <div className="sm:pt-8 sm:pb-2 container drop-shadow-xl rounded-md">
