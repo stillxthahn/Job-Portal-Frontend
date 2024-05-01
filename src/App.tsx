@@ -26,8 +26,6 @@ function App() {
           <Route path='/company/:id' element={<InfoEmployer />} />
           <Route path='/job/:id' element={<JobDetails />} />
           <Route path='/apply' element={<ApplyForm />} />
-
-
         </Route>
       </Routes>
 

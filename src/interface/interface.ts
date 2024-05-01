@@ -66,3 +66,8 @@ export interface JobWithCompany extends Job {
 export interface CompanyWithJobsCount extends Company {
     jobsCount: number;
 }
+
+export interface AuthAction {
+    type: string
+    status: boolean
+}
