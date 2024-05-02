@@ -1,4 +1,4 @@
-import { get, post } from "../utilities/request"
+import { get, patch, post } from "../utilities/request"
 
 export const getCompany = async (id? : number | string) => {
     const query = id ? `company/${id}` : "company"
@@ -18,5 +18,10 @@ export const checkExist = async (attribute: string, value: string) => {
 
 export const createCompany = async (value) => {
     const result = await post('company', value)
+    return result
+}
+
+export const editCompany = async (id: number | string, options) => {
+    const result = await patch(`company/${id}`, options)
     return result
 }

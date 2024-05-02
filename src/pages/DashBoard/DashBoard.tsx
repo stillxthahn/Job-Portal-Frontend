@@ -57,7 +57,7 @@ const DashBoard = () => {
 	}, [idCompany])
 	console.log(job, CV, company)
 	return (
-		<div className='mx-[28px] mt-[100px]'>
+		<>
 			<div className='text-2xl font-bold'>Tổng quan</div>
 			<Row className='mt-4 mb-10' gutter={[20, 20]}>
 				{job && (
@@ -111,7 +111,7 @@ const DashBoard = () => {
 
 				)}
 			</Row>
-		</div>
+		</>
 	)
 }
 
