@@ -1709,17 +1709,30 @@
       "statusRead": true
     },
     {
-      "name": "123",
+      "name": "xuan thanh",
       "phone": "123",
-      "email": "contact@abc.com",
+      "email": "lxthanh235@gmail.com",
+      "city": "Ha Noi",
+      "description": "23",
+      "linkProject": "23",
+      "idJob": "5",
+      "idCompany": "2",
+      "createAt": "05-03-2024 00:04:37",
+      "statusRead": false,
+      "id": 12
+    },
+    {
+      "name": "xuan thanh",
+      "phone": "0985600072",
+      "email": "123456789@gmail.com",
       "city": "Ha Noi",
       "description": "123",
       "linkProject": "123",
-      "idJob": "",
-      "idCompany": "",
-      "createAt": "05-01-2024 20:14:41",
+      "idJob": "1",
+      "idCompany": "1",
+      "createAt": "05-03-2024 00:04:59",
       "statusRead": false,
-      "id": 12
+      "id": 13
     }
   ]
 }

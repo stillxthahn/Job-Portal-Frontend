@@ -11,6 +11,15 @@ import InfoEmployer from './pages/InfoEmployer/InfoEmployer'
 import ScrollToTop from './helpers/ScrollToTop'
 import JobDetails from './pages/JobDetails/JobDetails'
 import ApplyForm from './components/ApplyForm/ApplyForm'
+import LayoutAdmin from './components/Layouts/LayoutAdmin/LayoutAdmin'
+import PrivateRoute from './components/Layouts/LayoutAdmin/PrivateRoute'
+import DashBoard from './pages/DashBoard/DashBoard'
+import AdminInfoCompany from './pages/AdminInfoCompany/AdminInfoCompany'
+import JobManage from './pages/JobManage/JobManage'
+import CreateJob from './pages/CreateJob/CreateJob'
+import AdminInfoJob from './pages/AdminInfoJob/AdminInfoJob'
+import CVManage from './pages/CVManage/CVManage'
+import CVDetail from './pages/CVDetail/CVDetail'
 function App() {
   return (
     <BrowserRouter>
@@ -27,8 +36,18 @@ function App() {
           <Route path='/job/:id' element={<JobDetails />} />
           <Route path='/apply' element={<ApplyForm />} />
         </Route>
+        <Route element={<PrivateRoute />}>
+          <Route element={<LayoutAdmin />}>
+            <Route path='/admin' element={<DashBoard />} />
+            <Route path='/info-company' element={<AdminInfoCompany />} />
+            <Route path='/job-manage' element={<JobManage />} />
+            <Route path='/create-job' element={<CreateJob />} />
+            <Route path='/detail-job/:id' element={<AdminInfoJob />} />
+            <Route path='/cv-manage' element={<CVManage />} />
+            <Route path='/detail-cv/:id' element={<CVDetail />} />
+          </Route>
+        </Route>
       </Routes>
-
     </BrowserRouter >
   )
 }

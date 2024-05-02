@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { getListCity } from '../../services/cityService'
 import { CV, City } from '../../interface/interface'
 import { createCV } from '../../services/cvService'
 import { getTimeCurrent } from '../../helpers/getTime'
-import { Button, Modal } from 'antd'
+import { Modal } from 'antd'
 import { FaRegCircleCheck } from 'react-icons/fa6'
 
 
 const ApplyForm = () => {
 	const [params, setParams] = useSearchParams()
 	const jobName = params.get("name") || ""
-	const idJob = params.get("job") || ""
-	const idCompany = params.get("company") || ""
+	const idJob = params.get("idJob") || ""
+	const idCompany = params.get("idCompany") || ""
 	const [city, setCity] = useState<City[]>()
 	const [open, setOpen] = useState<boolean>(false);
 	const [loading, setLoading] = useState<boolean>(false);
@@ -26,6 +26,7 @@ const ApplyForm = () => {
 		}
 		fetchAPI()
 	}, [])
+
 	const handleSumbit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault()
 		const target = event.target as typeof event.target & {

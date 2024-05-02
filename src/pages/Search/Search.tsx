@@ -47,16 +47,7 @@ const Search = () => {
         fetchAPI()
     }, [searchParams, citySearch, keywordSearch])
     console.log(data)
-    if (data?.length == 0 || !data) {
-        return (
-            <div className='bg-gradient-to-r from-slate-900 to-red-900 pb-24 mt-[66px] text-gray-50'>
-                <div className='container px-4 sm:px-24 2xl:px-56 mx-full max-w-screen '>
-                    <SearchForm />
-                </div>
-                <div>We cannot find any suitable jobs for u :(</div>
-            </div>
-        )
-    }
+
     const handleOnClick = (selectedJob: Job): MouseEventHandler => async () => {
         if (selectedJob.id !== activeElement) {
             const selectedCompany = await getCompany(selectedJob.idCompany)
@@ -65,80 +56,90 @@ const Search = () => {
             console.log("CLICK", selectedJob, selectedCompany)
         }
     }
+    if (!data) {
+        return null
+    }
     return (
         <div className='bg-gray-100 text-gray-800 pb-20'>
             <div className='bg-gradient-to-r from-slate-900 to-red-900 pb-24 mt-[66px] text-gray-50'>
                 <div className='container px-4 sm:px-32 2xl:px-72 mx-full max-w-screen '>
                     <SearchForm />
+                    {data?.length == 0 && (
+                        <div className='text-center text-3xl font-bold mt-10'>Sorry, we cannot find any suitable jobs for u :(</div>
+                    )}
                 </div>
             </div>
-            {/* Company Spotlight */}
-            <div className='container 2xl:px-56 mx-full max-w-screen -mt-[100px]'>
-                <div className='flex relative'>
-                    <div className='w-[300px] shrink-0 h-[200px] basis-[300px] rounded-l-lg overflow-hidden'><img className="object-cover w-[300px] h-[200px]" src={companySpotlight?.imageUrl[0]} alt="" /></div>
-                    {/* company des */}
-                    <div className='flex bg-white basis-1/2 relative '>
-                        {/* first col */}
-                        <div className='pl-20 my-5 flex items-center border-r border-gray-400 border-dashed'>
-                            <div className='flex flex-wrap items-center gap-4'>
-                                <div className='w-full text-lg font-bold '>{companySpotlight?.companyName}</div>
-                                <div className='-ml-1 w-full flex items-center gap-1 font-semibold text-gray-600'>
-                                    <MdOutlineLocationOn color="gray" size={20} />
-                                    <div className='flex gap-2'>
-                                        {companySpotlight?.city.map((item, index) => (
-                                            <div key={index}>{item}</div>
+            {data?.length !== 0 && (
+                <>
+                    <div className='container 2xl:px-56 mx-full max-w-screen -mt-[100px]'>
+                        <div className='flex relative'>
+                            <div className='w-[300px] shrink-0 h-[200px] basis-[300px] rounded-l-lg overflow-hidden'><img className="object-cover w-[300px] h-[200px]" src={companySpotlight?.imageUrl[0]} alt="" /></div>
+                            {/* company des */}
+                            <div className='flex bg-white basis-1/2 relative '>
+                                {/* first col */}
+                                <div className='pl-20 my-5 flex items-center border-r border-gray-400 border-dashed'>
+                                    <div className='flex flex-wrap items-center gap-4'>
+                                        <div className='w-full text-lg font-bold '>{companySpotlight?.companyName}</div>
+                                        <div className='-ml-1 w-full flex items-center gap-1 font-semibold text-gray-600'>
+                                            <MdOutlineLocationOn color="gray" size={20} />
+                                            <div className='flex gap-2'>
+                                                {companySpotlight?.city.map((item, index) => (
+                                                    <div key={index}>{item}</div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                        {jobSpotlight && jobSpotlight.length > 0 && (
+                                            <Link to={`/company/${companySpotlight?.id}`}>
+                                                <div className='w-full flex items-center font-semibold text-blue-600'>
+                                                    <div className=''>View {jobSpotlight.length} jobs</div>
+                                                    <IoIosArrowForward />
+                                                </div>
+                                            </Link>
+                                        )}
+                                    </div>
+                                </div>
+                                <div className='bottom-[40px] -left-[60px] absolute w-[120px] sm:w-[120px] bg-white rounded-xl border border-gray-200 aspect-square overflow-hidden flex justify-center items-center'><img className='' src={companySpotlight?.logoUrl} alt="" /></div>
+                            </div>
+                            <div className='flex bg-white basis-1/2 rounded-r-lg'>
+                                {/* second col */}
+                                <div className='pl-6 my-auto'>
+                                    <div className='flex flex-wrap items-center gap-4 font-semibold text-gray-800'>
+                                        {jobSpotlight && jobSpotlight.slice(0, 3).map((item, index) => (
+                                            <Link key={index} className="w-full" to={`/job/${item.id}`}>
+                                                <div className='flex items-center gap-2 '>
+                                                    <IoArrowForwardCircleOutline color="red" size={15} />
+                                                    <div>{item.name}</div>
+                                                </div>
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>
-                                {jobSpotlight && jobSpotlight.length > 0 && (
-                                    <Link to={`/company/${companySpotlight?.id}`}>
-                                        <div className='w-full flex items-center font-semibold text-blue-600'>
-                                            <div className=''>View {jobSpotlight.length} jobs</div>
-                                            <IoIosArrowForward />
-                                        </div>
-                                    </Link>
-                                )}
                             </div>
-                        </div>
-                        <div className='bottom-[40px] -left-[60px] absolute w-[120px] sm:w-[120px] bg-white rounded-xl border border-gray-200 aspect-square overflow-hidden flex justify-center items-center'><img className='' src={companySpotlight?.logoUrl} alt="" /></div>
-                    </div>
-                    <div className='flex bg-white basis-1/2 rounded-r-lg'>
-                        {/* second col */}
-                        <div className='pl-6 my-auto'>
-                            <div className='flex flex-wrap items-center gap-4 font-semibold text-gray-800'>
-                                {jobSpotlight && jobSpotlight.slice(0, 3).map((item, index) => (
-                                    <Link key={index} className="w-full" to={`/job/${item.id}`}>
-                                        <div className='flex items-center gap-2 '>
-                                            <IoArrowForwardCircleOutline color="red" size={15} />
-                                            <div>{item.name}</div>
-                                        </div>
-                                    </Link>
-                                ))}
-                            </div>
+                            <div className='absolute top-2 py-1.5 px-3 text-white font-bold text-sm bg-orange-400 rounded-r-lg  '>Company Spotlight</div>
                         </div>
                     </div>
-                    <div className='absolute top-2 py-1.5 px-3 text-white font-bold text-sm bg-orange-400 rounded-r-lg  '>Company Spotlight</div>
-                </div>
-            </div>
-            <div className='container 2xl:px-72 mx-full max-w-screen '>
-                <div className='font-bold text-3xl mt-8'>{data.length} IT {`${data.length == 1 ? "job" : "jobs"}`} in Vietnam</div>
-                {selectedElement && (
-                    <div className='flex mt-8 gap-6 '>
-                        {/* first col */}
-                        <div className='flex basis-2/6 flex-col gap-4'>
-                            {data && data.map((item) => (
-                                <div onClick={handleOnClick(item)} key={item.id} className='cursor-pointer'>
-                                    <JobCard props={item} selected={item.id === activeElement} />
+                    <div className='container 2xl:px-72 mx-full max-w-screen '>
+                        <div className='font-bold text-3xl mt-8'>{data.length} IT {`${data.length == 1 ? "job" : "jobs"}`} in Vietnam</div>
+                        {selectedElement && (
+                            <div className='flex mt-8 gap-6 '>
+                                {/* first col */}
+                                <div className='flex basis-2/6 flex-col gap-4'>
+                                    {data && data.map((item) => (
+                                        <div onClick={handleOnClick(item)} key={item.id} className='cursor-pointer'>
+                                            <JobCard props={item} selected={item.id === activeElement} />
+                                        </div>
+                                    ))}
                                 </div>
-                            ))}
-                        </div>
-                        {/* second col */}
-                        <div className='basis-4/6 sticky self-start top-[65px]'>
-                            <JobApply job={selectedElement[0]} company={selectedElement[1]} isPage={false}></JobApply>
-                        </div>
+                                {/* second col */}
+                                <div className='basis-4/6 sticky self-start top-[65px]'>
+                                    <JobApply job={selectedElement[0]} company={selectedElement[1]} isPage={false}></JobApply>
+                                </div>
+                            </div>
+                        )}
                     </div>
-                )}
-            </div>
+                </>
+            )}
+            {/* Company Spotlight */}
         </div>
     )
 }
