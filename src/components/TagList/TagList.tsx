@@ -13,7 +13,6 @@ const TagList = () => {
         }
         fetchAPI()
     }, [])
-    console.log(tagList)
     return (
         <div className='sm:py-0 container flex items-center font-semibold text-gray-50'>
             <div className='hidden sm:block sm:min-w-40'>Suggestions for you:</div>

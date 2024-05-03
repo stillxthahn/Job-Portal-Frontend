@@ -13,7 +13,7 @@ const LayoutAdmin = () => {
 
 	return (
 		<>
-			<Layout className="h-screen">
+			<Layout className="h-full">
 				<Header />
 				<Layout>
 					<Sider
@@ -24,7 +24,7 @@ const LayoutAdmin = () => {
 					>
 						<MenuSider />
 					</Sider>
-					<Content className="mx-[28px] mt-[100px]">
+					<Content className="mx-[28px] mt-[100px] h-screen">
 						<Outlet />
 					</Content>
 				</Layout>

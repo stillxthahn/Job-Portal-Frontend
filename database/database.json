@@ -25,7 +25,6 @@
       "why": [
         "15 days Annual Leaves",
         "Life Insurance, Health Insurance",
-        "FLEX benefit package",
         "Annual health check-up",
         "Training and Development Programs"
       ],
@@ -511,6 +510,50 @@
         "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNUxSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--08b27ff329c1424b7fd2d8c49a6bb22736a9267c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/SIM-411.jpg",
         "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMDNSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ea7e2ea53e0f03ea402281ec7ead004d7d46a645/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/SIM-4975.jpg"
       ]
+    },
+    {
+      "companyName": "Xuan Thanh",
+      "email": "lxthanh235@gmail.com",
+      "password": "123456",
+      "token": "Ji2OU2J0eKSwv6AUI9DH",
+      "companyType": "Outsource",
+      "companySize": 0,
+      "country": "Vietnam",
+      "workingDays": "Monday - Tuesday",
+      "overTimePolicy": "",
+      "phone": "0985600072",
+      "quantityPeople": 1,
+      "description": [
+        "13123123",
+        "123123123123",
+        "fdfvdvdfvd"
+      ],
+      "reason": [
+        "124354",
+        "sdasxvx",
+        "bfdeww",
+        "qưeqwe"
+      ],
+      "why": [
+        "t54m"
+      ],
+      "address": [
+        "108 Hà Huy Tập, thành phố Đà Lạt, tỉnh Lâm Đồng"
+      ],
+      "city": [
+        "Ho Chi Minh"
+      ],
+      "website": "gg.com",
+      "logoUrl": "",
+      "tags": [
+        "Javascript",
+        "NodeJS",
+        "ReactJS"
+      ],
+      "imageUrl": [
+        "https://www.recordnet.com/gcdn/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG?width=660&height=425&fit=crop&format=pjpg&auto=webp"
+      ],
+      "id": 10
     }
   ],
   "city": [
@@ -620,8 +663,7 @@
       "name": "Java Engineer (Middle-Senior, English)",
       "tags": [
         "Java",
-        "MySQL",
-        "Spring"
+        "MySQL"
       ],
       "location": "Hybrid",
       "salary": "1000",
@@ -634,8 +676,7 @@
         "Maintain current knowledge of standard language, coding methods, and operations requirements",
         "Thoroughly tests the operation of completed programs and linkage to other programs",
         "Assists the system analyst to establish file requirements and processing specifications for automated portions of the system",
-        "Build software and deploy to UIS/SIT/UAT environment",
-        "Support defect/problem investigation"
+        "Build software and deploy to UIS/SIT/UAT environment"
       ],
       "experience": [
         "Bachelor's Degree in Computer Engineer, Computer Science, IT or other related fields",
@@ -687,6 +728,7 @@
         "Strong communication skills to effectively interact with team members and stakeholders.",
         "Strong knowledge and understanding of SOLID principles and Clean Architecture"
       ],
+      "status": true,
       "createAt": "04-25-2024 21:31:32",
       "city": [
         "Ho Chi Minh",

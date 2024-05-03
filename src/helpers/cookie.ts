@@ -10,7 +10,7 @@ export function getCookie(cname: string) {
 			return c.substring(name.length, c.length);
 		}
 	}
-	return null || "";
+	return null;
 }
 
 export function setCookie(cname : string, cvalue : string, exdays : number) {

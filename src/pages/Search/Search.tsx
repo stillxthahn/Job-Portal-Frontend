@@ -65,7 +65,7 @@ const Search = () => {
                 <div className='container px-4 sm:px-32 2xl:px-72 mx-full max-w-screen '>
                     <SearchForm />
                     {data?.length == 0 && (
-                        <div className='text-center text-3xl font-bold mt-10'>Sorry, we cannot find any suitable jobs for u :(</div>
+                        <div className='text-center text-3xl font-bold mt-10'>Sorry, we cannot find any suitable jobs for you :(</div>
                     )}
                 </div>
             </div>

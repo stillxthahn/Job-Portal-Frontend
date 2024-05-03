@@ -1,9 +1,19 @@
-import { get } from "../utilities/request"
+import { del, get, patch } from "../utilities/request"
 
 export const getJob = async (id?: number | string) => {
     const query = id ? `jobs/${id}` : "jobs"
     const response = await get(query)
     return response
+}
+
+export const updateJob = async (id: string | number, options: any) => {
+    const result = await patch(`jobs/${id}`, options)
+    return result
+}
+
+export const deleteJob = async (id: number | string) => {
+    const result = await del(`jobs/${id}`)
+    return result
 }
 
 export const getJobsByCompanyId = async (id: number | string) => {

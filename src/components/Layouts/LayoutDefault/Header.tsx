@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 const Header = () => {
     const token = getCookie("token");
+    console.log(token)
     const [open, setOpen] = useState<boolean>(false);
     const [loading, setLoading] = useState<boolean>(false);
     const navigate = useNavigate()

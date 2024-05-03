@@ -80,13 +80,13 @@ const DashBoard = () => {
 					<Col span={8}>
 						<Card title="CV" size="small">
 							<div>
-								Số lượng CV: <strong>{CV.total}</strong>
+								CV: <strong>{CV.total}</strong>
 							</div>
 							<div>
-								CV đã đọc: <strong>{CV.readTrue}</strong>
+								Read: <strong>{CV.readTrue}</strong>
 							</div>
 							<div>
-								CV chưa đọc: <strong>{CV.readFalse}</strong>
+								Unread: <strong>{CV.readFalse}</strong>
 							</div>
 						</Card>
 					</Col>
@@ -104,7 +104,7 @@ const DashBoard = () => {
 								Phone: <strong>{company.phone}</strong>
 							</div>
 							<div>
-								Employess: <strong>{company.quantityPeople}</strong>
+								Employees: <strong>{company.quantityPeople}</strong>
 							</div>
 						</Card>
 					</Col>

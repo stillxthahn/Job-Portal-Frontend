@@ -45,7 +45,7 @@ const AdminInfoCompany = () => {
 	}
 
 	useEffect(() => {
-		fetchAPI(idCompany)
+		fetchAPI(idCompany || "")
 	}, [idCompany])
 	const handleFinish = async (values) => {
 		console.log("FIRST VAL", values)
@@ -57,10 +57,10 @@ const AdminInfoCompany = () => {
 			why: values.why.split("\n"),
 			imageUrl: values.imageUrl.split("\n")
 		}
-		const response = await editCompany(idCompany, newValues)
+		const response = await editCompany(idCompany || "", newValues)
 		if (response) {
 			mess.success("Update successfully!")
-			fetchAPI(idCompany)
+			fetchAPI(idCompany || "")
 			setIsEdit(false)
 		}
 	}
@@ -76,7 +76,7 @@ const AdminInfoCompany = () => {
 	}
 	console.log(company?.reason)
 	return (
-		<>
+		<div className='h-screen'>
 			{contextHolder}
 			{company && (
 				<Card
@@ -206,7 +206,7 @@ const AdminInfoCompany = () => {
 					</Form>
 				</Card>
 			)}
-		</>
+		</div>
 	)
 }
 
