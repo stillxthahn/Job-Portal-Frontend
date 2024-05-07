@@ -24,7 +24,7 @@ const LayoutAdmin = () => {
 					>
 						<MenuSider />
 					</Sider>
-					<Content className="mx-[28px] mt-[100px] h-screen">
+					<Content className="mx-[28px] mt-[100px] mb-[40px]">
 						<Outlet />
 					</Content>
 				</Layout>

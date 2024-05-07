@@ -76,7 +76,7 @@ const AdminInfoCompany = () => {
 	}
 	console.log(company?.reason)
 	return (
-		<div className='h-screen'>
+		<div>
 			{contextHolder}
 			{company && (
 				<Card

@@ -27,19 +27,18 @@ export const del = async (path: string) => {
     return result;
 }
 
-export const patch = async (path: string, option: object) => {
-    const response = fetch(API_DOMAIN + path, {
-        method: "PATCH",
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(option),
-    })
-    const result = (await response).json();
-    return result;
-}
-
+export const patch = async (path: string, options = {}) => {
+ const response = await fetch(API_DOMAIN + path, {
+  method: "PATCH",
+  headers: {
+   Accept: "application/json",
+   "Content-Type": "application/json",
+  },
+  body: JSON.stringify(options),
+ });
+ const result = await response.json();
+ return result;
+};
 
 
 

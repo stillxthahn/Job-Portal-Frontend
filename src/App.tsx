@@ -16,10 +16,10 @@ import PrivateRoute from './components/Layouts/LayoutAdmin/PrivateRoute'
 import DashBoard from './pages/DashBoard/DashBoard'
 import AdminInfoCompany from './pages/AdminInfoCompany/AdminInfoCompany'
 import JobManage from './pages/JobManage/JobManage'
-import CreateJob from './pages/CreateJob/CreateJob'
-import AdminInfoJob from './pages/AdminInfoJob/AdminInfoJob'
 import CVManage from './pages/CVManage/CVManage'
-import CVDetail from './pages/CVDetail/CVDetail'
+import CreateJob from './pages/JobManage/CreateJob'
+import AdminInfoJob from './pages/AdminInfoJob/AdminInfoJob'
+import CVDetails from './pages/CVManage/CVDetails'
 function App() {
   return (
     <BrowserRouter>
@@ -44,7 +44,7 @@ function App() {
             <Route path='/create-job' element={<CreateJob />} />
             <Route path='/detail-job/:id' element={<AdminInfoJob />} />
             <Route path='/cv-manage' element={<CVManage />} />
-            <Route path='/detail-cv/:id' element={<CVDetail />} />
+            <Route path='/detail-cv/:id' element={<CVDetails />} />
           </Route>
         </Route>
       </Routes>

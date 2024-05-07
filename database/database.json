@@ -1611,7 +1611,7 @@
     {
       "id": 1,
       "idCompany": 1,
-      "idJob": 4,
+      "idJob": 1,
       "name": "Le Van A",
       "phone": "0123456789",
       "email": "levana@gmail.com",
@@ -1624,7 +1624,7 @@
     {
       "id": 2,
       "idCompany": 1,
-      "idJob": 4,
+      "idJob": 2,
       "name": "Le Van E",
       "phone": "0123456789",
       "email": "levane@gmail.com",
@@ -1637,7 +1637,7 @@
     {
       "id": 3,
       "idCompany": 1,
-      "idJob": 4,
+      "idJob": 3,
       "name": "Le Van F",
       "phone": "0123456789",
       "email": "levanf@gmail.com",
@@ -1648,41 +1648,16 @@
       "city": "Hà Nội"
     },
     {
-      "id": 4,
-      "idCompany": 2,
-      "idJob": 5,
-      "name": "Le Van B",
-      "phone": "0123456789",
-      "email": "levanb@gmail.com",
-      "statusRead": false,
-      "description": "Xin chào, tôi là Le Van B. Hiện tại tôi đang là...",
-      "linkProject": "",
-      "createAt": "04-30-2023 10:31:41",
-      "city": "Hà Nội"
-    },
-    {
-      "id": 5,
-      "idCompany": 1,
-      "idJob": 4,
-      "name": "Le Van C",
-      "phone": "0123456789",
-      "email": "levanc@gmail.com",
-      "statusRead": true,
-      "description": "Xin chào, tôi là Le Van C. Hiện tại tôi đang là...",
-      "linkProject": "",
-      "createAt": "04-30-2023 10:31:41",
-      "city": "Hà Nội"
-    },
-    {
       "name": "Le Van A",
       "phone": "0123456789",
       "email": "namdp.1999@gmail.com",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "linkProject": "https://itviec.com/\nhttps://www.w3schools.com/",
-      "idJob": 7,
-      "idCompany": 1,
+      "idJob": 5,
+      "idCompany": 2,
       "createAt": "04-30-2023 08:59:36",
-      "id": 6
+      "id": 6,
+      "statusRead": true
     },
     {
       "name": "Le Van A",
@@ -1690,8 +1665,8 @@
       "email": "namdp.1999@gmail.com",
       "description": "ádasd",
       "linkProject": "ádasd",
-      "idJob": 7,
-      "idCompany": 1,
+      "idJob": 5,
+      "idCompany": 2,
       "createAt": "04-30-2023 09:02:32",
       "id": 7,
       "statusRead": true
@@ -1703,8 +1678,8 @@
       "city": "Hà Nội",
       "description": "Lorem...",
       "linkProject": "Lorem 123 ...",
-      "idJob": 7,
-      "idCompany": 1,
+      "idJob": 6,
+      "idCompany": 2,
       "createAt": "04-30-2023 10:35:35",
       "id": 8,
       "statusRead": true
@@ -1717,7 +1692,7 @@
       "description": "Xin chào...",
       "linkProject": "https://daca.vn/",
       "idJob": 7,
-      "idCompany": 1,
+      "idCompany": 2,
       "createAt": "04-30-2023 22:28:37",
       "id": 9,
       "statusRead": true
@@ -1729,8 +1704,8 @@
       "city": "Hà Nội",
       "description": "Xin chào...",
       "linkProject": "daca.vn",
-      "idJob": 7,
-      "idCompany": 1,
+      "idJob": 8,
+      "idCompany": 3,
       "createAt": "04-30-2023 21:25:50",
       "id": 10,
       "statusRead": true
@@ -1742,8 +1717,8 @@
       "city": "Hà Nội",
       "description": "Lorem...",
       "linkProject": "daca.vn",
-      "idJob": 7,
-      "idCompany": 1,
+      "idJob": 9,
+      "idCompany": 3,
       "createAt": "04-30-2023 21:52:51",
       "id": 11,
       "statusRead": true
@@ -1755,8 +1730,8 @@
       "city": "Ha Noi",
       "description": "23",
       "linkProject": "23",
-      "idJob": "5",
-      "idCompany": "2",
+      "idJob": "10",
+      "idCompany": "3",
       "createAt": "05-03-2024 00:04:37",
       "statusRead": false,
       "id": 12
@@ -1768,8 +1743,8 @@
       "city": "Ha Noi",
       "description": "123",
       "linkProject": "123",
-      "idJob": "1",
-      "idCompany": "1",
+      "idJob": "11",
+      "idCompany": "4",
       "createAt": "05-03-2024 00:04:59",
       "statusRead": false,
       "id": 13

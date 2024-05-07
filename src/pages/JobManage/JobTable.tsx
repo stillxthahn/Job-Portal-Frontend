@@ -7,15 +7,7 @@ import { Link } from 'react-router-dom'
 import { EyeOutlined } from '@ant-design/icons'
 import EditJob from './EditJob'
 import DeleteJob from './DeleteJob'
-import { ColumnType, ColumnsType } from 'antd/es/table'
-
-interface DataType {
-	key: string;
-	title: string;
-	dataIndex: string;
-	render?: (_: never, record: Job) => Element[];
-
-}
+import { ColumnsType } from 'antd/es/table'
 
 const JobTable = () => {
 	const idCompany = getCookie("id")

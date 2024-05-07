@@ -6,6 +6,7 @@ import { getListCity } from '../../services/cityService'
 import { EditOutlined } from '@ant-design/icons'
 import TextArea from 'antd/es/input/TextArea'
 import { updateJob } from '../../services/jobService'
+import { getTimeCurrent } from '../../helpers/getTime'
 interface EditJobProps {
 	record: Job
 	onReload: () => void
@@ -63,9 +64,16 @@ const EditJob = ({ record, onReload }: EditJobProps) => {
 	const handleFinish = async (values) => {
 		const parseValues = {
 			...values,
-			overview: values.overview.split("\n"),
-			experience: values.experience.split("\n"),
-			responsibilities: values.responsibilities.split("\n")
+			overview: values.overview.trim().split("\n").filter((item: string) => {
+				return item.trim().length != 0
+			}),
+			experience: values.experience.trim().split("\n").filter((item: string) => {
+				return item.trim().length != 0
+			}),
+			responsibilities: values.responsibilities.trim().split("\n").filter((item: string) => {
+				return item.trim().length != 0
+			}),
+			updateAt: getTimeCurrent()
 		}
 		const response = await updateJob(record.id, parseValues)
 		if (response) {
@@ -79,7 +87,7 @@ const EditJob = ({ record, onReload }: EditJobProps) => {
 		} else {
 			mess.open({
 				type: "error",
-				content: "Update successfully",
+				content: "Update failed!",
 				duration: 3,
 			})
 		}

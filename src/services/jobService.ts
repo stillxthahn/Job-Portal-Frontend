@@ -1,9 +1,14 @@
-import { del, get, patch } from "../utilities/request"
+import { del, get, patch, post } from "../utilities/request"
 
 export const getJob = async (id?: number | string) => {
     const query = id ? `jobs/${id}` : "jobs"
     const response = await get(query)
     return response
+}
+
+export const createJob = async (values) => {
+    const result = await post("jobs", values)
+    return result
 }
 
 export const updateJob = async (id: string | number, options: any) => {

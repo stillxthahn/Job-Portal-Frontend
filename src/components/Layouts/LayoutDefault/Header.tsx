@@ -67,7 +67,7 @@ const Header = () => {
                         </div>
                     )}
                 </div>
-                <div className='pt-[0.25px] bg-gray-700'></div>
+                <div className='pt-[0.1px] bg-gray-600'></div>
             </div >
         </>
     )

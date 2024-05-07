@@ -51,8 +51,8 @@ export interface CV {
     city: string;
     description: string;
     linkProject: string;
-    idJob: string;
-    idCompany: string;
+    idJob: number;
+    idCompany: number;
     createAt: string;
     id: number;
     statusRead: boolean;
