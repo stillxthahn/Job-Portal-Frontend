@@ -1,4 +1,8 @@
-const API_DOMAIN = "http://localhost:3002/";
+// LOCAL DATABASE
+// const API_DOMAIN = "http://localhost:3002/";
+
+// ONLINE DATABASE
+const API_DOMAIN = "https://dummy-database-job-portal.vercel.app/";
 
 export const get = async (path: string) => {
     const respone = fetch(API_DOMAIN + path);

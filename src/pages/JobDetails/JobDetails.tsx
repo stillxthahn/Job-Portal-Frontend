@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react"
 import { Company, Job } from "../../interface/interface"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { getJob, getJobList } from "../../services/jobService"
 import { getCompany } from "../../services/companyService"
 import JobCard from "../../components/Jobs/JobCard"
 import CompanyCard from "../../components/Employers/CompanyCard"
 import InfoJob from "../../components/Jobs/InfoJob"
-import ApplyForm from "../../components/ApplyForm/ApplyForm"
 const JobDetails = () => {
 	const [job, setJob] = useState<Job>()
 	const [company, setCompany] = useState<Company>()
@@ -37,7 +36,7 @@ const JobDetails = () => {
 	}
 	return (
 		<>
-			<div className="container pb-20 2xl:px-56 gap-6 mt-[88px]">
+			<div className="container pb-20  gap-6 mt-[88px]">
 				{/* first section */}
 				<div className=" flex  w-full gap-6 ">
 					<div className="flex flex-wrap basis-2/3">
@@ -53,8 +52,11 @@ const JobDetails = () => {
 				<div className="font-bold mt-10 text-2xl w-full">More jobs for you</div>
 
 				<div className="w-full mt-8 grid grid-cols-3 gap-8">
-					{otherJobs && otherJobs.map((job, index) => (
-						<JobCard key={index} props={job} selected={false} />
+					{otherJobs && otherJobs.map((job) => (
+						<Link key={job.id} to={`/job/${job.id}`}>
+							<JobCard props={job} selected={false} />
+						</Link>
+
 					))}
 				</div>
 			</div >

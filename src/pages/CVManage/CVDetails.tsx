@@ -32,7 +32,7 @@ const CVDetails = () => {
 	return (
 		<>
 			<Button onClick={() => navigate(-1)}>Back</Button>
-			<Card className="mt-4" title={`Candidate ${cv?.name}`}>
+			<Card className="mt-4" title={`Candidate: ${cv?.name}`}>
 				<div className="">Sent at:
 					<span className='font-bold'> {cv.createAt}</span>
 				</div>

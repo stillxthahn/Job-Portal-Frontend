@@ -41,7 +41,7 @@ const InfoEmployer = () => {
         <div className='bg-gray-100 mt-[66px] pb-4'>
             {/* COMPANY */}
             <div className='bg-gradient-to-r from-slate-900 to-red-900 text-gray-50 '>
-                <div className='container 2xl:px-56'>
+                <div className='container '>
                     <div className='hidden sm:flex container py-8'>
                         <div className='flex items-center justify-center gap-7'>
                             <div className='w-[140px] sm:w-[160px] bg-white rounded-xl aspect-square overflow-hidden flex justify-center items-center'><img className='' src={company?.logoUrl} alt="" /></div>
@@ -68,7 +68,7 @@ const InfoEmployer = () => {
             </div>
 
             {/* MAIN */}
-            <div className='flex container my-10 2xl:px-56 gap-6'>
+            <div className='flex container my-10 gap-6'>
                 <div className='flex flex-wrap gap-6 basis-2/3'>
                     <div className='w-full py-2 px-8 bg-white rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
                         <div>

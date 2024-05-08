@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer>
             <div className='bg-gradient-to-r from-slate-900 to-red-900 pt-14 shrink-0 text-gray-400 '>
-                <div className='container sm:px-40 2xl:px-56 font-bold  pb-14 flex justify-between'>
+                <div className='container sm:px-40 2xl:px-20 font-bold  pb-14 flex justify-between'>
                     <div className='flex flex-col sm:gap-8'>
                         <div>
                             <Link className="text-2xl text-gray-100" to='/'>PORTAL</Link>

@@ -8,7 +8,7 @@ interface CompanyProps {
 
 const EmployerCard = ({ props }: CompanyProps) => {
     return (
-        <Link to={`company/${props.id}`} className='cursor-pointer flex flex-col border sm:w-[416px] w-[300px] aspect-square items-center justify-between rounded-xl gap-4 sm:gap-0'>
+        <Link to={`company/${props.id}`} className='cursor-pointer hover:border-orange-600 flex flex-col border sm:w-[416px] w-[300px] aspect-square items-center justify-between rounded-xl gap-4 sm:gap-0'>
             <div className='w-[140px] sm:w-[160px] bg-white drop-shadow-xl rounded-xl aspect-square overflow-hidden flex justify-center items-center mt-8'><img className='' src={props.logoUrl} alt="" /></div>
             <div className='text-lg font-bold flex justify-center items-center text-center max-w-[240px]'><p>{props.companyName}</p></div>
             <div className='flex flex-row gap-2 sm:gap-3 flex-wrap font-medium justify-center items-center text-xs text-slate-600 sm:text-sm max-w-[220px] sm:max-w-[320px]'>

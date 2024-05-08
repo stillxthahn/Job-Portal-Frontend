@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { getListCity } from '../../services/cityService'
-import { CV, City } from '../../interface/interface'
 import { createCV } from '../../services/cvService'
 import { getTimeCurrent } from '../../helpers/getTime'
 import { Modal } from 'antd'
 import { FaRegCircleCheck } from 'react-icons/fa6'
+import { CV } from '../../interface/interface'
 
 
 const ApplyForm = () => {
@@ -27,25 +27,25 @@ const ApplyForm = () => {
 		fetchAPI()
 	}, [])
 
-	const handleSumbit = async (event: React.FormEvent<HTMLFormElement>) => {
+	const handleSumbit = async (event: React.BaseSyntheticEvent) => {
 		event.preventDefault()
-		const target = event.target as typeof event.target & {
-			name: { value: string };
-			phone: { value: string };
-			email: { value: string };
-			city: { value: string };
-			description: { value: string };
-			linkProject: { value: string };
-		};
+		// const target = event.target as typeof event.target & {
+		// 	name: { value: string };
+		// 	phone: { value: string };
+		// 	email: { value: string };
+		// 	city: { value: string };
+		// 	description: { value: string };
+		// 	linkProject: { value: string };
+		// };
 		const values: CV = {
-			name: target.name.value,
-			phone: target.phone.value,
-			email: target.email.value,
-			city: target.city.value,
-			description: target.description.value,
-			linkProject: target.linkProject.value,
-			idJob: idJob,
-			idCompany: idCompany,
+			name: event.currentTarget.name.value,
+			phone: event.currentTarget.phone.value,
+			email: event.currentTarget.email.value,
+			city: event.currentTarget.city.value,
+			description: event.currentTarget.description.value,
+			linkProject: event.currentTarget.linkProject.value,
+			idJob: parseInt(idJob),
+			idCompany: parseInt(idCompany),
 			createAt: getTimeCurrent(),
 			statusRead: false
 		}
@@ -88,7 +88,7 @@ const ApplyForm = () => {
 				</div>
 			</Modal>
 
-			<div className='relative top-10 container pb-20 2xl:px-[500px] sm:px-[200px] gap-6'>
+			<div className='relative top-10 container pb-20  sm:px-[200px] gap-6'>
 				<div className='bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 py-6 rounded-lg'>
 					<div className='text-2xl font-bold'>{jobName}</div>
 					<form className='flex flex-col text-gray-800 font-semibold ' onSubmit={handleSumbit}>

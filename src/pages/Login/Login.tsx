@@ -41,7 +41,7 @@ const Login = () => {
     return (
         <div className=' mt-[66px]'>
             <div className='w-full bg-gradient-to-r from-slate-900 to-red-900 h-80 rounded-b-[20%] absolute  '></div>
-            <div className='relative top-10 container pb-20 2xl:px-[500px] sm:px-[400px] gap-6'>
+            <div className='relative top-10 container pb-20 sm:px-[400px] gap-6'>
                 <div className='bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 py-5 rounded-lg'>
                     <div className='text-3xl mt-1 text-center font-bold'>Login</div>
                     <form className='flex flex-col text-gray-800 font-semibold ' onSubmit={handleSumbit}>

@@ -52,6 +52,10 @@ const CVList = () => {
 			combineData(cvs, job)
 		}
 	}, [cvs, job])
+	console.log(idCompany)
+	console.log(cvs)
+
+	console.log(data)
 
 	const columns: ColumnsType<CVWithJobName> = [
 		{

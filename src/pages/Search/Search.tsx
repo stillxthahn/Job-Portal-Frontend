@@ -62,7 +62,7 @@ const Search = () => {
     return (
         <div className='bg-gray-100 text-gray-800 pb-20'>
             <div className='bg-gradient-to-r from-slate-900 to-red-900 pb-24 mt-[66px] text-gray-50'>
-                <div className='container px-4 sm:px-32 2xl:px-72 mx-full max-w-screen '>
+                <div className='container px-4 sm:px-32  mx-full max-w-screen '>
                     <SearchForm />
                     {data?.length == 0 && (
                         <div className='text-center text-3xl font-bold mt-10'>Sorry, we cannot find any suitable jobs for you :(</div>
@@ -71,7 +71,7 @@ const Search = () => {
             </div>
             {data?.length !== 0 && (
                 <>
-                    <div className='container 2xl:px-56 mx-full max-w-screen -mt-[100px]'>
+                    <div className='container  mx-full max-w-screen -mt-[100px]'>
                         <div className='flex relative'>
                             <div className='w-[300px] shrink-0 h-[200px] basis-[300px] rounded-l-lg overflow-hidden'><img className="object-cover w-[300px] h-[200px]" src={companySpotlight?.imageUrl[0]} alt="" /></div>
                             {/* company des */}
@@ -118,7 +118,7 @@ const Search = () => {
                             <div className='absolute top-2 py-1.5 px-3 text-white font-bold text-sm bg-orange-400 rounded-r-lg  '>Company Spotlight</div>
                         </div>
                     </div>
-                    <div className='container 2xl:px-72 mx-full max-w-screen '>
+                    <div className='container mx-full max-w-screen '>
                         <div className='font-bold text-3xl mt-8'>{data.length} IT {`${data.length == 1 ? "job" : "jobs"}`} in Vietnam</div>
                         {selectedElement && (
                             <div className='flex mt-8 gap-6 '>

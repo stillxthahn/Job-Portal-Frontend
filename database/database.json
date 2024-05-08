@@ -510,50 +510,6 @@
         "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNUxSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--08b27ff329c1424b7fd2d8c49a6bb22736a9267c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSVVBV2tCdURvSlkzSnZjRnNKYVFCcEFHa0NGQUZwQWJnPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d8a3eb368df546d7b32fdaac0e2c713bdc764d66/SIM-411.jpg",
         "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMDNSUHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ea7e2ea53e0f03ea402281ec7ead004d7d46a645/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRS2VBbWtDdlFFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22ae3c60c8cd4ceb8906930c6fd9de4e83ffa644/SIM-4975.jpg"
       ]
-    },
-    {
-      "companyName": "Xuan Thanh",
-      "email": "lxthanh235@gmail.com",
-      "password": "123456",
-      "token": "Ji2OU2J0eKSwv6AUI9DH",
-      "companyType": "Outsource",
-      "companySize": 0,
-      "country": "Vietnam",
-      "workingDays": "Monday - Tuesday",
-      "overTimePolicy": "",
-      "phone": "0985600072",
-      "quantityPeople": 1,
-      "description": [
-        "13123123",
-        "123123123123",
-        "fdfvdvdfvd"
-      ],
-      "reason": [
-        "124354",
-        "sdasxvx",
-        "bfdeww",
-        "qưeqwe"
-      ],
-      "why": [
-        "t54m"
-      ],
-      "address": [
-        "108 Hà Huy Tập, thành phố Đà Lạt, tỉnh Lâm Đồng"
-      ],
-      "city": [
-        "Ho Chi Minh"
-      ],
-      "website": "gg.com",
-      "logoUrl": "",
-      "tags": [
-        "Javascript",
-        "NodeJS",
-        "ReactJS"
-      ],
-      "imageUrl": [
-        "https://www.recordnet.com/gcdn/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG?width=660&height=425&fit=crop&format=pjpg&auto=webp"
-      ],
-      "id": 10
     }
   ],
   "city": [
@@ -577,7 +533,7 @@
     },
     {
       "key": 2,
-      "value": "CSS"
+      "value": "Ant Design"
     },
     {
       "key": 3,
@@ -1641,7 +1597,7 @@
       "name": "Ngo Van Hung",
       "phone": "0123456789",
       "email": "cv03@test.com",
-      "statusRead": true,
+      "statusRead": false,
       "description": "Xin chào, tôi là Ngo Van Hung. Hiện tại tôi đang là...",
       "linkProject": "",
       "createAt": "04-29-2024 10:33:41",
@@ -1656,7 +1612,7 @@
       "idJob": 5,
       "idCompany": 2,
       "createAt": "04-30-2024 08:59:36",
-      "id": 6,
+      "id": 4,
       "statusRead": true
     },
     {
@@ -1668,8 +1624,8 @@
       "idJob": 5,
       "idCompany": 2,
       "createAt": "04-30-2024 09:02:32",
-      "id": 7,
-      "statusRead": true,
+      "id": 5,
+      "statusRead": false,
       "city": "Da Nang"
     },
     {
@@ -1682,7 +1638,7 @@
       "idJob": 6,
       "idCompany": 2,
       "createAt": "04-30-2024 10:35:35",
-      "id": 8,
+      "id": 6,
       "statusRead": true
     },
     {
@@ -1695,8 +1651,8 @@
       "idJob": 7,
       "idCompany": 2,
       "createAt": "04-30-2024 22:28:37",
-      "id": 9,
-      "statusRead": true
+      "id": 7,
+      "statusRead": false
     },
     {
       "name": "Nguyen Thi Linh",
@@ -1708,8 +1664,8 @@
       "idJob": 8,
       "idCompany": 3,
       "createAt": "04-30-2024 21:25:50",
-      "id": 10,
-      "statusRead": true
+      "id": 8,
+      "statusRead": false
     },
     {
       "name": "Luong Xuan Truong",
@@ -1721,8 +1677,151 @@
       "idJob": 9,
       "idCompany": 3,
       "createAt": "04-30-2024 21:52:51",
+      "id": 9,
+      "statusRead": true
+    },
+    {
+      "name": "Luong Xuan Thien",
+      "phone": "0123456789",
+      "email": "cv10@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 11,
+      "idCompany": 4,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 10,
+      "statusRead": false
+    },
+    {
+      "name": "Luong Xuan Truong",
+      "phone": "0123456789",
+      "email": "cv11@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 12,
+      "idCompany": 4,
+      "createAt": "04-30-2024 21:52:51",
       "id": 11,
       "statusRead": true
+    },
+    {
+      "name": "Luong Xuan Tri",
+      "phone": "0123456789",
+      "email": "cv12@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 13,
+      "idCompany": 5,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 12,
+      "statusRead": true
+    },
+    {
+      "name": "Nguyen Dang Khoa",
+      "phone": "0123456789",
+      "email": "cv13@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 14,
+      "idCompany": 5,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 13,
+      "statusRead": false
+    },
+    {
+      "name": "Le Van Bao",
+      "phone": "0123456789",
+      "email": "cv14@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 15,
+      "idCompany": 6,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 14,
+      "statusRead": true
+    },
+    {
+      "name": "Nguyen Thi Ngoc Linh",
+      "phone": "0123456789",
+      "email": "cv15@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 16,
+      "idCompany": 6,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 15,
+      "statusRead": true
+    },
+    {
+      "name": "Nguyen Thi Bich",
+      "phone": "0123456789",
+      "email": "cv16@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 20,
+      "idCompany": 7,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 16,
+      "statusRead": false
+    },
+    {
+      "name": "Le Bao Quynh Ngan",
+      "phone": "0123456789",
+      "email": "cv17@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 21,
+      "idCompany": 7,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 17,
+      "statusRead": false
+    },
+    {
+      "name": "Nguyen Bao Ngoc",
+      "phone": "0123456789",
+      "email": "cv18@test.com",
+      "city": "Ha Noi",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 22,
+      "idCompany": 8,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 18,
+      "statusRead": false
+    },
+    {
+      "name": "Ngo Quang Nhut",
+      "phone": "0123456789",
+      "email": "cv19@test.com",
+      "city": "Ho Chi Minh",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 23,
+      "idCompany": 9,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 19,
+      "statusRead": false
+    },
+    {
+      "name": "Luong Quang Tho",
+      "phone": "0123456789",
+      "email": "cv20@test.com",
+      "city": "Ho Chi Minh",
+      "description": "Lorem...",
+      "linkProject": "daca.vn",
+      "idJob": 24,
+      "idCompany": 9,
+      "createAt": "04-30-2024 21:52:51",
+      "id": 20,
+      "statusRead": false
     }
   ]
 }

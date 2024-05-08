@@ -58,7 +58,7 @@ const DashBoard = () => {
 	console.log(job, CV, company)
 	return (
 		<>
-			<div className='text-2xl font-bold'>Tổng quan</div>
+			<div className='text-2xl font-bold'>General</div>
 			<Row className='mt-4 mb-10' gutter={[20, 20]}>
 				{job && (
 					<Col span={8}>

@@ -28,7 +28,7 @@ const JobCard = ({ props, selected }: JobCardProps) => {
         updateAt: timeAgo(props.updateAt)
     }
     return (
-        <div className={`flex w-full flex-wrap px-4 border ${selected ? 'bg-red-50 border-red-600' : 'bg-white'}  rounded-xl py-4`}>
+        <div className={`flex w-full flex-wrap px-4 hover:border hover:border-orange-600 border ${selected ? 'bg-red-50 border-red-600' : 'bg-white'}  rounded-xl py-4`}>
             <div className='w-full text-sm text-gray-400 font-semibold'>{job.createAt}</div>
             <div className='w-full mt-3 text-xl font-bold max-w-80'>{job.name}</div>
             <div className='w-full flex mt-3 items-center gap-3'>

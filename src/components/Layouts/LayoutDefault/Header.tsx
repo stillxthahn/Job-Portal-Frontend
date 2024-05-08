@@ -5,6 +5,9 @@ import { checkAuth } from '../../../actions/actions';
 import { Modal } from 'antd';
 import { FaRegCircleCheck } from 'react-icons/fa6';
 import { useState } from 'react';
+import { CiBoxList, CiGrid2H, CiLogin, CiLogout } from 'react-icons/ci';
+import { VscSignIn } from 'react-icons/vsc';
+import { PiNotePencilThin } from 'react-icons/pi';
 
 const Header = () => {
     const token = getCookie("token");
@@ -52,18 +55,42 @@ const Header = () => {
             </Modal>
             <div className=' fixed z-10 h-[66px] top-0 left-0 right-0 bg-gradient-to-r from-slate-900 to-red-900 text-gray-100'>
                 <div className='px-4 sm:px-0 h-full sm:container mx-auto py-6 flex sm:font-bold items-center justify-between'>
-                    <div>
-                        <Link className="text-lg sm:text-xl" to='/'>PORTAL</Link>
+                    <div className='flex items-center gap-20'>
+                        <Link className="text-lg font-medium gap-2 items-center flex " to='/'>
+                            <img className="w-10 h-10" src="src/assets/logo.png" alt="logo" />
+                            <span>Portal</span>
+                        </Link>
+                        <div className='text-lg font-semibold justify-self-start flex gap-12'>
+                            <Link to='/' className='hover:text-red-500'>
+                                <span>Home</span>
+                            </Link>
+                            <Link to='/search?city=&keyword=' className=' hover:text-red-500'>
+                                <span>Top jobs</span>
+                            </Link>
+                        </div>
                     </div>
                     {token === null ? (
-                        <div className='text-md sm:text-lg font-semibold flex gap-12'>
-                            <Link to='/login'>Login</Link>
-                            <Link to='/register'>Register</Link>
+                        <div className='font-semibold flex gap-12'>
+                            <Link to='/login' className='flex items-center gap-1 hover:text-red-500'>
+                                <CiLogin size={25} className='' />
+                                <span>Login</span>
+                            </Link>
+                            <Link to='/register' className='flex items-center gap-1 hover:text-red-500'>
+                                <PiNotePencilThin size={25} />
+                                <span>Register</span>
+                            </Link>
                         </div>
                     ) : (
-                        <div className='text-md sm:text-lg font-semibold flex gap-12'>
-                            <Link to='/admin'>Manage</Link>
-                            <div className='cursor-pointer' onClick={handleLogOut}>Logout</div>
+                        <div className='font-semibold flex gap-12'>
+                            <Link to='/admin' className='flex items-center gap-1 hover:text-red-500'>
+                                <CiBoxList size={25} />
+                                <span>Manage</span>
+
+                            </Link>
+                            <div className='cursor-pointer font-semibold flex items-center gap-1 hover:text-red-500' onClick={handleLogOut}>
+                                <CiLogout size={25} />
+                                <span>Log out</span>
+                            </div>
                         </div>
                     )}
                 </div>
