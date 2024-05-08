@@ -12,7 +12,7 @@ const JobDetails = () => {
 	const [otherJobs, setOtherJobs] = useState<Job[]>()
 
 	const params = useParams()
-	const jobId = params.id
+	const jobId = parseInt(params.id)
 
 	useEffect(() => {
 		const fetchAPI = async () => {

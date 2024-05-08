@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { Company, Job } from '../../interface/interface'
 import { useSticky } from '../../helpers/useSticky'
 import { LuCircleDollarSign } from 'react-icons/lu'
@@ -6,8 +5,7 @@ import { MdOutlineLocationOn } from 'react-icons/md'
 import { RiHomeOfficeLine } from 'react-icons/ri'
 import { timeAgo } from '../../helpers/time'
 import { IoMdTime } from 'react-icons/io'
-import ApplyForm from '../ApplyForm/ApplyForm'
-import { Link, createSearchParams, useNavigate } from 'react-router-dom'
+import { createSearchParams, useNavigate } from 'react-router-dom'
 
 interface InfoJobProps {
 	job: Job

@@ -1,19 +1,19 @@
 export function getTimeCurrent() {
   const date = new Date();
 
-  let second = date.getSeconds();
+  let second : number | string = date.getSeconds();
   second = second > 9 ? second : `0${second}`;
 
-  let minute = date.getMinutes();
+  let minute : number | string = date.getMinutes();
   minute = minute > 9 ? minute : `0${minute}`;
 
-  let hour = date.getHours();
+  let hour : number | string = date.getHours();
   hour = hour > 9 ? hour : `0${hour}`;
 
-  let day = date.getDate();
+  let day : number | string = date.getDate();
   day = day > 9 ? day : `0${day}`;
 
-  let month = date.getMonth() + 1;
+  let month : number | string = date.getMonth() + 1;
   month = month > 9 ? month : `0${month}`;
 
   const year = date.getFullYear();

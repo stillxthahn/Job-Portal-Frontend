@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { CV, Job } from '../../interface/interface'
 import { Link } from 'react-router-dom'
 import { getCVByIdCompany } from '../../services/cvService'
@@ -20,9 +20,9 @@ const CVList = () => {
 	const [cvs, setCVs] = useState<CV[]>()
 	const [job, setJob] = useState<Job[]>()
 	const [data, setData] = useState<CVWithJobName[]>()
-	const fectAPI = async (idCompany: number | string) => {
-		const CVResponse = await getCVByIdCompany(idCompany || "")
-		const jobResponse = await getJobsByCompanyId(idCompany || "")
+	const fectAPI = async (idCompany: string) => {
+		const CVResponse = await getCVByIdCompany(parseInt(idCompany))
+		const jobResponse = await getJobsByCompanyId(parseInt(idCompany))
 		if (CVResponse) {
 			setCVs(CVResponse)
 		}
@@ -45,7 +45,7 @@ const CVList = () => {
 		}
 	}
 	useEffect(() => {
-		fectAPI(idCompany || "")
+		fectAPI(idCompany)
 	}, [idCompany])
 	useEffect(() => {
 		if (cvs && job) {

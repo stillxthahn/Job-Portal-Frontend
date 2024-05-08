@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getCookie } from '../../helpers/cookie'
 import { Job } from '../../interface/interface'
 import { getJobsByCompanyId } from '../../services/jobService'
@@ -12,8 +12,8 @@ import { ColumnsType } from 'antd/es/table'
 const JobTable = () => {
 	const idCompany = getCookie("id")
 	const [jobs, setJobs] = useState<Job[]>()
-	const fetchAPI = async (idCompany: number | string) => {
-		const response = await getJobsByCompanyId(idCompany)
+	const fetchAPI = async (idCompany) => {
+		const response = await getJobsByCompanyId(parseInt(idCompany))
 		if (response) {
 			setJobs(response)
 		}

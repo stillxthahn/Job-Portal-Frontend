@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { getListTag } from '../../services/tagService';
 import { Link } from 'react-router-dom';
 

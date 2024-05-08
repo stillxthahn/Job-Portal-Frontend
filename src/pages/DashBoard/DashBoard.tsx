@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getCookie } from '../../helpers/cookie'
 import { getJobsByCompanyId } from '../../services/jobService'
 import { CV, Company, Job } from '../../interface/interface'
@@ -22,9 +22,9 @@ const DashBoard = () => {
 	const [company, setCompany] = useState<Company>()
 	useEffect(() => {
 		const fetchAPI = async () => {
-			const jobResponse = await getJobsByCompanyId(idCompany)
-			const CVResponse = await getCVByIdCompany(idCompany)
-			const companyResponse = await getCompany(idCompany)
+			const jobResponse = await getJobsByCompanyId(parseInt(idCompany))
+			const CVResponse = await getCVByIdCompany(parseInt(idCompany))
+			const companyResponse = await getCompany(parseInt(idCompany))
 			if (jobResponse) {
 				const obj = {
 					total: 0,

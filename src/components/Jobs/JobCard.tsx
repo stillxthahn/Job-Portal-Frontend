@@ -3,7 +3,6 @@ import { timeAgo } from '../../helpers/time'
 import { LuCircleDollarSign } from 'react-icons/lu'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { RiHomeOfficeLine } from 'react-icons/ri'
-import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getCompany } from '../../services/companyService'
 interface JobCardProps {

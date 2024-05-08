@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";

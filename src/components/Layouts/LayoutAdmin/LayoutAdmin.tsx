@@ -1,16 +1,16 @@
 /* eslint-disable no-unused-vars */
 import { Layout } from "antd";
-import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import MenuSider from "./MenuSider";
 import { useSelector } from "react-redux";
 import Header from "../LayoutDefault/Header"
+import { IRootState } from "../../../main";
 const { Sider, Content } = Layout;
 
 
 const LayoutAdmin = () => {
-	const authen = useSelector((state) => state.authenReducer);
-
+	const authen = useSelector((state: IRootState) => state['authReducer']);
+	console.log(authen)
 	return (
 		<>
 			<Layout className="h-full">

@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useEffect, useState } from 'react'
+import { MouseEventHandler, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getCompany } from '../../services/companyService'
 import { getJobsByCompanyId } from '../../services/jobService'
@@ -10,7 +10,7 @@ import JobCard from '../../components/Jobs/JobCard'
 const mapKey = process.env.VITE_MAP_API
 const InfoEmployer = () => {
     const params = useParams()
-    const companyId = params.id || "";
+    const companyId = parseInt(params.id)
     const [company, setCompany] = useState<Company>()
     const [jobs, setJobs] = useState<Array<JobWithCompany>>()
     const [activeElement, setActiveElement] = useState(0);

@@ -5,8 +5,7 @@ import { checkAuth } from '../../../actions/actions';
 import { Modal } from 'antd';
 import { FaRegCircleCheck } from 'react-icons/fa6';
 import { useState } from 'react';
-import { CiBoxList, CiGrid2H, CiLogin, CiLogout } from 'react-icons/ci';
-import { VscSignIn } from 'react-icons/vsc';
+import { CiBoxList, CiLogin, CiLogout } from 'react-icons/ci';
 import { PiNotePencilThin } from 'react-icons/pi';
 
 const Header = () => {

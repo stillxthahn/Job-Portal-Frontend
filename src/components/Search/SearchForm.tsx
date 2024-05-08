@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Input, Select, Form, Button, Row, Col } from "antd";
 import { FaSearch } from "react-icons/fa";
 import styles from "./SearchForm.module.css"
 import { getListCity } from '../../services/cityService';
-import { createSearchParams, useNavigate, useSearchParams } from 'react-router-dom';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 import { City } from '../../interface/interface';
-import path from 'path';
 
 
 
 const SearchForm = () => {
     const navigate = useNavigate()
     const [cities, setCities] = useState<City[]>();
-    const [searchParams, setSearchParams] = useSearchParams()
     useEffect(() => {
         const fectAPI = async () => {
             const response = await getListCity()

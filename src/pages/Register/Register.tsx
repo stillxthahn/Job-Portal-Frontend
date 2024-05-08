@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { checkExist, createCompany, login } from '../../services/companyService';
-import { setCookie } from '../../helpers/cookie';
-import { useDispatch } from 'react-redux';
-import { checkAuth } from '../../actions/actions';
+import { checkExist, createCompany } from '../../services/companyService';
 import { generateToken } from '../../helpers/generateToken';
 import { Modal } from 'antd';
 import { FaRegCircleCheck } from 'react-icons/fa6';
@@ -13,7 +10,6 @@ const Register = () => {
     const [validEmail, setValidEmail] = useState<boolean>(true);
     const [validPhone, setValidPhone] = useState<boolean>(true);
     const [open, setOpen] = useState<boolean>(false);
-    const dispatch = useDispatch()
     const navigate = useNavigate()
 
     const handleSumbit = async (event: React.BaseSyntheticEvent) => {

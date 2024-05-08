@@ -1,4 +1,3 @@
-import React from 'react'
 import CVList from './CVList'
 
 const CVManage = () => {

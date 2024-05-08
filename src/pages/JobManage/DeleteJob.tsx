@@ -1,4 +1,3 @@
-import React from 'react'
 import { Job } from '../../interface/interface'
 import { Button, Popconfirm, Tooltip } from 'antd'
 import { DeleteOutlined } from '@ant-design/icons'

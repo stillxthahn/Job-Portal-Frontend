@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Job } from '../../interface/interface'
 import { getJob } from '../../services/jobService'
@@ -10,7 +10,7 @@ const AdminInfoJob = () => {
 	const navigate = useNavigate()
 	useEffect(() => {
 		const fectAPI = async () => {
-			const response = await getJob(params.id)
+			const response = await getJob(parseInt(params.id))
 			if (response) {
 				setJob(response)
 			}

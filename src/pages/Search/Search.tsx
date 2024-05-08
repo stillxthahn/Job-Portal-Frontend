@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useEffect, useState } from 'react'
+import { MouseEventHandler, useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import SearchForm from '../../components/Search/SearchForm';
 import { getJob, getJobsByCompanyId } from '../../services/jobService';
@@ -8,12 +8,10 @@ import { MdOutlineLocationOn } from 'react-icons/md';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 import JobCard from '../../components/Jobs/JobCard';
-import InfoJob from '../../components/Jobs/InfoJob';
 import JobApply from '../../components/Jobs/InfoJob';
-import CompanyCard from '../../components/Employers/CompanyCard';
 
 const Search = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const [data, setData] = useState<Job[]>();
     const [companySpotlight, setCompanySpotlight] = useState<Company>()
     const [jobSpotlight, setJobSpotlight] = useState<Job[]>()

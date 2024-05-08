@@ -1,7 +1,5 @@
 import { CompanyWithJobsCount } from '../../interface/interface'
 import { Link } from 'react-router-dom'
-import { HiOutlineStatusOnline } from 'react-icons/hi'
-import { IconContext } from 'react-icons'
 interface CompanyProps {
     props: CompanyWithJobsCount
 }
@@ -36,22 +34,3 @@ const EmployerCard = ({ props }: CompanyProps) => {
 }
 
 export default EmployerCard
-
-// < div className = 'aspect-square rounded-xl border border-slate-300 bg-gray-200 flex flex-col justify-end overflow-hidden' >
-//             <div className='flex flex-col items-center grow'>
-//                 <div className='drop-shadow-xl bg-white rounded-xl aspect-square w-[120px] lg:w-[160px] flex items-center justify-center overflow-hidden'><img className="" src={props.imageUrl} alt="" /></div>
-//                 <p className='max-w-40 sm:max-w-60 lg:max-w-80 text-sm sm:text-md lg:text-xl font-bold mt-4 xl:mt-6 text-center'>{props.companyName}</p>
-//                 <div className='max-w-[240px] sm:max-w-60 lg:max-w-80 flex gap-2 flex-wrap mt-2 lg:mt-6 lg:text-sm mb-4 text-xs text-slate-800 font-semibold justify-center items-center'>
-//                     {props.tags.map((tag: string, index: number) => (
-//                         <div className="mt-1 px-2 py-0.5 bg-slate-100 rounded-xl" key={index}>{tag}</div>
-//                     ))}
-//                 </div>
-//             </div>
-//             <div className='flex lg:text-sm text-xs text-slate-800 font-semibold px-3 py-3 bg-white'>
-//                 <div className='flex flex-row gap-4'>
-//                     {props.city.map((item: string, index: number) => (
-//                         <div key={index}>{item}</div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </ >

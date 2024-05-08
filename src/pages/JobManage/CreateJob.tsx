@@ -1,9 +1,8 @@
-import { Button, Col, Form, Input, Row, Select, SelectProps, Switch, Tag, Tooltip, message } from 'antd'
+import { Button, Col, Form, Input, Row, Select, SelectProps, Switch, message } from 'antd'
 import { getListTag } from '../../services/tagService'
 import { getListCity } from '../../services/cityService'
 import TextArea from 'antd/es/input/TextArea'
 import { useEffect, useState } from 'react'
-import { Job } from '../../interface/interface'
 import { createJob } from '../../services/jobService'
 import { useNavigate } from 'react-router-dom'
 import { getCookie } from '../../helpers/cookie'
@@ -39,7 +38,8 @@ const CreateJob = () => {
 	const handleFinish = async (values) => {
 		const parseValues = {
 			...values,
-			idCompany: idCompany,
+			id: 0,
+			idCompany: parseInt(idCompany),
 			overview: values.overview.trim().split("\n").filter((item: string) => {
 				return item.trim().length != 0
 			}),

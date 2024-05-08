@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Job } from '../../interface/interface'
 import { Button, Col, Form, Input, Modal, Row, Select, SelectProps, Switch, Tooltip, message } from 'antd'
 import { getListTag } from '../../services/tagService'
@@ -73,7 +73,8 @@ const EditJob = ({ record, onReload }: EditJobProps) => {
 			responsibilities: values.responsibilities.trim().split("\n").filter((item: string) => {
 				return item.trim().length != 0
 			}),
-			updateAt: getTimeCurrent()
+			updateAt: getTimeCurrent(),
+			id: parseInt(values.id)
 		}
 		const response = await updateJob(record.id, parseValues)
 		if (response) {

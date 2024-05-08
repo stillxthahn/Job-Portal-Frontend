@@ -1,4 +1,3 @@
-import React from 'react'
 import { getCookie } from '../../../helpers/cookie'
 import { Navigate, Outlet } from 'react-router-dom'
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getCookie } from '../../helpers/cookie'
 import { City, Company } from '../../interface/interface'
 import { editCompany, getCompany } from '../../services/companyService'
@@ -21,8 +21,8 @@ const AdminInfoCompany = () => {
 	const [isEdit, setIsEdit] = useState<boolean>(false)
 	const [form] = Form.useForm()
 	const [mess, contextHolder] = message.useMessage();
-	const fetchAPI = async (idCompany: number | string) => {
-		const companyResponse = await getCompany(idCompany)
+	const fetchAPI = async (idCompany: string) => {
+		const companyResponse = await getCompany(parseInt(idCompany))
 		const cityResponse = await getListCity()
 		const tagsResponse = await getListTag()
 		if (companyResponse) {
@@ -45,7 +45,7 @@ const AdminInfoCompany = () => {
 	}
 
 	useEffect(() => {
-		fetchAPI(idCompany || "")
+		fetchAPI(idCompany)
 	}, [idCompany])
 	const handleFinish = async (values) => {
 		console.log("FIRST VAL", values)
@@ -55,7 +55,7 @@ const AdminInfoCompany = () => {
 			address: values.address.split("\n"),
 			reason: values.reason.split("\n"),
 			why: values.why.split("\n"),
-			imageUrl: values.imageUrl.split("\n")
+			imageUrl: values.imageUrl.split("\n"),
 		}
 		const response = await editCompany(idCompany || "", newValues)
 		if (response) {

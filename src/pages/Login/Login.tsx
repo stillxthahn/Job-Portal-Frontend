@@ -1,6 +1,4 @@
-import { Modal } from 'antd';
 import React, { useState } from 'react'
-import { FaRegCircleCheck } from 'react-icons/fa6';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../../services/companyService';
 import { setCookie } from '../../helpers/cookie';

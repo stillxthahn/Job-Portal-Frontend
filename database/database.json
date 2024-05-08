@@ -8,11 +8,11 @@
       "id": 1,
       "companyType": "IT Product",
       "companySize": "151-300 employees",
-      "country": "Thailand",
+      "country": "Singapore",
       "workingDays": "Monday - Friday",
       "overTimePolicy": "No OT",
       "phone": "0935324245",
-      "quantityPeople": 8,
+      "quantityPeople": 150,
       "description": [
         "Công ty TNHH KBTG Việt Nam,Established in 2016",
         "KASIKORN Business Technology Group (KBTG) is the technology arm of KASIKORNBANK (KBank), one of Thailand's leading commercial banks. This spin-off allows KBTG to fully focus on IT operations, supporting KBank and K-Group on its digital transformation journey and day-to-day business.",
@@ -1561,6 +1561,37 @@
       "status": true,
       "createAt": "04-25-2024 14:10:23",
       "updateAt": "04-24-2024 10:23:02"
+    },
+    {
+      "name": "xuan thanh",
+      "tags": [
+        "Ant Design",
+        "Javascript",
+        "Agile",
+        "Python",
+        "Java"
+      ],
+      "salary": "123123",
+      "city": [
+        "Ho Chi Minh"
+      ],
+      "location": "Hybrid",
+      "overview": [
+        "123123"
+      ],
+      "responsibilities": [
+        "1231"
+      ],
+      "experience": [
+        "123123131231",
+        "312313",
+        "123123"
+      ],
+      "status": true,
+      "id": 25,
+      "idCompany": 10,
+      "createAt": "05-08-2024 21:04:55",
+      "updateAt": "05-08-2024 21:04:55"
     }
   ],
   "cv": [

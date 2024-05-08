@@ -1,4 +1,3 @@
-import React from 'react'
 import { Company } from '../../interface/interface'
 import { Link } from 'react-router-dom'
 import { IoOpenOutline } from 'react-icons/io5'

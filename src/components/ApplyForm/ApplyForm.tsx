@@ -5,11 +5,11 @@ import { createCV } from '../../services/cvService'
 import { getTimeCurrent } from '../../helpers/getTime'
 import { Modal } from 'antd'
 import { FaRegCircleCheck } from 'react-icons/fa6'
-import { CV } from '../../interface/interface'
+import { CV, City } from '../../interface/interface'
 
 
 const ApplyForm = () => {
-	const [params, setParams] = useSearchParams()
+	const [params] = useSearchParams()
 	const jobName = params.get("name") || ""
 	const idJob = params.get("idJob") || ""
 	const idCompany = params.get("idCompany") || ""
@@ -47,7 +47,8 @@ const ApplyForm = () => {
 			idJob: parseInt(idJob),
 			idCompany: parseInt(idCompany),
 			createAt: getTimeCurrent(),
-			statusRead: false
+			statusRead: false,
+			id: 0
 		}
 		const response = await createCV(values);
 		if (response) {
