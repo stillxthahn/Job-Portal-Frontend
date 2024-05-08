@@ -56,7 +56,7 @@ const Header = () => {
                 <div className='px-4 sm:px-0 h-full sm:container mx-auto py-6 flex sm:font-bold items-center justify-between'>
                     <div className='flex items-center gap-20'>
                         <Link className="text-lg font-medium gap-2 items-center flex " to='/'>
-                            <img className="w-10 h-10" src="src/assets/logo.png" alt="logo" />
+                            <img className="w-10 h-10" src="../../../src/assets/logo.png" alt="logo" />
                             <span>Portal</span>
                         </Link>
                         <div className='text-lg font-semibold justify-self-start flex gap-12'>
