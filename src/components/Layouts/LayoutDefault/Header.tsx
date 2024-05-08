@@ -7,6 +7,7 @@ import { FaRegCircleCheck } from 'react-icons/fa6';
 import { useState } from 'react';
 import { CiBoxList, CiLogin, CiLogout } from 'react-icons/ci';
 import { PiNotePencilThin } from 'react-icons/pi';
+import logo from "../../../assets/logo.png"
 
 const Header = () => {
     const token = getCookie("token");
@@ -56,7 +57,7 @@ const Header = () => {
                 <div className='px-4 sm:px-0 h-full sm:container mx-auto py-6 flex sm:font-bold items-center justify-between'>
                     <div className='flex items-center gap-20'>
                         <Link className="text-lg font-medium gap-2 items-center flex " to='/'>
-                            <img className="w-10 h-10" src={"src/assets/logo.png"} alt="logo" />
+                            <img className="w-10 h-10" src={logo} alt="logo" />
                             <span>Portal</span>
                         </Link>
                         <div className='text-lg font-semibold justify-self-start flex gap-12'>
