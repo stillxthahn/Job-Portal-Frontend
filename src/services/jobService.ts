@@ -1,7 +1,7 @@
 import { Job } from "../interface/interface"
 import { del, get, post, put } from "../utilities/request"
 
-export const getJob = async (id: number | undefined) => {
+export const getJob = async (id: number | string) => {
     const query = `job/${id}` 
     const response = await get(query)
     return response

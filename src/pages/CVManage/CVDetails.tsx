@@ -10,12 +10,13 @@ const CVDetails = () => {
 	const navigate = useNavigate()
 	const [cv, setCV] = useState<CV>()
 	const [job, setJob] = useState<Job>()
-	console.log(params.id)
 	useEffect(() => {
 		const fetchAPI = async () => {
-			const CVResponse = await getCV(params.id || "")
+			const CVResponse = await getCV(params.id)
+			console.log("CVResponse", CVResponse)
 			if (CVResponse) {
-				const jobResponse = await getJob(CVResponse.idJob || "")
+				console.log(CVResponse.idJob)
+				const jobResponse = await getJob(CVResponse.idJob)
 				if (jobResponse) {
 					setCV(CVResponse)
 					setJob(jobResponse)
@@ -28,7 +29,6 @@ const CVDetails = () => {
 	if (!cv || !job) {
 		return null
 	}
-	console.log(cv)
 	return (
 		<>
 			<Button onClick={() => navigate(-1)}>Back</Button>

@@ -37,7 +37,7 @@ export const del = async (path: string) => {
     return result;
 }
 
-export const patch = async (path: string, options = {}) => {
+export const patch = async (path: string, options: object) => {
  const response = await fetch(API_DOMAIN + path, {
   method: "PATCH",
   headers: {
@@ -47,7 +47,9 @@ export const patch = async (path: string, options = {}) => {
   mode: "cors",
   body: JSON.stringify(options),
  });
- const result = await response.json();
+    const text = await response.text();
+    const result = text ? JSON.parse(text) : null; 
+    
  return result;
 };
 

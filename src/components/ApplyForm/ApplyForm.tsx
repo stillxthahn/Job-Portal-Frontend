@@ -5,7 +5,7 @@ import { createCV } from '../../services/cvService'
 import { getTimeCurrent } from '../../helpers/getTime'
 import { Modal } from 'antd'
 import { FaRegCircleCheck } from 'react-icons/fa6'
-import { CV, City } from '../../interface/interface'
+import { City } from '../../interface/interface'
 
 
 const ApplyForm = () => {
@@ -29,15 +29,7 @@ const ApplyForm = () => {
 
 	const handleSumbit = async (event: React.BaseSyntheticEvent) => {
 		event.preventDefault()
-		// const target = event.target as typeof event.target & {
-		// 	name: { value: string };
-		// 	phone: { value: string };
-		// 	email: { value: string };
-		// 	city: { value: string };
-		// 	description: { value: string };
-		// 	linkProject: { value: string };
-		// };
-		const values: CV = {
+		const values = {
 			name: event.currentTarget.name.value,
 			phone: event.currentTarget.phone.value,
 			email: event.currentTarget.email.value,
@@ -48,7 +40,7 @@ const ApplyForm = () => {
 			idCompany: parseInt(idCompany),
 			createAt: getTimeCurrent(),
 			statusRead: false,
-			id: 0
+			id: Date.now()
 		}
 		const response = await createCV(values);
 		if (response) {
