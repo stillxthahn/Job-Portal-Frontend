@@ -145,7 +145,7 @@ const InfoEmployer = () => {
                         </div>
                         <div className='grid grid-cols-3 gap-2 mb-6'>
                             {company?.imageUrl.map((url, index) => (
-                                <div key={index} className='overflow-hidden rounded-md'><img src={url} alt="" /></div>
+                                <div key={index} className='overflow-hidden rounded-md'><img className='w-full h-full' src={url} alt="" /></div>
                             ))}
                         </div>
                         <div className='list-disc font-medium text-gray-900 mt-4 mb-6 text-base flex gap-2 flex-wrap'>
