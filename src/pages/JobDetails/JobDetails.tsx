@@ -17,7 +17,7 @@ const JobDetails = () => {
 	useEffect(() => {
 		const fetchAPI = async () => {
 			const jobRes = await getJob(jobId)
-			const others = await getJobList(1, 7)
+			const others = await getJobList()
 			if (jobRes) {
 				const companyRes = await getCompany(jobRes.idCompany)
 				if (companyRes) {

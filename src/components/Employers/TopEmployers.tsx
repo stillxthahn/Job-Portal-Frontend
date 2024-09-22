@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getCompany } from '../../services/companyService'
 import EmployerCard from './EmployerCard'
-import { getJob } from '../../services/jobService'
+import { getJobList } from '../../services/jobService'
 import { Company, CompanyWithJobsCount, Job } from '../../interface/interface'
 
 
@@ -11,7 +11,7 @@ const TopEmployers = () => {
     useEffect(() => {
         const fetchAPI = async () => {
             const company = await getCompany();
-            const jobs = await getJob();
+            const jobs = await getJobList();
             const dataFinal = company.map((item: Company) => {
                 let count = 0;
                 jobs.map((job: Job) => {

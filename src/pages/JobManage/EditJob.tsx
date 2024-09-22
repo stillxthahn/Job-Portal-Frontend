@@ -23,12 +23,13 @@ const EditJob = ({ record, onReload }: EditJobProps) => {
 	const [form] = Form.useForm()
 	const [tags, setTags] = useState()
 	const [city, setCity] = useState()
-	const parseRecord = {
+	const parseRecord = record && {
 		...record,
 		overview: record.overview.join('\n'),
 		experience: record.experience.join('\n'),
 		responsibilities: record.responsibilities.join('\n')
 	}
+
 	const [mess, contextHolder] = message.useMessage();
 	const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
 	const showModal = () => {
@@ -63,6 +64,7 @@ const EditJob = ({ record, onReload }: EditJobProps) => {
 	}, [])
 	const handleFinish = async (values) => {
 		const parseValues = {
+			...record,
 			...values,
 			overview: values.overview.trim().split("\n").filter((item: string) => {
 				return item.trim().length != 0
@@ -74,8 +76,9 @@ const EditJob = ({ record, onReload }: EditJobProps) => {
 				return item.trim().length != 0
 			}),
 			updateAt: getTimeCurrent(),
-			id: parseInt(values.id)
+			id: record.id
 		}
+
 		const response = await updateJob(record.id, parseValues)
 		if (response) {
 			setIsModalOpen(false)

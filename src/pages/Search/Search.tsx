@@ -1,7 +1,7 @@
 import { MouseEventHandler, useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import SearchForm from '../../components/Search/SearchForm';
-import { getJob, getJobsByCompanyId } from '../../services/jobService';
+import { getJobList, getJobsByCompanyId } from '../../services/jobService';
 import { Company, Job } from '../../interface/interface';
 import { getCompany } from '../../services/companyService';
 import { MdOutlineLocationOn } from 'react-icons/md';
@@ -22,7 +22,7 @@ const Search = () => {
 
     useEffect(() => {
         const fetchAPI = async () => {
-            const response = await getJob()
+            const response = await getJobList()
             if (response) {
                 const newData = response.filter((item: Job) => {
                     const city = citySearch ? item.city?.includes(citySearch) : true;

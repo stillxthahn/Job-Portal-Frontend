@@ -2,7 +2,7 @@ import { CV } from "../interface/interface";
 import { del, get, patch, post } from "../utilities/request";
 
 export const getCVByIdCompany = async (id: number | undefined) => {
-  const result = await get(`cv?idCompany=${id}`)
+  const result = await get(`cv/idCompany=${id}`)
   return result
 }
 
