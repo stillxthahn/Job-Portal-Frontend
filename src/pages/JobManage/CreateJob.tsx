@@ -38,15 +38,15 @@ const CreateJob = () => {
 	const handleFinish = async (values) => {
 		const parseValues = {
 			...values,
-			id: 0,
+			id: Date.now(),
 			idCompany: parseInt(idCompany),
-			overview: values.overview.trim().split("\n").filter((item: string) => {
+			overview: !values.overview ? [] : values.overview.trim().split("\n").filter((item: string) => {
 				return item.trim().length != 0
 			}),
-			experience: values.experience.trim().split("\n").filter((item: string) => {
+			experience: !values.experience ? [] : values.experience.trim().split("\n").filter((item: string) => {
 				return item.trim().length != 0
 			}),
-			responsibilities: values.responsibilities.trim().split("\n").filter((item: string) => {
+			responsibilities: !values.responsibilities ? [] : values.responsibilities.trim().split("\n").filter((item: string) => {
 				return item.trim().length != 0
 			}),
 			createAt: getTimeCurrent(),

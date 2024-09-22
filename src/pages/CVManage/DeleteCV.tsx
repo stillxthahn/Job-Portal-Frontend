@@ -11,6 +11,7 @@ const DeleteCV = ({ record, onReload }: RecordProps) => {
 	const handleDelete = async () => {
 		const response = await deleteCV(record.id)
 		if (response) {
+			console.log("DELETE")
 			onReload()
 		}
 	}

@@ -22,14 +22,14 @@ const Register = () => {
         const checkEmail = await checkExist("email", email)
         const checkPhone = await checkExist("phone", phone)
         console.log(checkEmail)
-        if (checkEmail.length !== 0 || checkPhone.length !== 0) {
-            if (checkEmail.length !== 0) {
+        if (!checkEmail.error || !checkPhone.error) {
+            if (!checkEmail.error) {
                 setValidEmail(false)
             }
             else {
                 setValidEmail(true)
             }
-            if (checkPhone.length !== 0) {
+            if (!checkPhone.error) {
                 setValidPhone(false)
             }
             else {

@@ -11,11 +11,14 @@ import { ColumnsType } from 'antd/es/table'
 
 const JobTable = () => {
 	const idCompany = getCookie("id")
-	const [jobs, setJobs] = useState<Job[]>()
+	const [jobs, setJobs] = useState()
 	const fetchAPI = async (idCompany) => {
 		const response = await getJobsByCompanyId(parseInt(idCompany))
-		if (response) {
+		if (!response.error) {
 			setJobs(response)
+		}
+		else {
+			setJobs(undefined)
 		}
 	}
 	useEffect(() => {
@@ -85,6 +88,7 @@ const JobTable = () => {
 			)
 		}
 	]
+
 	return (
 		<>
 			<div className='mt-4'>

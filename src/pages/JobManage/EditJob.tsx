@@ -25,9 +25,9 @@ const EditJob = ({ record, onReload }: EditJobProps) => {
 	const [city, setCity] = useState()
 	const parseRecord = record && {
 		...record,
-		overview: record.overview.join('\n'),
-		experience: record.experience.join('\n'),
-		responsibilities: record.responsibilities.join('\n')
+		overview: !record.overview ? "" : record.overview.join('\n'),
+		experience: !record.experience ? "" : record.experience.join('\n'),
+		responsibilities: !record.responsibilities ? "" : record.responsibilities.join('\n')
 	}
 
 	const [mess, contextHolder] = message.useMessage();

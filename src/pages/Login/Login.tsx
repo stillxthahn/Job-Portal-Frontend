@@ -18,15 +18,14 @@ const Login = () => {
         const password = event.currentTarget.password.value
         console.log(password)
         const response = await login(email, password)
-        console.log("RES", response)
-        if (response.length > 0) {
+        if (!response.error) {
             setLoading(true)
             setTimeout(() => {
                 const time = 1;
-                setCookie("id", response[0].id, time);
-                setCookie("companyName", response[0].companyName, time);
-                setCookie("email", response[0].email, time);
-                setCookie("token", response[0].token, time);
+                setCookie("id", response.id, time);
+                setCookie("companyName", response.companyName, time);
+                setCookie("email", response.email, time);
+                setCookie("token", response.token, time);
                 dispatch(checkAuth(true));
                 setLoading(false)
                 navigate("/")

@@ -25,7 +25,7 @@ const DashBoard = () => {
 			const jobResponse = await getJobsByCompanyId(parseInt(idCompany))
 			const CVResponse = await getCVByIdCompany(parseInt(idCompany))
 			const companyResponse = await getCompany(parseInt(idCompany))
-			if (jobResponse) {
+			if (!jobResponse.error) {
 				const obj = {
 					total: 0,
 					statusTrue: 0,
@@ -37,7 +37,7 @@ const DashBoard = () => {
 				})
 				setJob(obj)
 			}
-			if (CVResponse) {
+			if (!CVResponse.error) {
 				const obj = {
 					total: 0,
 					readTrue: 0,
@@ -49,13 +49,13 @@ const DashBoard = () => {
 				})
 				setCV(obj)
 			}
-			if (companyResponse) {
+			if (!companyResponse.error) {
 				setCompany(companyResponse)
 			}
 		}
 		fetchAPI()
 	}, [idCompany])
-	console.log(job, CV, company)
+	console.log("DATA", job, CV, company)
 	return (
 		<>
 			<div className='text-2xl font-bold'>General</div>

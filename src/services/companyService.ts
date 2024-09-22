@@ -7,13 +7,15 @@ export const getCompany = async (id? : number | string) => {
 }
 
 export const login = async (email: string, password: string) => {
-    const response = await get(`company?email=${email}&password=${password}`)
+    const response = await get(`company/login/email=${email}&password=${password}`)
     return response
+    // /company/login/email=:email&password=:password
 }
 
 export const checkExist = async (attribute: string, value: string) => {
-    const response = await get(`company?${attribute}=${value}`)
+    const response = await get(`company/check/${attribute}/${value}`)
     return response
+    // /company/check/:attribute/:value
 }
 
 export const createCompany = async (value) => {

@@ -41,6 +41,7 @@ const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 			)
 		}
 	}
+	console.log(job)
 	return (
 
 		<div className={`root`}>

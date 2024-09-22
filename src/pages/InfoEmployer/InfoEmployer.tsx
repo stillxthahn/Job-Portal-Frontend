@@ -23,7 +23,7 @@ const InfoEmployer = () => {
                 setCompany(companyRes)
                 setActiveMap(`https://www.google.com/maps/embed/v1/place?key=${mapKey}&q=${companyRes?.address[0]}`)
             }
-            if (jobsRes) {
+            if (!jobsRes.error) {
                 setJobs(jobsRes)
             }
         }

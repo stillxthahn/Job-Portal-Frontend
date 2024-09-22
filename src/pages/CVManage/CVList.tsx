@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { CV, Job } from '../../interface/interface'
+import { CV } from '../../interface/interface'
 import { Link } from 'react-router-dom'
 import { getCVByIdCompany } from '../../services/cvService'
 import { getJobsByCompanyId } from '../../services/jobService'
@@ -17,45 +17,42 @@ export interface CVWithJobName extends CV {
 
 const CVList = () => {
 	const idCompany = getCookie("id")
-	const [cvs, setCVs] = useState<CV[]>()
-	const [job, setJob] = useState<Job[]>()
-	const [data, setData] = useState<CVWithJobName[]>()
-	const fectAPI = async (idCompany: string) => {
+	const [cvs, setCVs] = useState()
+	const [job, setJob] = useState()
+	const [data, setData] = useState()
+	const fectAPI = async (idCompany) => {
 		const CVResponse = await getCVByIdCompany(parseInt(idCompany))
 		const jobResponse = await getJobsByCompanyId(parseInt(idCompany))
-		if (CVResponse) {
+		if (!CVResponse.error) {
 			setCVs(CVResponse)
-		}
-		if (jobResponse) {
 			setJob(jobResponse)
-		}
-	}
-	const combineData = (cvs: CV[], job: Job[]) => {
-		if (cvs?.length && job?.length) {
-			const parseData = cvs.map((item) => {
-				const cvJob = job.find((it) => {
-					return it.id === item.idJob
-				})
-				return {
-					...item,
-					jobName: cvJob?.name || ""
+			setData((prevData) => {
+				if (CVResponse.length && jobResponse.length) {
+					const parsedData = CVResponse.map((item) => {
+						const cvJob = jobResponse.find((it) => it.id === item.idJob);
+						return {
+							...item,
+							jobName: cvJob?.name || ""
+						};
+					});
+					return parsedData;
 				}
-			})
-			setData(parseData)
+				return prevData;
+			});
+		}
+		else {
+			setCVs(undefined)
+			setJob(undefined)
+			setData(undefined)
 		}
 	}
+
 	useEffect(() => {
 		fectAPI(idCompany)
 	}, [idCompany])
-	useEffect(() => {
-		if (cvs && job) {
-			combineData(cvs, job)
-		}
-	}, [cvs, job])
-	console.log(idCompany)
-	console.log(cvs)
 
-	console.log(data)
+	console.log(cvs)
+	console.log(job)
 
 	const columns: ColumnsType<CVWithJobName> = [
 		{
@@ -113,17 +110,12 @@ const CVList = () => {
 		},
 	]
 	const handleReload = () => {
-		fectAPI(idCompany || "")
-		if (cvs && job) {
-			combineData(cvs, job)
-		}
+		fectAPI(idCompany)
 	}
 	console.log(data)
 	return (
 		<div className='mt-4'>
-			{data && (
-				<Table dataSource={data} columns={columns} rowKey="id"></Table>
-			)}
+			<Table dataSource={data} columns={columns} rowKey="id"></Table>
 		</div>
 	)
 }

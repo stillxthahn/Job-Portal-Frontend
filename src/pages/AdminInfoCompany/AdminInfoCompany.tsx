@@ -50,6 +50,7 @@ const AdminInfoCompany = () => {
 	const handleFinish = async (values) => {
 		console.log("FIRST VAL", values)
 		const newValues = {
+			...company,
 			...values,
 			description: values.description.split("\n"),
 			address: values.address.split("\n"),
