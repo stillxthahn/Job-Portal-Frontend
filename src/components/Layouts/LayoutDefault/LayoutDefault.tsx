@@ -9,7 +9,7 @@ const LayoutDefault = () => {
     console.log(authen)
     return (
         <>
-            <div className="mx-auto min-h-screen">
+            <div className="min-h-screen ">
                 <Header />
                 <div>
                     <Outlet />

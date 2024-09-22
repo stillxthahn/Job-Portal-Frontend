@@ -7,11 +7,11 @@ import { HiOutlineMail } from 'react-icons/hi';
 const Footer = () => {
     return (
         <footer>
-            <div className='bg-gradient-to-r from-slate-900 to-red-900 pt-14 shrink-0 text-gray-400 '>
-                <div className='container sm:px-40 2xl:px-20 font-bold  pb-14 flex justify-between'>
-                    <div className='flex flex-col sm:gap-8'>
-                        <div>
-                            <Link className="text-2xl text-gray-100" to='/'>PORTAL</Link>
+            <div className='bg-gradient-to-r from-slate-900 to-red-900 pt-8 md:pt-14 shrink-0 text-gray-400 '>
+                <div className='  2xl:px-20 font-bold  pb-8 flex md:pb-14 sm:gap-10 justify-center items-center gap-12 md:gap-8  sm:flex-wrap  md:justify-between sm:px-4'>
+                    <div className='flex sm:flex-col sm:items-center '>
+                        <div className=' sm:pb-4'>
+                            <Link className="hidden sm:flex text-2xl text-gray-100" to='/'>PORTAL</Link>
                         </div>
                         <div className='text-xl flex gap-4'>
                             <Link to='/login'>
@@ -32,19 +32,19 @@ const Footer = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-2 text-sm font-semibold'>
+                    <div className='hidden md:flex flex-col gap-2 text-sm font-semibold'>
                         <div className='text-base text-gray-100 pb-2'>About Us</div>
                         <Link to='/'>Home</Link>
                         <Link to='/'>About Us</Link>
                         <Link to='/'>All Jobs</Link>
                         <Link to='/'>FAQ</Link>
                     </div>
-                    <div className='flex flex-col gap-2 text-sm font-semibold'>
+                    <div className='hidden md:flex flex-col gap-2 text-sm font-semibold'>
                         <div className='text-base text-gray-100 pb-2'>Campaign</div>
                         <Link to='/'>IT Story</Link>
                         <Link to='/'>Writing contest</Link>
                     </div>
-                    <div className='flex flex-col gap-2 text-sm font-semibold'>
+                    <div className='hidden md:flex flex-col gap-2 text-sm font-semibold'>
                         <div className='text-base text-gray-100 pb-2'>Terms & Conditions</div>
                         <Link to='/'>Privacy Policy</Link>
                         <Link to='/'>Operating Regulation</Link>

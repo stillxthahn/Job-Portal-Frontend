@@ -53,49 +53,51 @@ const Header = () => {
                     </div>
                 </div>
             </Modal>
-            <div className=' fixed z-10 h-[66px] top-0 left-0 right-0 bg-gradient-to-r from-slate-900 to-red-900 text-gray-100'>
-                <div className='px-4 sm:px-0 h-full sm:container mx-auto py-6 flex sm:font-bold items-center justify-between'>
-                    <div className='flex items-center gap-20'>
-                        <Link className="text-lg font-medium gap-2 items-center flex " to='/'>
-                            <img className="w-10 h-10" src={logo} alt="logo" />
-                            <span>Portal</span>
-                        </Link>
-                        <div className='text-lg font-semibold justify-self-start flex gap-12'>
-                            <Link to='/' className='hover:text-red-500'>
-                                <span>Home</span>
+            <div className='w-full'>
+                <div className='w-full fixed z-10 h-[66px]  top-0 left-0 right-0 bg-gradient-to-r from-slate-900 to-red-900 text-gray-100 text-sm sm:text-lg m-0'>
+                    <div className='w-full px-4 h-full container py-6 flex sm:font-bold items-center justify-between  '>
+                        <div className='flex items-center gap-8 md:gap-20 '>
+                            <Link className=" font-medium gap-2 items-center flex " to='/'>
+                                <img className="w-10 h-10" src={logo} alt="logo" />
+                                <span>Portal</span>
                             </Link>
-                            <Link to='/search?city=&keyword=' className=' hover:text-red-500'>
-                                <span>Top jobs</span>
-                            </Link>
-                        </div>
-                    </div>
-                    {token === null ? (
-                        <div className='font-semibold flex gap-12'>
-                            <Link to='/login' className='flex items-center gap-1 hover:text-red-500'>
-                                <CiLogin size={25} className='' />
-                                <span>Login</span>
-                            </Link>
-                            <Link to='/register' className='flex items-center gap-1 hover:text-red-500'>
-                                <PiNotePencilThin size={25} />
-                                <span>Register</span>
-                            </Link>
-                        </div>
-                    ) : (
-                        <div className='font-semibold flex gap-12'>
-                            <Link to='/admin' className='flex items-center gap-1 hover:text-red-500'>
-                                <CiBoxList size={25} />
-                                <span>Manage</span>
-
-                            </Link>
-                            <div className='cursor-pointer font-semibold flex items-center gap-1 hover:text-red-500' onClick={handleLogOut}>
-                                <CiLogout size={25} />
-                                <span>Log out</span>
+                            <div className='hidden font-semibold sm:flex gap-8  sm:justify-self-start sm:items-center sm:gap-12'>
+                                <Link to='/' className='hover:text-red-500'>
+                                    <span>Home</span>
+                                </Link>
+                                <Link to='/search?city=&keyword=' className=' hover:text-red-500'>
+                                    <span>Top jobs</span>
+                                </Link>
                             </div>
                         </div>
-                    )}
-                </div>
-                <div className='pt-[0.1px] bg-gray-600'></div>
-            </div >
+                        {token === null ? (
+                            <div className='font-semibold flex gap-12'>
+                                <Link to='/login' className='flex items-center gap-1 hover:text-red-500'>
+                                    <CiLogin size={25} className='' />
+                                    <span>Login</span>
+                                </Link>
+                                <Link to='/register' className='flex items-center gap-1 hover:text-red-500'>
+                                    <PiNotePencilThin size={25} />
+                                    <span>Register</span>
+                                </Link>
+                            </div>
+                        ) : (
+                            <div className='font-semibold flex gap-12'>
+                                <Link to='/admin' className='flex items-center gap-1 hover:text-red-500'>
+                                    <CiBoxList size={25} />
+                                    <span>Manage</span>
+
+                                </Link>
+                                <div className='cursor-pointer font-semibold flex items-center gap-1 hover:text-red-500' onClick={handleLogOut}>
+                                    <CiLogout size={25} />
+                                    <span>Log out</span>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                    <div className='pt-[0.1px] bg-gray-600'></div>
+                </div >
+            </div>
         </>
     )
 }

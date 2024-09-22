@@ -42,7 +42,7 @@ const InfoEmployer = () => {
             {/* COMPANY */}
             <div className='bg-gradient-to-r from-slate-900 to-red-900 text-gray-50 '>
                 <div className='container '>
-                    <div className='hidden sm:flex container py-8'>
+                    <div className='flex container py-8'>
                         <div className='flex items-center justify-center gap-7'>
                             <div className='w-[140px] sm:w-[160px] bg-white rounded-xl aspect-square overflow-hidden flex justify-center items-center'><img className='' src={company?.logoUrl} alt="" /></div>
                             <div className='self-start flex flex-col gap-4'>
@@ -69,7 +69,7 @@ const InfoEmployer = () => {
 
             {/* MAIN */}
             <div className='flex container my-10 gap-6'>
-                <div className='flex flex-wrap gap-6 basis-2/3'>
+                <div className='flex w-full flex-wrap gap-6 basis-2/3'>
                     <div className='w-full py-2 px-8 bg-white rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
                         <div>
                             <div className='font-bold text-2xl py-4'>General information</div>
@@ -163,7 +163,7 @@ const InfoEmployer = () => {
                             <div className='mt-2 border-[0.25px] border-dashed'></div>
                         </div>
                         <div className='flex items-start mt-6 gap-4'>
-                            <div className='flex flex-wrap gap-5 basis-1/3 overflow-auto h-full font-medium'>
+                            <div className='flex flex-wrap gap-5 sm:basis-1/3 overflow-auto h-full font-medium'>
                                 {company?.address.map((item, index) => (
                                     <div key={index} onClick={handleClick(index)} className={`flex  border-2 rounded-lg py-4 px-2 gap-4 justify-start items-start cursor-pointer
                                         ${activeElement === index && 'border-red-500'}`}>
@@ -172,14 +172,14 @@ const InfoEmployer = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className='basis-2/3'>
+                            <div className='hidden sm:basis-2/3'>
                                 <iframe loading="lazy" className="w-full aspect-square" src={activeMap}></iframe>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div className='basis-1/3 sticky self-start top-[100px]'>
+                <div className='hidden sm:basis-1/3 sticky self-start top-[100px]'>
                     <div className='font-bold text-2xl mb-8'>{jobs?.length} {jobs?.length === 1 || jobs?.length === 0 ? 'job' : 'jobs'} available</div>
 
                     <div className="overflow-auto flex gap-6 flex-wrap h-[70vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
