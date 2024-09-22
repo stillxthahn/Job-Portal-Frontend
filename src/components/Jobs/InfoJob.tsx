@@ -60,9 +60,9 @@ const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 				{/* ApplyForm */}
 			</div>
 			<div className={`${isPage ? '' : 'overflow-auto h-[55vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full'} flex flex-wrap w-full px-6 py-6 bg-white rounded-b-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]`}>
-				<div className='w-full grid grid-cols-3 gap-2 '>
+				<div className='w-full grid grid-cols-3 gap-2'>
 					{company?.imageUrl.map((url, index) => (
-						<div key={index} className='overflow-hidden rounded-md'><img src={url} alt="" /></div>
+						<div key={index} className='overflow-hidden rounded-md'><img className='w-full h-full' src={url} alt="" /></div>
 					))}
 				</div>
 				<div className='flex gap-2 mt-6  items-center font-semibold text-gray-600 -ml-1'>

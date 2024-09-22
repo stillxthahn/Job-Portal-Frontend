@@ -14,6 +14,7 @@ export default {
     lg: "1024px",
     xl: "1280px",
     xxl: "1800px",
+    "2xl": "1800px",
    },
   },
  },
