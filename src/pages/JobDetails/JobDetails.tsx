@@ -36,14 +36,14 @@ const JobDetails = () => {
 	}
 	return (
 		<>
-			<div className="container pb-20  gap-6 mt-[88px]">
+			<div className="container pb-20  gap-6 mt-[88px] px-4">
 				{/* first section */}
-				<div className=" flex  w-full gap-6 ">
-					<div className="flex flex-wrap basis-2/3">
+				<div className=" flex  w-full gap-6">
+					<div className="flex flex-wrap md:basis-2/3">
 						{/* // <InfoJob job={job} company={company} isPage={true}></InfoJob> */}
 						<InfoJob job={job} company={company} isPage={true}></InfoJob>
 					</div>
-					<div className="basis-1/3 sticky top-[66px] self-start">
+					<div className="hidden md:block md:basis-1/3 sticky top-[66px] self-start">
 						<CompanyCard company={company}></CompanyCard>
 					</div>
 				</div>
@@ -51,9 +51,9 @@ const JobDetails = () => {
 				{/* second section */}
 				<div className="font-bold mt-10 text-2xl w-full">More jobs for you</div>
 
-				<div className="w-full mt-8 grid grid-cols-3 gap-8">
+				<div className="overflow-x-scroll w-full mt-8 md:grid md:grid-cols-3 gap-8 flex">
 					{otherJobs && otherJobs.map((job) => (
-						<Link key={job.id} to={`/job/${job.id}`}>
+						<Link key={job.id} to={`/job/${job.id}`} className='flex-shrink-0 w-10/12 md:w-full'>
 							<JobCard props={job} selected={false} />
 						</Link>
 

@@ -189,7 +189,7 @@ const InfoEmployer = () => {
 
                     <div className="md:overflow-auto overflow-x-scroll flex md:w-full  gap-6 md:flex-wrap md:h-[70vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                         {jobs && jobs.map((job, index) => (
-                            <Link key={index} to={`/job/${job.id}`} className='flex-shrink-0 w-80 md:w-full'>
+                            <Link key={index} to={`/job/${job.id}`} className='flex-shrink-0 w-10/12 md:w-full'>
                                 <JobCard props={job} selected={false} />
                             </Link>
 

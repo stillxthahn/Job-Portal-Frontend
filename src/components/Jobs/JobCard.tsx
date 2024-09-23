@@ -55,7 +55,7 @@ const JobCard = ({ props, selected }: JobCardProps) => {
             </div>
             <div className="flex gap-2 mt-3 w-full ">
                 {job.tags.map((tag, index) => (
-                    <div key={index} className="px-3 py-1 text-sm bg-white flex border border-1 rounded-2xl">{tag}</div>
+                    <div key={index} className="px-2 py-1 text-sm bg-white flex border border-1 rounded-2xl">{tag}</div>
                 ))}
             </div>
         </div>
