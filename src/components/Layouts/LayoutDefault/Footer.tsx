@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer>
             <div className='bg-gradient-to-r from-slate-900 to-red-900 pt-8 md:pt-14 shrink-0 text-gray-400 '>
-                <div className='  2xl:px-20 font-bold  pb-8 flex md:pb-14 sm:gap-10 justify-center items-center gap-12 md:gap-8  sm:flex-wrap  md:justify-between sm:px-4'>
+                <div className='  2xl:px-20 font-bold  pb-8 flex md:pb-14 sm:gap-10 justify-center items-center flex-col sm:flex-row md:gap-8  sm:flex-wrap md:items-start   md:justify-between px-12 '>
                     <div className='flex sm:flex-col sm:items-center '>
                         <div className=' sm:pb-4'>
                             <Link className="hidden sm:flex text-2xl text-gray-100" to='/'>PORTAL</Link>
@@ -51,9 +51,9 @@ const Footer = () => {
                         <Link to='/'>Complant Handling</Link>
                         <Link to='/'>Press</Link>
                     </div>
-                    <div className='flex flex-col gap-2 text-sm font-semibold'>
-                        <div className='text-base text-gray-100 pb-2'>Contact us at:</div>
-                        <a href='tel:0985600072' className='flex items-center gap-2'>
+                    <div className='flex flex-col gap-2 text-sm font-semibold mt-6 md:mt-0'>
+                        <div className='hidden md:flex text-base text-gray-100 pb-2'>Contact us at:</div>
+                        <a href='tel:0985600072' className='flex flex-wrap justify-center md:justify-normal items-center gap-2'>
                             <FiPhone />
                             <span>Phone: 0985 600 072</span></a>
                         <a href='https://www.gmail.com' target='_blank' className='flex items-center gap-2'>
