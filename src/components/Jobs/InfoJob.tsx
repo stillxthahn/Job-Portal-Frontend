@@ -42,14 +42,19 @@ const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 		}
 	}
 	console.log(job)
+	if (!job || !company) {
+		return (
+			<div>asd</div>
+		)
+	}
 	return (
 
 		<div className={`root`}>
 			{/* apply */}
 			<div ref={container.ref} className={`pt-5 flex flex-wrap w-full px-6  pb-3 bg-white rounded-t-lg shadow-[0_-12px_30px_rgb(0,0,0,0.12)] sticky self-start top-[66px]`}>
 				<div onClick={handleJob} className={`${isPage ? "" : "cursor-pointer"} max-w-[680px] md:text-2xl text-lg font-bold`}>{job?.name}</div>
-				<div onClick={handleCompany} className={`${container.isSticky ? 'md:mt-6 mt-2' : 'mt-1.5'} ${isPage ? "" : "cursor-pointer"} text-md w-full font-semibold text-gray-800 transition-all`}>{company?.companyName}</div>
-				<div className={`${container.isSticky ? 'mt-2' : 'mt-1.5'} w-full flex items-center gap-2 font-bold text-gray-600 transition-all`}>
+				<div onClick={handleCompany} className={`${container.isSticky ? 'md:mt-6 mt-2' : 'mt-1.5'} ${isPage ? "" : "cursor-pointer"} hidden md:block text-md w-full font-semibold text-gray-800 transition-all`}>{company?.companyName}</div>
+				<div className={`${container.isSticky ? 'mt-2' : 'mt-1.5'} hidden md:block w-full  items-center gap-2 font-bold text-gray-600 transition-all`}>
 					<LuCircleDollarSign size={25} color="gray" />
 					<div>Up to {job?.salary}$</div>
 				</div>
@@ -75,12 +80,17 @@ const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 						{job?.location}
 					</div>
 				</div>
+
 				<div className='flex gap-2 w-full -ml-1 text-gray-600 items-center font-semibold mt-3'>
 					<IoMdTime color="gray" size={23} />
 					<div className='flex gap-2'>
 						<span>Posted</span>
 						{timeAgo(job?.createAt || "")}
 					</div>
+				</div>
+				<div className={`md:hidden flex gap-2.5 w-full -ml-1 text-gray-600 items-center font-semibold mt-3`}>
+					<LuCircleDollarSign size={23} color="gray" />
+					<div>Up to {job?.salary}$</div>
 				</div>
 				<div className='flex gap-5 w-full -ml-1 text-gray-800 text-sm items-center mt-4 font-semibold'>
 					<div>Skills:</div>

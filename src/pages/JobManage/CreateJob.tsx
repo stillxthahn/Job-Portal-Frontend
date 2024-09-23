@@ -91,75 +91,79 @@ const CreateJob = () => {
 				layout='vertical'
 				form={form}
 			>
-				<Row gutter={20}>
-					<Col span={24}>
-						<Form.Item label="Job name" name="name" rules={rules}>
-							<Input />
-						</Form.Item>
-					</Col>
-					<Col span={16}>
-						<Form.Item label="Tags" name="tags" rules={rules}>
-							<Select
-								mode="multiple"
-								allowClear
-								style={{ width: '100%' }}
-								placeholder="Please select"
-								options={tags}
-							/>
-						</Form.Item>
-					</Col>
-					<Col span={8}>
-						<Form.Item label="Salary" name="salary" rules={rules}>
-							<Input addonAfter="$" />
-						</Form.Item>
-					</Col>
-					<Col span={16}>
-						<Form.Item label="City" name="city" rules={rules}>
-							<Select
-								mode="multiple"
-								allowClear
-								style={{ width: '100%' }}
-								placeholder="Please select"
-								options={city}
-							/>
-						</Form.Item>
-					</Col>
-					<Col span={8}>
-						<Form.Item label="Location" name="location" rules={rules}>
-							<Select
-								allowClear
-								style={{ width: '100%' }}
-								placeholder="Please select"
-								options={locationOptions}
-							/>
-						</Form.Item>
-					</Col>
-					<Col span={24}>
-						<Form.Item label="Overview" name="overview">
-							<TextArea rows={12} />
-						</Form.Item>
-					</Col>
-					<Col span={24}>
-						<Form.Item label="Responsibility" name="responsibilities">
-							<TextArea rows={12} />
-						</Form.Item>
-					</Col>
-					<Col span={24}>
-						<Form.Item label="Experience" name="experience">
-							<TextArea rows={12} />
-						</Form.Item>
-					</Col>
-					<Col span={24}>
-						<Form.Item label="Status" valuePropName='checked' name="status">
-							<Switch checkedChildren="On" unCheckedChildren="Off" />
-						</Form.Item>
-					</Col>
-					<Col span={24}>
-						<Form.Item >
-							<Button type="primary" htmlType='submit'>Update</Button>
-						</Form.Item>
-					</Col>
-				</Row>
+				<div className='w-full'>
+					<div className='overflow-x-scroll flex w-98'>
+						<Row gutter={20}>
+							<Col span={24}>
+								<Form.Item label="Job name" name="name" rules={rules}>
+									<Input />
+								</Form.Item>
+							</Col>
+							<Col span={16}>
+								<Form.Item label="Tags" name="tags" rules={rules}>
+									<Select
+										mode="multiple"
+										allowClear
+										style={{ width: '100%' }}
+										placeholder="Please select"
+										options={tags}
+									/>
+								</Form.Item>
+							</Col>
+							<Col span={8}>
+								<Form.Item label="Salary" name="salary" rules={rules}>
+									<Input addonAfter="$" />
+								</Form.Item>
+							</Col>
+							<Col span={16}>
+								<Form.Item label="City" name="city" rules={rules}>
+									<Select
+										mode="multiple"
+										allowClear
+										style={{ width: '100%' }}
+										placeholder="Please select"
+										options={city}
+									/>
+								</Form.Item>
+							</Col>
+							<Col span={8}>
+								<Form.Item label="Location" name="location" rules={rules}>
+									<Select
+										allowClear
+										style={{ width: '100%' }}
+										placeholder="Please select"
+										options={locationOptions}
+									/>
+								</Form.Item>
+							</Col>
+							<Col span={24}>
+								<Form.Item label="Overview" name="overview">
+									<TextArea rows={12} />
+								</Form.Item>
+							</Col>
+							<Col span={24}>
+								<Form.Item label="Responsibility" name="responsibilities">
+									<TextArea rows={12} />
+								</Form.Item>
+							</Col>
+							<Col span={24}>
+								<Form.Item label="Experience" name="experience">
+									<TextArea rows={12} />
+								</Form.Item>
+							</Col>
+							<Col span={24}>
+								<Form.Item label="Status" valuePropName='checked' name="status">
+									<Switch checkedChildren="On" unCheckedChildren="Off" />
+								</Form.Item>
+							</Col>
+							<Col span={24}>
+								<Form.Item >
+									<Button type="primary" htmlType='submit'>Update</Button>
+								</Form.Item>
+							</Col>
+						</Row>
+					</div>
+				</div>
 			</Form>
 		</>
 	)

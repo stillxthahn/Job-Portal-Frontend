@@ -38,7 +38,7 @@ const SearchForm = () => {
         })
     }
     return (
-        <div className="sm:pt-8 sm:pb-2 container drop-shadow-xl rounded-md">
+        <div className="sm:pt-8 sm:pb-2 container drop-shadow-xl rounded-md ">
             <Form onFinish={handleFinish}>
                 <Row gutter={[10, 10]} className='justify-center !mx-0 !w-full'>
                     <Col xxl={5} xl={5} lg={5}>

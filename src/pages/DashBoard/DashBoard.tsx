@@ -59,58 +59,60 @@ const DashBoard = () => {
 	return (
 		<>
 			<div className='text-2xl font-bold'>General</div>
-			<Row className='mt-4 mb-10' gutter={[20, 20]}>
-				{job && (
-					<Col span={8}>
-						<Card title="Job" className="" size="small">
-							<div>
-								Jobs: <strong>{job.total}</strong>
-							</div>
-							<div>
-								Activated: <strong>{job.statusTrue}</strong>
-							</div>
-							<div>
-								Inactivated: <strong>{job.statusFalse}</strong>
-							</div>
-						</Card>
-					</Col>
+			<div className='md:block mt-4 mb-10 flex flex-col'>
+				<Row className=' ' gutter={[20, 20]}>
+					{job && (
+						<Col span={12}>
+							<Card title="Job" className="" size="small">
+								<div>
+									Jobs: <strong>{job.total}</strong>
+								</div>
+								<div>
+									Activated: <strong>{job.statusTrue}</strong>
+								</div>
+								<div>
+									Inactivated: <strong>{job.statusFalse}</strong>
+								</div>
+							</Card>
+						</Col>
 
-				)}
-				{CV && (
-					<Col span={8}>
-						<Card title="CV" size="small">
-							<div>
-								CV: <strong>{CV.total}</strong>
-							</div>
-							<div>
-								Read: <strong>{CV.readTrue}</strong>
-							</div>
-							<div>
-								Unread: <strong>{CV.readFalse}</strong>
-							</div>
-						</Card>
-					</Col>
-				)}
-				{company && (
-					<Col span={8}>
-						<Card title="Company" size="small">
-							<div>
-								Name: <strong>{company.companyName}</strong>
-							</div>
-							<div>
-								Email: <strong>{company.email}</strong>
-							</div>
-							<div>
-								Phone: <strong>{company.phone}</strong>
-							</div>
-							<div>
-								Employees: <strong>{company.quantityPeople}</strong>
-							</div>
-						</Card>
-					</Col>
+					)}
+					{CV && (
+						<Col span={12}>
+							<Card title="CV" size="small">
+								<div>
+									CV: <strong>{CV.total}</strong>
+								</div>
+								<div>
+									Read: <strong>{CV.readTrue}</strong>
+								</div>
+								<div>
+									Unread: <strong>{CV.readFalse}</strong>
+								</div>
+							</Card>
+						</Col>
+					)}
+					{company && (
+						<Col span={16}>
+							<Card title="Company" size="small">
+								<div>
+									Name: <strong>{company.companyName}</strong>
+								</div>
+								<div>
+									Email: <strong>{company.email}</strong>
+								</div>
+								<div>
+									Phone: <strong>{company.phone}</strong>
+								</div>
+								<div>
+									Employees: <strong>{company.quantityPeople}</strong>
+								</div>
+							</Card>
+						</Col>
 
-				)}
-			</Row>
+					)}
+				</Row>
+			</div>
 		</>
 	)
 }
