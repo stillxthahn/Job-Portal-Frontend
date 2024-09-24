@@ -9,7 +9,6 @@ export const get = async (path: string) => {
         },
         mode:   "cors",
     });
-    console.log(respone)
     const result = (await respone).json();
     return result;
 };

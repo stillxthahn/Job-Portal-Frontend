@@ -8,18 +8,17 @@ import { Button, Tag, Tooltip } from 'antd'
 import { EyeOutlined } from '@ant-design/icons'
 import Table, { ColumnsType } from 'antd/es/table'
 import DeleteCV from './DeleteCV'
+import Loading from '../../components/Loading/Loading'
 
 export interface CVWithJobName extends CV {
 	jobName: string
 }
 
-
-
 const CVList = () => {
 	const idCompany = getCookie("id")
-	const [cvs, setCVs] = useState()
-	const [job, setJob] = useState()
-	const [data, setData] = useState()
+	const [cvs, setCVs] = useState(undefined)
+	const [job, setJob] = useState(undefined)
+	const [data, setData] = useState(undefined)
 	const fectAPI = async (idCompany) => {
 		const CVResponse = await getCVByIdCompany(parseInt(idCompany))
 		const jobResponse = await getJobsByCompanyId(parseInt(idCompany))
@@ -50,6 +49,13 @@ const CVList = () => {
 	useEffect(() => {
 		fectAPI(idCompany)
 	}, [idCompany])
+	if (!data) {
+		return (
+			<div className='flex justify-center items-center mx-auto mt-12'>
+				<Loading size={12} ></Loading>
+			</div>
+		)
+	}
 
 	console.log(cvs)
 	console.log(job)
@@ -115,7 +121,7 @@ const CVList = () => {
 	console.log(data)
 	return (
 		<div className='mt-4'>
-			<Table dataSource={data} columns={columns} rowKey="id"></Table>
+			<Table scroll={{ x: 400 }} dataSource={data} columns={columns} rowKey="id"></Table>
 		</div>
 	)
 }

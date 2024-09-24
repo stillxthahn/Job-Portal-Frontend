@@ -4,12 +4,13 @@ import { CV, Job } from '../../interface/interface'
 import { changeCVStatus, getCV } from '../../services/cvService'
 import { getJob } from '../../services/jobService'
 import { Button, Card, Tag } from 'antd'
+import Loading from '../../components/Loading/Loading'
 
 const CVDetails = () => {
 	const params = useParams()
 	const navigate = useNavigate()
-	const [cv, setCV] = useState<CV>()
-	const [job, setJob] = useState<Job>()
+	const [cv, setCV] = useState<CV>(undefined)
+	const [job, setJob] = useState<Job>(undefined)
 	useEffect(() => {
 		const fetchAPI = async () => {
 			const CVResponse = await getCV(params.id)
@@ -27,7 +28,9 @@ const CVDetails = () => {
 		fetchAPI()
 	}, [params])
 	if (!cv || !job) {
-		return null
+		return <div className='flex justify-center items-center mx-auto mt-12'>
+			<Loading size={12} ></Loading>
+		</div>
 	}
 	return (
 		<>

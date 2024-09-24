@@ -6,8 +6,9 @@ import { getCompany } from "../../services/companyService"
 import JobCard from "../../components/Jobs/JobCard"
 import CompanyCard from "../../components/Employers/CompanyCard"
 import InfoJob from "../../components/Jobs/InfoJob"
+import Loading from "../../components/Loading/Loading"
 const JobDetails = () => {
-	const [job, setJob] = useState<Job>()
+	const [job, setJob] = useState<Job>(undefined)
 	const [company, setCompany] = useState<Company>()
 	const [otherJobs, setOtherJobs] = useState<Job[]>()
 
@@ -16,6 +17,7 @@ const JobDetails = () => {
 
 	useEffect(() => {
 		const fetchAPI = async () => {
+			setJob(undefined)
 			const jobRes = await getJob(jobId)
 			const others = await getJobList()
 			if (jobRes) {
@@ -32,7 +34,10 @@ const JobDetails = () => {
 		fetchAPI()
 	}, [jobId])
 	if (!job || !company) {
-		return null
+		return (
+			<div className='flex justify-center items-center mx-auto mt-32	'>
+				<Loading size={12} ></Loading>
+			</div>)
 	}
 	return (
 		<>
@@ -49,16 +54,23 @@ const JobDetails = () => {
 				</div>
 
 				{/* second section */}
-				<div className="font-bold mt-10 text-2xl w-full">More jobs for you</div>
+				{otherJobs ? (
+					<>
+						<div className="font-bold mt-10 text-2xl w-full">More jobs for you</div>
+						<div className="overflow-x-scroll w-full mt-8 md:grid md:grid-cols-3 gap-8 flex">
+							{otherJobs && otherJobs.map((job) => (
+								<Link key={job.id} to={`/job/${job.id}`} className='flex-shrink-0 w-10/12 md:w-full'>
+									<JobCard props={job} selected={false} />
+								</Link>
 
-				<div className="overflow-x-scroll w-full mt-8 md:grid md:grid-cols-3 gap-8 flex">
-					{otherJobs && otherJobs.map((job) => (
-						<Link key={job.id} to={`/job/${job.id}`} className='flex-shrink-0 w-10/12 md:w-full'>
-							<JobCard props={job} selected={false} />
-						</Link>
-
-					))}
-				</div>
+							))}
+						</div>
+					</>
+				) : (
+					<div className='flex justify-center items-center mx-auto w-full my-10'>
+						<Loading size={12} ></Loading>
+					</div>
+				)}
 			</div >
 		</>
 	)

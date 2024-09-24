@@ -6,6 +6,7 @@ import { Button, Card, Col, Form, Input, InputNumber, Row, Select, message } fro
 import TextArea from 'antd/es/input/TextArea'
 import { getListCity } from '../../services/cityService'
 import { getListTag } from '../../services/tagService'
+import Loading from '../../components/Loading/Loading'
 
 const AdminInfoCompany = () => {
 	const rules = [
@@ -15,9 +16,9 @@ const AdminInfoCompany = () => {
 		}
 	]
 	const idCompany = getCookie("id")
-	const [company, setCompany] = useState<Company>()
-	const [city, setCity] = useState<City[]>()
-	const [tags, setTags] = useState()
+	const [company, setCompany] = useState<Company>(undefined)
+	const [city, setCity] = useState<City[]>(undefined)
+	const [tags, setTags] = useState(undefined)
 	const [isEdit, setIsEdit] = useState<boolean>(false)
 	const [form] = Form.useForm()
 	const [mess, contextHolder] = message.useMessage();
@@ -47,6 +48,13 @@ const AdminInfoCompany = () => {
 	useEffect(() => {
 		fetchAPI(idCompany)
 	}, [idCompany])
+	if (!company || !city || !tags) {
+		return (
+			<div className='flex justify-center items-center mx-auto mt-12'>
+				<Loading size={12} ></Loading>
+			</div>
+		)
+	}
 	const handleFinish = async (values) => {
 		console.log("FIRST VAL", values)
 		const newValues = {

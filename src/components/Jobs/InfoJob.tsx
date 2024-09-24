@@ -14,8 +14,10 @@ interface InfoJobProps {
 }
 
 const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
+
 	const container = useSticky<HTMLDivElement>("root")
 	const navigate = useNavigate()
+
 	const params = {
 		name: `${job.name}`,
 		idJob: `${job.id}`,
@@ -42,11 +44,7 @@ const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 		}
 	}
 	console.log(job)
-	if (!job || !company) {
-		return (
-			<div>asd</div>
-		)
-	}
+
 	return (
 
 		<div className={`root`}>
@@ -54,7 +52,7 @@ const InfoJob = ({ job, company, isPage }: InfoJobProps) => {
 			<div ref={container.ref} className={`pt-5 flex flex-wrap w-full px-6  pb-3 bg-white rounded-t-lg shadow-[0_-12px_30px_rgb(0,0,0,0.12)] sticky self-start top-[66px]`}>
 				<div onClick={handleJob} className={`${isPage ? "" : "cursor-pointer"} max-w-[680px] md:text-2xl text-lg font-bold`}>{job?.name}</div>
 				<div onClick={handleCompany} className={`${container.isSticky ? 'md:mt-6 mt-2' : 'mt-1.5'} ${isPage ? "" : "cursor-pointer"} hidden md:block text-md w-full font-semibold text-gray-800 transition-all`}>{company?.companyName}</div>
-				<div className={`${container.isSticky ? 'mt-2' : 'mt-1.5'} hidden md:block w-full  items-center gap-2 font-bold text-gray-600 transition-all`}>
+				<div className={`${container.isSticky ? 'mt-2' : 'mt-1.5'} hidden md:flex w-full  items-center gap-2 font-bold text-gray-600 transition-all`}>
 					<LuCircleDollarSign size={25} color="gray" />
 					<div>Up to {job?.salary}$</div>
 				</div>

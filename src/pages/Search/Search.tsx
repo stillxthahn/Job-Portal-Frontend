@@ -9,20 +9,23 @@ import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 import JobCard from '../../components/Jobs/JobCard';
 import JobApply from '../../components/Jobs/InfoJob';
+import Loading from '../../components/Loading/Loading';
 
 const Search = () => {
     const [searchParams] = useSearchParams();
-    const [data, setData] = useState<Job[]>();
+    const [data, setData] = useState<Job[]>(undefined);
     const [companySpotlight, setCompanySpotlight] = useState<Company>()
     const [jobSpotlight, setJobSpotlight] = useState<Job[]>()
     const citySearch = searchParams.get("city") || "";
     const keywordSearch = searchParams.get("keyword") || "";
     const [activeElement, setActiveElement] = useState(0)
-    const [selectedElement, setSelectedElement] = useState<[Job, Company]>()
-
+    const [selectedElement, setSelectedElement] = useState(undefined)
+    const [loading, setLoading] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
     useEffect(() => {
         const fetchAPI = async () => {
             const response = await getJobList()
+            setData(undefined)
             if (response) {
                 const newData = response.filter((item: Job) => {
                     const city = citySearch ? item.city?.includes(citySearch) : true;
@@ -45,18 +48,31 @@ const Search = () => {
         fetchAPI()
     }, [searchParams, citySearch, keywordSearch])
     console.log(data)
+    console.log("Search", citySearch, keywordSearch)
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+    }, []);
 
     const handleOnClick = (selectedJob: Job): MouseEventHandler => async () => {
-        if (selectedJob.id !== activeElement) {
-            const selectedCompany = await getCompany(selectedJob.idCompany)
-            setActiveElement(selectedJob.id)
-            setSelectedElement([selectedJob, selectedCompany])
-            console.log("CLICK", selectedJob, selectedCompany)
+        setActiveElement(selectedJob.id)
+        if (!isMobile) {
+            if (selectedJob.id !== activeElement) {
+                setLoading(true)
+                const selectedCompany = await getCompany(selectedJob.idCompany)
+                if (selectedCompany) {
+                    setSelectedElement([selectedJob, selectedCompany])
+                    setLoading(false)
+                }
+                console.log("CLICK", selectedJob, selectedCompany)
+            }
         }
     }
-    if (!data) {
-        return null
-    }
+
     return (
         <div className='bg-gray-100 text-gray-800 pb-20'>
             <div className='bg-gradient-to-r from-slate-900 to-red-900 md:pb-24 pt-8 mt-[66px] text-gray-50'>
@@ -67,7 +83,7 @@ const Search = () => {
                     )}
                 </div>
             </div>
-            {data?.length !== 0 && (
+            {data && data.length > 0 ? (
                 <>
                     <div className='container  mx-full max-w-screen -mt-[100px]'>
                         <div className='hidden md:flex relative'>
@@ -119,7 +135,7 @@ const Search = () => {
                     <div className='container mx-full max-w-screen '>
                         <div className='hidden md:block  font-bold text-2xl mt-8'>{data.length} IT {`${data.length == 1 ? "job" : "jobs"}`} in Vietnam</div>
                         {selectedElement && (
-                            <div className='flex md:mt-8 mt-32 gap-6 flex-col '>
+                            <div className='flex md:mt-8 mt-32 gap-6 flex-col md:flex-row'>
                                 {/* first col */}
                                 <div className='md:hidden font-bold text-xl text-center'>{data.length} IT {`${data.length == 1 ? "job" : "jobs"}`} in Vietnam</div>
 
@@ -127,22 +143,38 @@ const Search = () => {
                                     {data && data.map((item) => (
 
                                         <div onClick={handleOnClick(item)} key={item.id} className='cursor-pointer'>
-                                            <Link className="md:hidden" to={`/job/${item.id}`}>
+                                            {isMobile ? (
+                                                <Link className="md:hidden w-[100%]" to={`/job/${item.id}`}>
+                                                    <JobCard props={item} selected={item.id === activeElement} />
+                                                </Link>
+                                            ) : (
                                                 <JobCard props={item} selected={item.id === activeElement} />
-                                            </Link>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
                                 {/* second col */}
-                                <div className='hidden md:block md:basis-4/6 sticky self-start top-[65px]'>
-                                    <JobApply job={selectedElement[0]} company={selectedElement[1]} isPage={false}></JobApply>
+                                <div className='hidden md:flex  md:basis-4/6 sticky self-start top-[65px]'>
+                                    {loading ? (
+                                        <div className='flex justify-center items-center mx-auto mt-32	'>
+                                            <Loading size={12} ></Loading>
+                                        </div>
+                                    ) : (
+                                        <JobApply job={selectedElement[0]} company={selectedElement[1]} isPage={false}></JobApply>
+                                    )}
                                 </div>
                             </div>
                         )}
                     </div>
                 </>
+            ) : !data ? (
+                <div className='flex justify-center mx-auto mt-32 h-screen'>
+                    <Loading size={12} ></Loading>
+                </div>
+            ) : (
+                <></>
             )}
-            {/* Company Spotlight */}
+
         </div>
     )
 }

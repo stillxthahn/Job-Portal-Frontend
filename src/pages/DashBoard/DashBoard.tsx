@@ -5,6 +5,7 @@ import { CV, Company, Job } from '../../interface/interface'
 import { getCVByIdCompany } from '../../services/cvService'
 import { getCompany } from '../../services/companyService'
 import { Card, Col, Row } from 'antd'
+import Loading from '../../components/Loading/Loading'
 interface JobStatistic {
 	total: number,
 	statusTrue: number
@@ -17,9 +18,9 @@ interface CVStatistic {
 }
 const DashBoard = () => {
 	const idCompany = getCookie("id")
-	const [job, setJob] = useState<JobStatistic>()
-	const [CV, setCV] = useState<CVStatistic>()
-	const [company, setCompany] = useState<Company>()
+	const [job, setJob] = useState<JobStatistic>(undefined)
+	const [CV, setCV] = useState<CVStatistic>(undefined)
+	const [company, setCompany] = useState<Company>(undefined)
 	useEffect(() => {
 		const fetchAPI = async () => {
 			const jobResponse = await getJobsByCompanyId(parseInt(idCompany))
@@ -55,6 +56,15 @@ const DashBoard = () => {
 		}
 		fetchAPI()
 	}, [idCompany])
+	if (!job || !CV || !company) {
+		return <>
+			<div className='text-2xl font-bold'>General</div>
+			<div className='flex justify-center items-center mx-auto mt-12'>
+				<Loading size={12} ></Loading>
+			</div>
+		</>
+	}
+
 	console.log("DATA", job, CV, company)
 	return (
 		<>
@@ -113,6 +123,8 @@ const DashBoard = () => {
 					)}
 				</Row>
 			</div>
+
+
 		</>
 	)
 }

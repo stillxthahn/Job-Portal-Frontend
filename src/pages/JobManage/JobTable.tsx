@@ -8,10 +8,11 @@ import { EyeOutlined } from '@ant-design/icons'
 import EditJob from './EditJob'
 import DeleteJob from './DeleteJob'
 import { ColumnsType } from 'antd/es/table'
+import Loading from '../../components/Loading/Loading'
 
 const JobTable = () => {
 	const idCompany = getCookie("id")
-	const [jobs, setJobs] = useState()
+	const [jobs, setJobs] = useState(undefined)
 	const fetchAPI = async (idCompany) => {
 		const response = await getJobsByCompanyId(parseInt(idCompany))
 		if (!response.error) {
@@ -24,6 +25,13 @@ const JobTable = () => {
 	useEffect(() => {
 		fetchAPI(idCompany || "")
 	}, [idCompany])
+	if (!jobs) {
+		return (
+			<div className='flex justify-center items-center mx-auto mt-12'>
+				<Loading size={12} ></Loading>
+			</div>
+		)
+	}
 	const handleReload = () => {
 		fetchAPI(idCompany || "")
 	}
@@ -92,7 +100,7 @@ const JobTable = () => {
 	return (
 		<>
 			<div className='mt-4'>
-				<Table dataSource={jobs} columns={columns} rowKey="id"></Table>
+				<Table scroll={{ x: 400 }} dataSource={jobs} columns={columns} rowKey="id"></Table>
 			</div>
 		</>
 	)
