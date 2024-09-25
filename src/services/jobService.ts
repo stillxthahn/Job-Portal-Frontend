@@ -8,7 +8,7 @@ export const getJob = async (id: number | string) => {
 }
 
 export const getJobSearch = async (keyword?: string, city?: string) => {
-    const query = keyword && city ? `job/search?keyword=${keyword}&city=${city}` : "job/search"
+    const query = keyword == "__" && city == "__" ? "job/list" : `job/search/keyword=${keyword}&city=${city}`
     const response = await get(query)
     return response
 }

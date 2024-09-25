@@ -1,7 +1,7 @@
 import { MouseEventHandler, useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import SearchForm from '../../components/Search/SearchForm';
-import { getJobList, getJobsByCompanyId } from '../../services/jobService';
+import { getJobsByCompanyId, getJobSearch } from '../../services/jobService';
 import { Company, Job } from '../../interface/interface';
 import { getCompany } from '../../services/companyService';
 import { MdOutlineLocationOn } from 'react-icons/md';
@@ -16,39 +16,34 @@ const Search = () => {
     const [data, setData] = useState<Job[]>(undefined);
     const [companySpotlight, setCompanySpotlight] = useState<Company>()
     const [jobSpotlight, setJobSpotlight] = useState<Job[]>()
-    const citySearch = searchParams.get("city") || "";
-    const keywordSearch = searchParams.get("keyword") || "";
+    const citySearch = searchParams.get("city") || "__";
+    const keywordSearch = searchParams.get("keyword") || "__";
     const [activeElement, setActiveElement] = useState(0)
     const [selectedElement, setSelectedElement] = useState(undefined)
     const [loading, setLoading] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
     useEffect(() => {
         const fetchAPI = async () => {
-            const response = await getJobList()
+            // const response = await getJobList()
+            console.log(keywordSearch, citySearch)
+            const response = await getJobSearch(keywordSearch, citySearch)
+            console.log("RESPONSE", response)
             setData(undefined)
-            if (response) {
-                const newData = response.filter((item: Job) => {
-                    const city = citySearch ? item.city?.includes(citySearch) : true;
-                    const tags = keywordSearch ? item.tags?.includes(keywordSearch) : true;
-                    const name = keywordSearch ? item.name?.includes(keywordSearch) : true;
-                    const status = item.status;
-                    return city && (tags || name) && status
-                })
-                if (newData.length > 0 && newData) {
-                    const company = await getCompany(newData[0]?.idCompany)
-                    const jobCompany = await getJobsByCompanyId(company.id)
-                    setJobSpotlight(jobCompany)
-                    setCompanySpotlight(company)
-                    setActiveElement(newData[0].id)
-                    setSelectedElement([newData[0], company])
-                }
-                setData(newData);
+
+            if (response && response.length > 0) {
+                const company = await getCompany(response[0].idCompany)
+                const jobCompany = await getJobsByCompanyId(company.id)
+                setJobSpotlight(jobCompany)
+                setCompanySpotlight(company)
+                setActiveElement(response[0].id)
+                setSelectedElement([response[0], company])
+                setData(response);
             }
         }
         fetchAPI()
     }, [searchParams, citySearch, keywordSearch])
-    console.log(data)
-    console.log("Search", citySearch, keywordSearch)
+
+    console.log("NEW DATA", data)
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
