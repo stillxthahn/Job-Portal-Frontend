@@ -1,26 +1,24 @@
-import { Company, Job } from '../../interface/interface'
+import { Job } from '../../interface/interface'
 import { timeAgo } from '../../helpers/time'
 import { LuCircleDollarSign } from 'react-icons/lu'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { RiHomeOfficeLine } from 'react-icons/ri'
-import { useEffect, useState } from 'react'
-import { getCompany } from '../../services/companyService'
 interface JobCardProps {
     props: Job
     selected: boolean
 }
 
 const JobCard = ({ props, selected }: JobCardProps) => {
-    const [company, setCompany] = useState<Company>()
-    useEffect(() => {
-        const fetchAPI = async () => {
-            const response = await getCompany(props.idCompany)
-            if (response) {
-                setCompany(response)
-            }
-        }
-        fetchAPI()
-    }, [props.idCompany])
+    // const [company, setCompany] = useState<Company>()
+    // useEffect(() => {
+    //     const fetchAPI = async () => {
+    //         const response = await getCompany(props.idCompany)
+    //         if (response) {
+    //             setCompany(response)
+    //         }
+    //     }
+    //     fetchAPI()
+    // }, [props.idCompany])
     const job = {
         ...props,
         createAt: timeAgo(props.createAt),
@@ -31,8 +29,8 @@ const JobCard = ({ props, selected }: JobCardProps) => {
             <div className='w-full text-sm text-gray-400 font-semibold'>{job.createAt}</div>
             <div className='w-full mt-3 md:text-xl text-lg font-bold max-w-80'>{job.name}</div>
             <div className='w-full flex mt-3 items-center gap-3'>
-                <div className='w-12 h-12 flex bg-white border border-gray-300 rounded-md overflow-hidden rouned-lg justify-center items-center'><img className="rouned-lg" src={company?.logoUrl} alt="" /></div>
-                <div className='text-gray-600 font-semibold text-sm md:text-base'>{company?.companyName}</div>
+                <div className='w-12 h-12 flex bg-white border border-gray-300 rounded-md overflow-hidden rouned-lg justify-center items-center'><img className="rouned-lg" src={job.logoUrl} alt="" /></div>
+                <div className='text-gray-600 font-semibold text-sm md:text-base'>{job.companyName}</div>
             </div>
             <div className='flex items-center gap-2 font-bold text-gray-600 text-sm md:text-base mt-3'>
                 <LuCircleDollarSign color="gray" />

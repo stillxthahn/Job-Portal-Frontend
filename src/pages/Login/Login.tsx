@@ -24,6 +24,7 @@ const Login = () => {
                 const time = 1;
                 setCookie("id", response.id, time);
                 setCookie("companyName", response.companyName, time);
+                setCookie("logoUrl", response.logoUrl, time);
                 setCookie("email", response.email, time);
                 setCookie("token", response.token, time);
                 dispatch(checkAuth(true));

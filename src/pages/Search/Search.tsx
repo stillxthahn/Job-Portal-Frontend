@@ -13,7 +13,7 @@ import Loading from '../../components/Loading/Loading';
 
 const Search = () => {
     const [searchParams] = useSearchParams();
-    const [data, setData] = useState<Job[]>(undefined);
+    const [data, setData] = useState(undefined);
     const [companySpotlight, setCompanySpotlight] = useState<Company>()
     const [jobSpotlight, setJobSpotlight] = useState<Job[]>()
     const citySearch = searchParams.get("city") || "__";
@@ -37,8 +37,8 @@ const Search = () => {
                 setCompanySpotlight(company)
                 setActiveElement(response[0].id)
                 setSelectedElement([response[0], company])
-                setData(response);
             }
+            setData(response);
         }
         fetchAPI()
     }, [searchParams, citySearch, keywordSearch])
@@ -73,7 +73,7 @@ const Search = () => {
             <div className='bg-gradient-to-r from-slate-900 to-red-900 md:pb-24 pt-8 mt-[66px] text-gray-50'>
                 <div className='container px-4 sm:px-32  mx-full max-w-screen '>
                     <SearchForm />
-                    {data?.length == 0 && (
+                    {data && data.error && (
                         <div className='text-center md:text-2xl text-lg font-bold md:mt-20 mt-2 pb-4 md:pb-0'>Sorry, we cannot find any suitable jobs for you :(</div>
                     )}
                 </div>

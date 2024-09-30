@@ -42,6 +42,8 @@ export interface Job {
     status: boolean;
     createAt: string;
     updateAt: string;
+    logoUrl: string;
+    companyName: string;
 }
 
 export interface CV {

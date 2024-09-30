@@ -17,6 +17,8 @@ const rules = [
 
 const CreateJob = () => {
 	const idCompany = getCookie("id")
+	const companyName = getCookie("companyName")
+	const logoUrl = getCookie("logoUrl")
 	const [form] = Form.useForm()
 	const navigate = useNavigate()
 	const [mess, contextHolder] = message.useMessage()
@@ -40,6 +42,8 @@ const CreateJob = () => {
 			...values,
 			id: Date.now(),
 			idCompany: parseInt(idCompany),
+			companyName: companyName,
+			logoUrl: logoUrl,
 			overview: !values.overview ? [] : values.overview.trim().split("\n").filter((item: string) => {
 				return item.trim().length != 0
 			}),
