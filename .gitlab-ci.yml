@@ -42,7 +42,7 @@ deploy s3:
    aud: react_s3_gl
  script:
   - *assume_role
-  - aws s3 sync disk/ s3://$S3_BUCKET
+  - aws s3 sync dist/ s3://$S3_BUCKET
  rules:
   - if: '$CI_COMMIT_REF_NAME == "main"'
     when: always
