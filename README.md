@@ -3,7 +3,8 @@ Developed a full stack job portal web application that allows employees to find,
 
 ## Description
 This repository serves as a front-end user interface.
-Link to the backend: [](https://github.com/stillxthahn/job-portal-serverless-api)
+Link to the backend: [https://github.com/stillxthahn/job-portal-serverless-api](https://github.com/stillxthahn/job-portal-serverless-api)
+
 
 
 ## How to use
