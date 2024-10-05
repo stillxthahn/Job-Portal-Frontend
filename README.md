@@ -1,20 +1,10 @@
 # Job portal 
-A website that I developed in order to apply for GEEK UP Summer Intership in 2024.
-
-
-This website serves users as a platform where employees can seek for jobs in Computer Science in general and Information Technology in specific
+Developed a full stack job portal web application that allows employees to find, apply occupations or research enterprise in the field of Information Technology. This is my self-learning project that I developed during my learning in Reactjs, Nodejs, Tailwind.
 
 ## Description
-This project **doesn't have any Back-End development**, so the dummy database is hosted through JSON-server and deployed in Vercel.
+This repository serves as a front-end user interface.
+Link to the backend: [](https://github.com/stillxthahn/job-portal-serverless-api)
 
-
-
-Due to this, any of **POST, PACTH, DELETE OR GET** methods won't work probably. Especially, **POST or DELETE** methods require a significant time to render precisely.
-
-
-
-Link to the database: [https://dummy-api-wine.vercel.app/
-](https://dummy-database-job-portal.vercel.app/)
 
 ## How to use
 There are two distinctive roles for users: Employee and Employer
