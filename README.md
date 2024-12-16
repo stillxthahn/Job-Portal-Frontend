@@ -1,16 +1,21 @@
-# Job portal 
-Developed a full stack job portal web application that allows employees to find, apply occupations or research enterprise in the field of Information Technology. This is my self-learning project that I developed during my learning in Reactjs, Nodejs, Tailwind.
+# Job portal frontend
 
-## Description
+## 1. Overview
+My full stack job portal web application that allows employees to find, apply occupations or research enterprise in the field of Information Technology. This is my self-learning project that I developed during my learning in ReactJS, NodeJS, TailwindCSS and AWS Services.
+
 This repository serves as a front-end user interface.
-Link to the backend: [https://github.com/stillxthahn/job-portal-serverless-api](https://github.com/stillxthahn/job-portal-serverless-api)
 
+Link to the backend: [https://github.com/stillxthahn/Job-Portal-Backend](https://github.com/stillxthahn/Job-Portal-Backend)
 
+![Architecture](architecture.jpeg)
 
-## How to use
+## 2. Services
+- Frontend: ReactJS, TailwindCSS, Ant-Design.
+
+- AWS Services: AWS Lambda, Amazon CloudFront, Route53, AWS DynamoDB, AWS Certificate Manager, IAM.
+
+## 3. How to use
 There are two distinctive roles for users: Employee and Employer
-
-
 
 * Employee
   * View companys
@@ -19,7 +24,6 @@ There are two distinctive roles for users: Employee and Employer
   * Sig up as a employer
 * Employer
   * With basic utilizations of employee, an employer can further log in or sign up as an administrator to manange their own company, jobs and CVs applied
-
 
 
 #### Initial login accounts
